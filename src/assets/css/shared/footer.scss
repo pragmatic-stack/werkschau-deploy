@@ -1,0 +1,21 @@
+@import "variables";
+
+#footerLogo {
+  max-width: 150px;
+}
+
+footer  {
+  padding: 25px;
+}
+
+footer a, footer span {
+  font-weight: bold;
+  color: $ws-text-dark;
+  transition: 250ms;
+}
+
+footer a:hover {
+  text-decoration: none;
+  color: orange;
+  transition: 250ms;
+}

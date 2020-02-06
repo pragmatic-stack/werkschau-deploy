@@ -1,0 +1,160 @@
+title: student
+
+status:
+  draft:
+    label: Entwurf
+    text: Deine Seite befindet sich im Entwurfsmodus
+  unlisted:
+    label: Veröffentlicht
+    text: Deine Seite ist veröffentlicht und die Daten werden auf der Website angezeigt
+
+addFields:
+  firstName:
+    label: Vorname
+    required: true
+    type: text
+    validate:
+      match: /[^<>${}=%;]$/
+
+  lastName:
+    label: Nachname
+    required: true
+    type: text
+    validate:
+      match: /[^<>${}=%;]$/
+
+  courseOfStudy:
+    label: studiengang
+    type: select
+    options: query
+    required: true
+    query:
+      fetch: site.studiengaenge.toStructure
+      text: "{{ structureItem.bezeichnung }} ({{ structureItem.kuerzel }}) - {{ structureItem.hoehe }}"
+      value: "{{ structureItem.bezeichnung }} {{ structureItem.kuerzel }} - {{ structureItem.hoehe }}"
+
+columns:
+
+  left:
+    width: 1/3
+    sections:
+      image:
+        type: fields
+        fields:
+          profileImage:
+            label: Dein Profilbild
+            type: files
+            multiple: false
+            layout: cards
+            required: true
+            size: tiny
+            uploads:
+              template: image
+            image:
+              cover: true
+              ratio: 1/1
+
+      images:
+        headline: hochgeladene Bilder
+        type: files
+        template: image
+
+      works:
+        extends: sections/works
+
+  right:
+    width: 2/3
+    sections:
+      selectedWorks:
+        type: fields
+
+        fields:
+          thesis:
+            type: pages
+            label: Deine Abschlussarbeit
+            template: abschlussarbeit
+            width: 1/2
+            required: true
+            help: Diese Arbeit wird als deine Abschlussarbeit angezeigt
+            options: query
+            multiple: false
+            query: page.children.unlisted.filterBy('template', 'abschlussarbeit')
+
+          projectWorks:
+            type: pages
+            label: Semesterarbeiten
+            template: semesterarbeit
+            width: 1/2
+            help: Die ausgewählten Arbeiten werden auf der Website angezeigt
+            options: query
+            query: page.children.unlisted.filterBy('template', 'semesterarbeit')
+
+
+      personalData:
+        type: fields
+        fields:
+
+          firstName:
+            label: Vorname
+            type: text
+            required: true
+            width: 1/2
+            validate:
+              match: /[^<>${}=%;]$/i
+
+          lastName:
+            label: Nachname
+            type: text
+            required: true
+            width: 1/2
+            validate:
+              match: /[^<>${}=%;]$/
+
+          courseOfStudy:
+            type: select
+            label: Studiengang
+            options: query
+            query:
+              fetch: site.studiengaenge.toStructure
+              text: "{{ structureItem.bezeichnung }} ({{ structureItem.kuerzel }}) - {{ structureItem.hoehe }}"
+              value: "{{ structureItem.bezeichnung }} {{ structureItem.kuerzel }} - {{ structureItem.hoehe }}"
+            width: 1/2
+            required: true
+
+          contactSeperator:
+            type: line
+
+          email:
+            label: E-Mail
+            type: email
+            width: 1/2
+
+          website:
+            label: Webseite
+            type: url
+            width: 1/2
+
+          instagram:
+            label: Instagram
+            type: url
+            width: 1/2
+
+          behance:
+            label: Behance
+            type: url
+            width: 1/2
+
+          twitter:
+            label: Twitter
+            type: url
+            width: 1/2
+
+          facebook:
+            label: Facebook
+            type: url
+            width: 1/2
+
+          linkedIn:
+            label: LinkedIn
+            type: url
+            width: 1/2

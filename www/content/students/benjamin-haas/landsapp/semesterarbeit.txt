@@ -1,0 +1,35 @@
+Title: LANDSAPP
+
+----
+
+Slug: landsapp
+
+----
+
+Student: Benjamin Haas
+
+----
+
+Heroimage:
+
+- screenshot_2020-01-23-landsapp.png
+
+----
+
+Headline: LandsApp
+
+----
+
+Description: Hierbei entwickelten wir im Team eine App für Landschaftsarchitekten. Mithilfe von AR konnten den Kunden damit 3D-Modelle von Bäumen, Büschen, Blumen und Gartenmöbel präsentiert werden, um den Kunden damit einen Ausblick auf seinen zukünftigen Garten zu vermitteln.
+
+----
+
+Template: semesterarbeit
+
+----
+
+Studentid: students/benjamin-haas
+
+----
+
+CourseOfStudy: Interaktive Medien IA - BA

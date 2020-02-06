@@ -1,0 +1,35 @@
+Title: Being Human in the Age of Technology
+
+----
+
+Slug: being-human-in-the-age-of-technology
+
+----
+
+Student: Fabian Franz
+
+----
+
+Heroimage:
+
+- 3f140365724237.5afdca9a74d25.jpg
+
+----
+
+Headline: Being Human in the Age of Technology
+
+----
+
+Description: Vor zehn Jahren fand an der Universität Princeton eine spannende Diskussion zu diesem Thema statt. Zum Jubiläum gab es einen Design-Relaunch, der u. a. aus Plakaten, Eintrittsbändern, einer Flagge, VIP-Pässen, Aufklebern und Stofftaschen bestand.
+
+----
+
+Template: semesterarbeit
+
+----
+
+Studentid: students/fabian-franz
+
+----
+
+CourseOfStudy: Design- und Kommunikationsstrategie DKS - MA

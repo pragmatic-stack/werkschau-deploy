@@ -1,0 +1,36 @@
+Title: Absolventen
+
+----
+
+Slug: absolventen
+
+----
+
+Displaytitle: true
+
+----
+
+Pagestructure:
+
+- 
+  sectiontitle: Absolventen
+  displaytitle: 'false'
+  asfullwidthsection: 'false'
+  withbackground: 'false'
+  paddingtop: 0
+  paddingbottom: 50
+  sectionblocks:
+    - 
+      blocks:
+        - blocks/studenten
+      blockwidth: full
+      displaytitle: 'false'
+      displayheadline: 'false'
+      separaterow: 'true'
+  ascontainer: 'true'
+  inrow: 'true'
+  separator: null
+
+----
+
+Template: sectionspage

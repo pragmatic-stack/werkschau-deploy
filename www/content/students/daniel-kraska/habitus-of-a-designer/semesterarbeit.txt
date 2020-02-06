@@ -1,0 +1,35 @@
+Title: Habitus of a Designer
+
+----
+
+Slug: habitus-of-a-designer
+
+----
+
+Student: Daniel Kraska
+
+----
+
+Heroimage:
+
+- gruppe-1.jpg
+
+----
+
+Headline: "Oh Gott" - Habitus des Designers
+
+----
+
+Description: "Oh Gott" ist eine empirische Studie und visualisiert das Alltags-Phänomen des Designers. Die schamlose Bewertung gegenüber Fremdgestaltung.
+
+----
+
+Template: semesterarbeit
+
+----
+
+Studentid: students/daniel-kraska
+
+----
+
+CourseOfStudy: Design- und Kommunikationsstrategie DKS - MA

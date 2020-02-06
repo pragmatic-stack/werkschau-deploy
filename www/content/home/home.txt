@@ -1,0 +1,112 @@
+Title: Werkschau 2020 Startseite
+
+----
+
+Redirect: true
+
+----
+
+Redirectpage: startseite
+
+----
+
+Marqueetext: blocks/marquee
+
+----
+
+Dozenten:
+
+- 
+  titel: Prof. Dr.
+  name: Müller
+  vorname: Hans
+- 
+  titel: Prof.
+  name: Rothaug
+  vorname: Daniel
+- 
+  titel: Prof.
+  name: Kai
+  vorname: Bergmann
+
+----
+
+Studiengaenge:
+
+- 
+  bezeichnung: Interaktive Medien
+  kuerzel: IAM
+- 
+  bezeichnung: 'Design- und Kommunikationsstrategie'
+  kuerzel: DKS
+- 
+  bezeichnung: Kommunikationsdesign
+  kuerzel: KD
+- 
+  bezeichnung: Interaktive Mediensysteme
+  kuerzel: IMS
+
+----
+
+Raeume:
+
+- 
+  gebaeude: 'W - Wirtschaftsgebäude'
+  raumnummer: 1.01
+
+----
+
+Gebaeude:
+
+- 
+  bezeichnung: Wirtschaftsgebäude
+  kuerzel: W
+- 
+  bezeichnung: 'Mensa - Cafeteria'
+  kuerzel: M
+- 
+  bezeichnung: Gestaltung
+  kuerzel: K
+- 
+  bezeichnung: Kunst
+  kuerzel: L
+
+----
+
+Name: Hochschule Augsburg
+
+----
+
+Street: Friedbergerstraße
+
+----
+
+Street-number: 2
+
+----
+
+City: Augsburg
+
+----
+
+Zip: 86161
+
+----
+
+Facebook: https://www.facebook.com/Werkschau.Augsburg/
+
+----
+
+Instagram: https://www.instagram.com/werkschau_augsburg/
+
+----
+
+Twitter: https://twitter.com/werkschau_HSA
+
+----
+
+Seotitle: 
+
+----
+
+Seodescription: 

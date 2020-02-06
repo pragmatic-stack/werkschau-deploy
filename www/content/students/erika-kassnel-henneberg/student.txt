@@ -1,0 +1,84 @@
+Title: Erika Kassnel-Henneberg
+
+----
+
+Slug: 
+
+----
+
+Profileimage:
+
+- absolventen-079_2.jpg
+
+----
+
+Thesis:
+
+- >
+  students/erika-kassnel-henneberg/rabbit-hole-4-0
+
+----
+
+Projectworks:
+
+- students/erika-kassnel-henneberg/hansel
+- >
+  students/erika-kassnel-henneberg/organ-harvesting
+- >
+  students/erika-kassnel-henneberg/traue-deinen-augen
+
+----
+
+Firstname: Erika
+
+----
+
+Lastname: Kassnel-Henneberg
+
+----
+
+Courseofstudy: Interaktive Medien IA - BA
+
+----
+
+Email: brief@eri-kassnel.de
+
+----
+
+Website: https://www.eri-kassnel.de/
+
+----
+
+Instagram: 
+
+----
+
+Behance: 
+
+----
+
+Twitter: 
+
+----
+
+Facebook: 
+
+----
+
+Linkedin: 
+
+----
+
+Comfortzone: - panik-zone-doping-ist-alle.jpg
+
+----
+
+Abschlussarbeit: - plakat_2.jpg
+
+----
+
+Comfortzonedescription: Panik Zone: Doping ist alle
+
+----
+
+Template: student

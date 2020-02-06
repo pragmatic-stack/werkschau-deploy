@@ -1,0 +1,47 @@
+title: Semesterarbeit
+preset: page
+pages: false
+
+status:
+  draft:
+    label: Entwurf
+    text: Deine Seite befindet sich im Entwurfsmodus
+  unlisted:
+    label: Veröffentlicht
+    text: Deine Seite ist veröffentlicht und die Daten werden auf der Website angezeigt
+
+fields:
+  student:
+    type: text
+    label: Student
+    disabled: true
+
+  heroImage:
+    type: files
+    width: 1/2
+    layout: cards
+    label: Anzeigebild
+    required: true
+    multiple: false
+    help: "Bild wird im Hochformat gezeigt"
+
+  separator:
+    type: line
+
+  headline:
+    type: text
+    label: Überschrift
+    required: true
+    validate:
+      match: /[^<>${}=%;]$/
+
+  description:
+    type: textarea
+    label: Kurzbeschreibung
+    maxlength: 300
+    buttons: false
+    size: medium
+    required: true
+    validate:
+      match: /[^<>${}=%;]$/
+

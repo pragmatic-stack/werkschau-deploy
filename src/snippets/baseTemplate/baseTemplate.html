@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <title><%= htmlWebpackPlugin.options.title %></title>
+</head>
+
+
+<body class="h-100 ws-body--no-hero">
+<!-- NAVIGATION WITHOUT HERO -->
+<%= require('html-loader!../../snippets/header-standard.html') %>
+
+<main>
+    <article class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <h1 class="ws-section--headline__centered">
+                    {{ pageName }}
+                </h1>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12"></div>
+        </div>
+    </article>
+</main>
+<!-- FOOTER -->
+<%= require('html-loader!../../snippets/footer.html') %>
+<!-- SEARCH FORM -->
+<%= require('html-loader!../../snippets/search-form.html') %>
+</body>
+</html>

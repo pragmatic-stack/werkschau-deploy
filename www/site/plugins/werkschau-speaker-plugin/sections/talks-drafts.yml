@@ -1,0 +1,7 @@
+type: pages
+status: drafts
+create: talk
+template: talk
+headline: Talk Entwürfe
+parent: site.find('talks')
+empty: Keine Talk Entwürfe angelegt

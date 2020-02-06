@@ -1,0 +1,8 @@
+type: pages
+headline: unveröffentlichte Studenten
+parent: kirby.page("students")
+info: "{{ page.date.toDate('d.m.Y') }}"
+status: draft
+template: student
+empty: Bisher keine Studenten Entwürfe eingetragen
+sortBy: firstName asc

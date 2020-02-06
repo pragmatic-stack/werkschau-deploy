@@ -1,0 +1,82 @@
+Title: Gabriel von Münchow
+
+----
+
+Slug: 
+
+----
+
+Profileimage:
+
+- absolventen-055.jpg
+
+----
+
+Thesis:
+
+- >
+  students/gabriel-von-munchow/romerapp-eine-augmented-reality-erlebnis-fur-junge-erwachsene-im-museum
+
+----
+
+Projectworks:
+
+- students/gabriel-von-munchow/auxgo
+- >
+  students/gabriel-von-munchow/tropical-express
+
+----
+
+Firstname: Gabriel
+
+----
+
+Lastname: von Münchow
+
+----
+
+Courseofstudy: Interaktive Mediensysteme IMS - MA
+
+----
+
+Email: 
+
+----
+
+Website: 
+
+----
+
+Instagram: 
+
+----
+
+Behance: 
+
+----
+
+Twitter: 
+
+----
+
+Facebook: 
+
+----
+
+Linkedin: 
+
+----
+
+Comfortzone: - comfort-zone.png
+
+----
+
+Abschlussarbeit: - romerapp00.jpg
+
+----
+
+Comfortzonedescription: Comfort Zone: fehlt seit einem Monat
+
+----
+
+Template: student

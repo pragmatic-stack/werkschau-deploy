@@ -1,0 +1,49 @@
+Title: Marius Maulpeter
+
+----
+
+Slug: 
+
+----
+
+Profileimg: 
+
+----
+
+Academicgrade: 
+
+----
+
+Name: Marius
+
+----
+
+Lastname: Maulpeter
+
+----
+
+Biography: haaaa
+
+----
+
+Biographyexcerpt: 
+
+----
+
+Instagramurl: 
+
+----
+
+Twitterurl: 
+
+----
+
+Template: speaker
+
+----
+
+Vorname: Marius
+
+----
+
+Nachname: Maulpeter

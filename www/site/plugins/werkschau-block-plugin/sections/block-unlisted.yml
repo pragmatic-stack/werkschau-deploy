@@ -1,0 +1,14 @@
+type: pages
+headline: verfügbare Blocks
+parent: kirby.page("blocks")
+info: "{{ page.intendedTemplate }}"
+empty: Bisher keine Entwürfe angelegt
+status: unlisted
+sortBy: date desc
+template:
+  - block-hero
+  - block-info
+  - block-timeschedule
+  - block-maps
+  - block-theses
+  - block-students

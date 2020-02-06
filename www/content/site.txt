@@ -1,0 +1,125 @@
+Title: Werkschau
+
+----
+
+Tags: #3D, #advertising, #animation, #app, #AR/VR, #bookdesign, #branding, #coding, #editorial, #film, #game, #illustration, #informationdesign, #interactive, #motion, #typedesign, #U/UX, #web, #development, #photography
+
+----
+
+Faculty: Fakultät für Gestaltung
+
+----
+
+Facultywebsite: https://gestaltung.hs-augsburg.de
+
+----
+
+Name: Hochschule Augsburg
+
+----
+
+Organisationwebsite: https://hs-augsburg.de
+
+----
+
+Street: Friedbergstraße 2 - 4
+
+----
+
+Zip: 86161
+
+----
+
+City: Augsburg
+
+----
+
+Countryabbrevation: DE
+
+----
+
+Cityabbrevation: AUX
+
+----
+
+Mapboxaccesstoken: pk.eyJ1Ijoia3Jhc2thc3lzdGVtIiwiYSI6ImNrNjlodGE4ODAzMWIzanFucThydTIyZHQifQ.rxtYPiS5QzwHRXicPA6Knw
+
+----
+
+Facebook: https://www.facebook.com/Werkschau.Augsburg/
+
+----
+
+Instagram: https://www.instagram.com/werkschau_augsburg/
+
+----
+
+Twitter: https://twitter.com/werkschau_HSA
+
+----
+
+Dozenten:
+
+- 
+  titel: Prof. Dr.
+  name: Jan
+  vorname: Ullrich
+- 
+  titel: Prof.
+  name: Rothaug
+  vorname: Daniel
+- 
+  titel: Prof.
+  name: Bergmann
+  vorname: Kai
+
+----
+
+Studiengaenge:
+
+- 
+  bezeichnung: Kommunikationsdesign
+  kuerzel: KD
+  hoehe: BA
+- 
+  bezeichnung: Interaktive Medien
+  kuerzel: IA
+  hoehe: BA
+- 
+  bezeichnung: Interaktive Medien
+  kuerzel: IA
+  hoehe: BSC
+- 
+  bezeichnung: Interaktive Mediensysteme
+  kuerzel: IMS
+  hoehe: MA
+- 
+  bezeichnung: 'Design- und Kommunikationsstrategie'
+  kuerzel: DKS
+  hoehe: MA
+
+----
+
+Googlemapslink: https://goo.gl/maps/xZqQG52B2PDTuJqD8
+
+----
+
+Parentwebsite: https://hs-augsburg.de
+
+----
+
+Raeume: 
+
+----
+
+Gebaeude:
+
+- 
+  bezeichnung: Wirtschaftsgebäude
+  kuerzel: W
+- 
+  bezeichnung: Kunstgebäude
+  kuerzel: K
+- 
+  bezeichnung: Mensa
+  kuerzel: M

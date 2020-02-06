@@ -1,0 +1,35 @@
+Title: Cultural Zeitgeist
+
+----
+
+Slug: cultural-zeitgeist
+
+----
+
+Student: Daniel Kraska
+
+----
+
+Heroimage:
+
+- reproshot_cultural_zeitgeist230517.jpg
+
+----
+
+Headline: Cultural Zeitgeist
+
+----
+
+Description: Belfast ist eine sehr pulsierende Stadt, die sowohl tagsüber als auch im Nachtleben sehr aktiv ist. Jeder Distrikt verkörpert seine ganz eigene Vorstellung von irischer Kultur. Dieses Fotobuch erzählt Alltagsgeschichten über die Urbanität von Belfast.
+
+----
+
+Template: semesterarbeit
+
+----
+
+Studentid: students/daniel-kraska
+
+----
+
+CourseOfStudy: Design- und Kommunikationsstrategie DKS - MA

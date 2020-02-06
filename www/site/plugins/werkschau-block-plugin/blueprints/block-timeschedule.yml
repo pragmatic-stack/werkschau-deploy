@@ -1,0 +1,32 @@
+title: Time Schedule Block (zeitlicher Ablauf)
+icon: clock
+
+status:
+  draft:
+    label: Entwurf
+    text: Der Block ist im Entwurfsmodus und nicht für Blockseiten verfügbar
+  unlisted:
+    label: Verfügbar
+    text: Der Block ist auf Blockseiten auswählbar
+
+sections:
+  settings:
+    type: fields
+    fields:
+      defaults: fields/default-block-fields
+      events:
+        label: Ablauf
+        type: structure
+        fields:
+          datum:
+            label: Datum
+            type: date
+          von:
+            label: von
+            type: time
+          bis:
+            label: bis
+            type: time
+          beschreibung:
+            label: Beschreibung
+            type: text

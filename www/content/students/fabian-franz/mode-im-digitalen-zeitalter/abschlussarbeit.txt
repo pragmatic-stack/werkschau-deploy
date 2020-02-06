@@ -1,0 +1,67 @@
+Title: Mode im digitalen Zeitalter
+
+----
+
+Slug: mode-im-digitalen-zeitalter
+
+----
+
+Student: Fabian Franz
+
+----
+
+CourseOfStudy: Design- und Kommunikationsstrategie DKS - MA
+
+----
+
+Dozent: Prof. Kai Bergmann, Prof.  Maurice Göldner
+
+----
+
+Building: buildings/m-gebaude
+
+----
+
+Tags: 
+
+----
+
+Presentation:
+
+- 0100.png
+- >
+  82667602_2527754153960530_4742346968045453312_n.jpg
+- >
+  82329183_581086175790613_4885839321438879744_n.jpg
+
+----
+
+Vimeolink: 
+
+----
+
+Headline: Mode im digitalen Zeitalter
+
+----
+
+Subheadline: Unternehmenskonzepte für Digital Fashion
+
+----
+
+Description: Untersuchungsgegenstand der gemeinsamen Masterarbeit von Fabian Franz und Florian Siegmann ist Mode im digitalen Zeitalter. Dabei wurden neue Systeme für die Zukunft der Modeindustrie mit einem Unternehmenskonzept im Sektor Industrie 4.0 verknüpft. Innovative Ideen an der Schnittstelle zwischen Mode und Technologie sollen Denkanstöße für einen nachhaltigeren Umgang mit Kleidung geben und zudem den grundlegenden Workflow zur Implementierung von Fashion im digitalen Raum erforschen.
+
+----
+
+Backgroundcolor: #ffffff
+
+----
+
+Typographycolor: #000000
+
+----
+
+Template: abschlussarbeit
+
+----
+
+Studentid: students/fabian-franz

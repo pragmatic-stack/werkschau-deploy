@@ -1,0 +1,53 @@
+Title: Strichpunkt Design
+
+----
+
+Slug: 
+
+----
+
+Profileimg: 
+
+----
+
+Academicgrade: 
+
+----
+
+Name: Strichpunkt
+
+----
+
+Lastname: Design
+
+----
+
+Biography: Unser Sponsor Strichpunkt schickt uns Fabian Hammans und Andreas Stiegler für einen Vortrag vorbei. Fabian Hammans ist Creative Director für Branding, Andreas Stiegler arbeitet als Creative Technologist.
+
+----
+
+Biographyexcerpt: 
+
+----
+
+Instagramurl: 
+
+----
+
+Twitterurl: 
+
+----
+
+Websiteurl: 
+
+----
+
+Template: speaker
+
+----
+
+Vorname: Strichpunkt
+
+----
+
+Nachname: Design

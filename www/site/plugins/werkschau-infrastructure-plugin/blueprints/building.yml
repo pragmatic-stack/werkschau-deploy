@@ -1,0 +1,43 @@
+title: Building Page
+icon: home
+
+status:
+  draft: Entwurf
+  unlisted: Verfügbar
+
+columns:
+  left:
+    width: 1/2
+    sections:
+      content:
+        type: fields
+        fields:
+          headline:
+            type: text
+            label: Anzeige Überschrift
+          bezeichnung:
+            type: text
+            label: Gebäude Bezeichnung
+            required: true
+            width: 1/2
+          kuerzel:
+            type: text
+            label: Gebäude Kürzel
+            required: true
+            width: 1/2
+          divider:
+            type: line
+
+  right:
+    width: 1/2
+    sections:
+      data:
+        type: fields
+        fields:
+          rooms:
+            type: structure
+            label: Räume
+            fields:
+              number:
+                type: number
+                label: Raumnummer

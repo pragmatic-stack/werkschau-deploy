@@ -1,0 +1,7 @@
+type: pages
+status: drafts
+create: speaker
+template: speaker
+headline: Speaker Entwürfe
+parent: site.find('speakers')
+empty: Keine Speaker Entwürfe angelegt

@@ -1,0 +1,65 @@
+Title: Spielräume im Regelwerk
+
+----
+
+Slug: spielraume-im-regelwerk
+
+----
+
+Student: Daniel Kraska
+
+----
+
+CourseOfStudy: Design- und Kommunikationsstrategie DKS - MA
+
+----
+
+Dozent: Prof.  Stefan Bufler, Prof. Ulrich  Fleischmann
+
+----
+
+Building: buildings/m-gebaude
+
+----
+
+Tags: #branding, #UI/UX
+
+----
+
+Presentation:
+
+- prasentation_thesis_buch_stehend.jpg
+- prasentation_thesis_sir_05.jpg
+- prasentation_thesis_screen_korridor.jpg
+
+----
+
+Vimeolink: 
+
+----
+
+Headline: Spielräume im Regelwerk
+
+----
+
+Subheadline: Untersuchungen zur Wirkungsweise von Identity-Design-Systemen
+
+----
+
+Description: Organisationen stehen vor der Herausforderung ihren Markenauftritt regelmäßig zu hinterfragen, zu modernisieren und zu verändern. Sie müssen sich an die Anforderungen der schnelllebigen Welt anpassen, flexibel sein und gleichzeitig beständig bleiben. Sie leben im Spannungsfeld zwischen Konstanz und Flexibilität. Beständigkeit und Veränderung. Innen wie außen. Doch wie flexibel können die Gestaltungselemente einer Marke eingesetzt werden, ohne den Markenkern zu verlassen? Die Masterarbeit gibt Einblicke, wie sich das Zusammenspiel von Konstanten und Variablen im Erscheinungsbild auf die Wahrnehmung einer Marke auswirkt. Die Untersuchungsergebnisse zeigen, dass neben der Qualität der Einzelelemente auch das Verhältnis der Gestaltungskomponenten zueinander im Layout die Wirkungsweise eines Markenbildes prägt. In der praktischen Auseinandersetzung konnte demonstriert werden, wie Szenarien Entscheidungsprozesse in der Markenpositionierung unterstützen. Auf dieser Grundlage wurde ein digitales Layout-Markentool konzipiert und gestaltet, dass dem Nutzer eine systematische Erprobung der Spielräume im Regelwerk einer Marke ermöglicht.
+
+----
+
+Backgroundcolor: #ffffff
+
+----
+
+Typographycolor: #000000
+
+----
+
+Template: abschlussarbeit
+
+----
+
+Studentid: students/daniel-kraska

@@ -1,0 +1,17 @@
+Title: Werkschau Info
+
+----
+
+Headline: Werkschau 2019
+
+----
+
+Description: Wie jedes Semester verabschieden sich die AbsolventInnen der Fakultät für Gestaltung von ihrer Hochschule mit einer Schau ihrer Abschlussarbeiten. Auf dem Campus am Roten Tor werden die Bachelorarbeiten der Studiengänge ›Kommunikationsdesign‹ und ›Interaktive Medien‹ sowie die Masterarbeiten der Studiengänge ›Design- und Kommunikationsstrategie‹ und ›Interaktive Mediensysteme‹ **gezeigt**.
+
+----
+
+Class: 
+
+----
+
+Displaytitle: true

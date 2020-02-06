@@ -1,0 +1,53 @@
+Title: Marco Mori
+
+----
+
+Slug: 
+
+----
+
+Profileimg: 
+
+----
+
+Academicgrade: 
+
+----
+
+Name: Marco
+
+----
+
+Lastname: Mori
+
+----
+
+Biography: Auch Marco Mori ist Absolvent unserer Hochschule und mittlerweile erfolgreicher 3D-Künstler. Wenige Monate nach seinem Abschluss 2018 war er bereits Lead Animator für ein Musikvideo von Kanye West. Seine surrealistischen, verrückten Clips polarisieren und neben persönlichen Projekten erstellt er Arbeiten für bekannte Kunden wie Universal, Lil Skies und die Gorillaz. Eine große Rolle spielt dabei auch sein skurriler Humor: Da tanzen schon mal nackte Figuren in einem Meer aus überdimensionalen Donuts oder robben durch Gelee.
+
+----
+
+Biographyexcerpt: 
+
+----
+
+Instagramurl: 
+
+----
+
+Twitterurl: 
+
+----
+
+Websiteurl: 
+
+----
+
+Template: speaker
+
+----
+
+Vorname: Marco
+
+----
+
+Nachname: Mori

@@ -1,0 +1,14 @@
+type: pages
+headline: Block Entwürfe
+parent: kirby.page("blocks")
+info: "{{ page.date.toDate('d.m.Y') }}"
+empty: Bisher keine Entwürfe angelegt
+sortBy: date desc
+status: drafts
+template:
+  - block-hero
+  - block-info
+  - block-timeschedule
+  - block-maps
+  - block-theses
+  - block-students

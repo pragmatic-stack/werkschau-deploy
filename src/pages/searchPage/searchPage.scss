@@ -1,0 +1,10 @@
+@import '../../assets/css/shared/variables';
+
+#onPageSearchInput {
+  min-width: 500px;
+  height: 50px;
+  padding: 15px;
+  font-weight: bold;
+  font-size: 1.2rem;
+  border: 3px solid $ws-dark;
+}

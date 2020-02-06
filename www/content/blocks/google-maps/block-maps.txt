@@ -1,0 +1,41 @@
+Title: Maps
+
+----
+
+Displaytitle: false
+
+----
+
+Displayheadline: false
+
+----
+
+Headline: Cool
+
+----
+
+Mapid: mapbox_map
+
+----
+
+Mapheight: 400
+
+----
+
+Locationlat: 48.358421
+
+----
+
+Locationlong: 10.9064
+
+----
+
+Zoom: 14.2
+
+----
+
+Style: mapbox://styles/kraskasystem/ck65koc902fsj1imrrajkcqzv
+
+----
+
+Accesstoken: pk.eyJ1Ijoia3Jhc2thc3lzdGVtIiwiYSI6ImNrNjVraWVuNDBxZHMzbW1wZDdkejU0ZHIifQ.xEI-kpWXm1U4cexCJHaeMA

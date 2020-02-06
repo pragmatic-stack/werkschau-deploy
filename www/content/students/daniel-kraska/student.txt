@@ -1,0 +1,84 @@
+Title: Daniel Kraska
+
+----
+
+Slug: 
+
+----
+
+Profileimage:
+
+- daniel_kraska_absolventenbild.jpg
+
+----
+
+Thesis:
+
+- >
+  students/daniel-kraska/spielraume-im-regelwerk
+
+----
+
+Projectworks:
+
+- >
+  students/daniel-kraska/cultural-zeitgeist
+- >
+  students/daniel-kraska/habitus-of-a-designer
+- students/daniel-kraska/harburg-rebranded
+
+----
+
+Firstname: Daniel
+
+----
+
+Lastname: Kraska
+
+----
+
+Courseofstudy: Design- und Kommunikationsstrategie DKS - MA
+
+----
+
+Email: kraskadaniel@web.de
+
+----
+
+Website: 
+
+----
+
+Instagram: https://www.instagram.com/kraskaesk/?hl=de
+
+----
+
+Behance: 
+
+----
+
+Twitter: 
+
+----
+
+Facebook: 
+
+----
+
+Linkedin: 
+
+----
+
+Comfortzone: - powernap.jpg
+
+----
+
+Abschlussarbeit: - prasentation_thesis_buch_stehend.jpg
+
+----
+
+Comfortzonedescription: Panic-Powernap
+
+----
+
+Template: student

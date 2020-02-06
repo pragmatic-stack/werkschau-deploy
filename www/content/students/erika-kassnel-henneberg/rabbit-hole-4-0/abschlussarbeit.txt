@@ -1,0 +1,71 @@
+Title: Rabbit Hole 4.0
+
+----
+
+Slug: rabbit-hole-4-0
+
+----
+
+Student: Erika Kassnel-Henneberg
+
+----
+
+CourseOfStudy: Interaktive Medien IA - BA
+
+----
+
+Dozent: Dipl. Designerin Rosa Rohm, Prof. Daniel Rothaug
+
+----
+
+Building: buildings/m-gebaude
+
+----
+
+Tags: #animation, #3D, #film
+
+----
+
+Presentation:
+
+- >
+  master_master.00_06_07_12.standbild173.jpg
+- >
+  master_master.00_07_28_20.standbild190.jpg
+- >
+  master_master.00_03_02_15.standbild145.jpg
+
+----
+
+Vimeolink: https://vimeo.com/380205258
+
+----
+
+Headline: Rabbit Hole 4.0
+
+----
+
+Subheadline: Attention Engineering in Social Media
+
+----
+
+Description:
+
+Über ein Drittel der Weltbevölkerung ist Teil der Social Media Community. Aus diesem Grund spielen diese Netzwerke eine zunehmende wirtschaftliche Rolle in der Online-Welt; und die Aufmerksamkeit des Users wird zu einer wertvollen, aber begrenzt verfügbaren Ressource. Allerdings verbirgt sich hinter dem Geschäftsmodell des kostenfreien Zugangs zu dieser Community auch eine signifikante Gefahr: Überwachung und Verhaltensmodifikation durch privatwirtschaftliche Unternehmen, die mächtige, manipulative Werkzeuge entwickeln. Diese neue Technologie wird "Attention Engineerin" genannt.
+Im Kurzfilm "Rabbit Hole 4.0" wird Attention Engineering inhaltlich und formal thematisiert: Suzanne wird durch blinkende Buttons und den Sprachassistent an ihrem Computer in eine virtuelle Traumwelt gelockt, der ihr eine Lösung für ihr Schlafproblem verspricht. Tatsächlich aber ist sie nur Teil eines großen wissenschaftlichen Experiments, in dem es darum geht, ihr Verhalten gezielt zu manipulieren.
+
+----
+
+Backgroundcolor: #8C7446
+
+----
+
+Typographycolor: #ffffff
+
+----
+
+Template: abschlussarbeit
+
+----
+
+Studentid: students/erika-kassnel-henneberg

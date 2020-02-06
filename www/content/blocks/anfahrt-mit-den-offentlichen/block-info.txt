@@ -1,0 +1,33 @@
+Title: Anfahrt mit den Öffentlichen
+
+----
+
+Slug: anfahrt-mit-den-offentlichen
+
+----
+
+Displaytitle: false
+
+----
+
+Displayheadline: true
+
+----
+
+Headline: Öffentliche Verkehrsmittel
+
+----
+
+Description:
+
+Straßenbahnlinie **6 **oder
+Bus **32**, **33**, **35**, **66 **oder **93**
+Haltestelle Hochschule
+
+----
+
+Class: 
+
+----
+
+Template: block-info

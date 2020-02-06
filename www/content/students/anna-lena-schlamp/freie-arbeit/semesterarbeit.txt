@@ -1,0 +1,35 @@
+Title: freie Arbeit
+
+----
+
+Slug: freie-arbeit
+
+----
+
+Student: Anna-Lena Schlamp
+
+----
+
+Heroimage:
+
+- instabubble_moment.jpg
+
+----
+
+Headline: freies Projekt
+
+----
+
+Description: Experiment
+
+----
+
+Template: semesterarbeit
+
+----
+
+Studentid: students/anna-lena-schlamp
+
+----
+
+CourseOfStudy: Interaktive Medien IA - BA

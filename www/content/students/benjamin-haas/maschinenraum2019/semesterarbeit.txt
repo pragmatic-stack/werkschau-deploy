@@ -1,0 +1,35 @@
+Title: MASCHINENRAUM2019
+
+----
+
+Slug: maschinenraum2019
+
+----
+
+Student: Benjamin Haas
+
+----
+
+Heroimage:
+
+- bild-maschinenraum.1200.png
+
+----
+
+Headline: Maschinenraum2019
+
+----
+
+Description: Das Semesterprojekt umfasste die Planung eines Symposiums zum Thema Mensch-Maschine und die zukünftige Entwicklung dessen.
+
+----
+
+Template: semesterarbeit
+
+----
+
+Studentid: students/benjamin-haas
+
+----
+
+CourseOfStudy: Interaktive Medien IA - BA

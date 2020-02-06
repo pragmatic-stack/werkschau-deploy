@@ -1,0 +1,25 @@
+Title: K-Gebäude
+
+----
+
+Slug: k-gebaude
+
+----
+
+Headline: 
+
+----
+
+Bezeichnung: K-Gebäude
+
+----
+
+Kuerzel: K
+
+----
+
+Rooms: 
+
+----
+
+Template: building

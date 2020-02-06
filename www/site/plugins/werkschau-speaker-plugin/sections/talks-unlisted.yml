@@ -1,0 +1,8 @@
+type: pages
+status: unlisted
+template: talk
+headline: Veröffentlichte Talks
+empty: Bisher keine Talks veröffentlicht
+parent: site.find('talks')
+info: 'Speaker: {{ page.speaker.toPage.title }} - Datum: {{ page.date }}'
+help: Veröffentlichte Talks erscheinen in der Übersicht und werden auf der Seite angezeigt

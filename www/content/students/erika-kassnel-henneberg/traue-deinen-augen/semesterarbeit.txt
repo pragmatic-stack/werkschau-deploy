@@ -1,0 +1,38 @@
+Title: Traue Deinen Augen
+
+----
+
+Slug: traue-deinen-augen
+
+----
+
+Student: Erika Kassnel-Henneberg
+
+----
+
+Heroimage:
+
+- eri03143.jpg
+
+----
+
+Headline: Traue Deinen Augen
+
+----
+
+Description:
+
+Entwicklung einer Webanwendung zum Thema Statistik - Datenvisualisierung-Wahrheit. 
+Medienprojekt /Teamprojekt.
+
+----
+
+Template: semesterarbeit
+
+----
+
+Studentid: students/erika-kassnel-henneberg
+
+----
+
+CourseOfStudy: Interaktive Medien IA - BA

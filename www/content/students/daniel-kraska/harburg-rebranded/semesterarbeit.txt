@@ -1,0 +1,35 @@
+Title: Harburg Rebranded
+
+----
+
+Slug: harburg-rebranded
+
+----
+
+Student: Daniel Kraska
+
+----
+
+Heroimage:
+
+- prasentation_identity_harburg.jpg
+
+----
+
+Headline: Harburg Rebranded
+
+----
+
+Description: Markenpositionierung der Burg Harburg als Kulturmarke + Konzeption und Gestaltung des visuellen Erscheinungsbildes.
+
+----
+
+Template: semesterarbeit
+
+----
+
+Studentid: students/daniel-kraska
+
+----
+
+CourseOfStudy: Design- und Kommunikationsstrategie DKS - MA

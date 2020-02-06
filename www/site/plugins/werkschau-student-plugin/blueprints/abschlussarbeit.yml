@@ -1,0 +1,146 @@
+title: Abschlussarbeit
+
+status:
+  draft:
+    label: Entwurf
+    text: Deine Seite befindet sich im Entwurfsmodus
+  unlisted:
+    label: Veröffentlicht
+    text: Deine Seite ist veröffentlicht und die Daten werden auf der Website angezeigt
+
+columns:
+  left:
+    width: 1/3
+    sections:
+      projectData:
+        type: fields
+        fields:
+          student:
+            type: text
+            disabled: true
+          courseOfStudy:
+            type: text
+            disabled: true
+          dozent:
+            label: Dozent
+            type: multiselect
+            required: true
+            options: query
+            query: site.dozenten.toStructure
+              fetch: site.dozenten.toStructure
+              value: "{{ structureItem.titel }} {{ structureItem.vorname }} {{ structureItem.name }}"
+              text: "{{ structureItem.titel }} {{ structureItem.vorname }} {{ structureItem.name }}"
+          building:
+            label: Gebäude
+            type: select
+            required: true
+            options: query
+            query: site.find('buildings').children.unlisted
+          room:
+            label: Raum
+            type: number
+            help: Trage den Raum ohne Punkt ein. Beispiel 101 für 1.01
+          tags:
+            type: multiselect
+            options: query
+            accept: options
+            query: site.tags.split(',')
+          dataSeperator:
+            type: line
+      images:
+        headline: hochgeladene Bilder
+        type: files
+        template: image
+
+  right:
+    width: 2/3
+    sections:
+      content:
+        type: fields
+        fields:
+           presentation:
+            label: deine Präsentationsbilder
+            type: files
+            width: 1/2
+            uploads:
+              template: image
+            max: 5
+            multiple: true
+            layout: list
+            required: true
+            help: "wähle bis zu 3 Bilder aus"
+            image:
+              cover: true
+              ratio: 16/9
+
+          vimeoLink:
+            label: Vimeo Video Link
+            type: url
+            width: 1/2
+
+          seperator:
+            type: line
+
+          headline:
+            label: Titel/Überschrift
+            type: text
+            required: true
+            width: 1/2
+            validate:
+              match: /[^<>${}=%;]$/
+          subheadline:
+            label: Unterüberschrift
+            type: text
+            width: 1/2
+            required: true
+            validate:
+              match: /[^<>${}=%;]$/
+          description:
+            type: textarea
+            label: Beschreibung
+            size: medium
+            buttons: false
+            maxlength: 1200
+            required: true
+            validate:
+              match: /[^<>${}=%;]$/
+          backgroundColor:
+            required: true
+            label: Theme Hauptfarbe
+            width: 1/2
+            type: color-palette
+            size: small
+            options:
+              skin1: '#933C21'
+              skin2: '#EBBBA4'
+              skin3: '#F0D2B4'
+              skin4: '#F2E6D0'
+              skin5: '#FFB7BC'
+              pastelBlue: '#BCB6C4'
+              pastelGreen: '#D9CC8F'
+              pastelBrown: '#8C7446'
+              pastelSkin: '#F2E6D1'
+              pastelRed: '#8C5858'
+              white: '#ffffff'
+              black: '#000000'
+            help: Diese Farbe wird als Seitenhintergrund und Highlight angezeigt
+          typographyColor:
+            required: true
+            label: Typografie / UI Farbe
+            width: 1/2
+            type: color-palette
+            size: small
+            options:
+              skin1: '#933C21'
+              skin2: '#EBBBA4'
+              skin3: '#F0D2B4'
+              skin4: '#F2E6D0'
+              skin5: '#FFB7BC'
+              pastelBlue: '#BCB6C4'
+              pastelGreen: '#D9CC8F'
+              pastelBrown: '#8C7446'
+              pastelSkin: '#F2E6D1'
+              pastelRed: '#8C5858'
+              white: '#ffffff'
+              black: '#000000'
+            help: Diese Farbe wird als Schrift- und UI-Farbe angezeigt

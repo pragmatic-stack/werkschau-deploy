@@ -1,0 +1,118 @@
+@import "variables";
+/* The Overlay (background) */
+.overlay {
+  /* Height & width depends on how you want to reveal the overlay (see JS below) */
+  height: 100%;
+  width: 100%;
+  position: fixed; /* Stay in place */
+  display: none;
+  z-index: 1050; /* Sit on top */
+  left: 0;
+  top: 0;
+  opacity: 0;
+  background-color: rgb(255,255,255); /* Black fallback color */
+  background-color: rgba(255,255,255, 0.9); /* Black w/opacity */
+  overflow-x: hidden; /* Disable horizontal scroll */
+  transition: opacity ease 200ms;
+}
+
+/* Position the content inside the overlay */
+.overlay-content {
+  position: relative;
+  width: 100%;
+  text-align: center;
+  overflow: hidden;
+}
+
+/* The navigation links inside the overlay */
+.overlay a {
+  padding: 8px;
+  text-decoration: none;
+  font-size: 36px;
+  color: #818181;
+  display: block; /* Display block instead of inline */
+  transition: 0.3s; /* Transition effects on hover (color) */
+}
+
+/* When you mouse over the navigation links, change their color */
+.overlay a:hover, .overlay a:focus {
+  color: black;
+}
+
+/* Position the close button (top right corner) */
+.overlay #closeSearch {
+  position: absolute;
+  top: 20px;
+  right: 45px;
+  font-size: 60px;
+  z-index: 5;
+}
+
+.open {
+  display: block;
+  z-index: 1050;
+}
+
+.visible {
+  opacity: 1;
+  transition: opacity ease 500ms;
+}
+
+input#searchControl {
+  flex: 1;
+  min-height: 50px;
+  padding: 10px;
+  border: 3px solid black;
+  font-weight: bold;
+  outline: none;
+}
+
+button#searchButton {
+  border: 3px solid black;
+  border-left: 0px transparent;
+  padding: 0 30px;
+  outline: none;
+}
+
+#searchResults {
+  position: absolute;
+  width: calc(100% - 30px);
+  margin: 0 15px;
+  background-color: white;
+  top: 55px;
+  left: 0;
+}
+
+a.search-result, .search-result {
+  font-weight: 700;
+  padding: 3px 15px;
+  font-size: 16px;
+}
+
+.search-result:first-child {
+  padding-top: 15px;
+}
+
+.search-result:last-child {
+  padding-bottom: 15px;
+}
+
+a.search-result:hover {
+  cursor: pointer;
+  color: $ws-text-highlight;
+}
+
+.search-result--type {
+  font-weight: normal;
+  font-style: italic;
+}
+
+/* When the height of the screen is less than 450 pixels, change the font-size of the links and position the close button again, so they don't overlap */
+@media screen and (max-height: 450px) {
+  .overlay a {font-size: 20px}
+  .overlay .closebtn {
+    font-size: 40px;
+    top: 15px;
+    right: 35px;
+  }
+}

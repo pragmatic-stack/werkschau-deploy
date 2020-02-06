@@ -1,0 +1,33 @@
+Title: Einfache Blockseite
+
+----
+
+Slug: einfache-blockseite
+
+----
+
+Displaytitle: true
+
+----
+
+Pagestructure:
+
+- 
+  sectiontitle: Einfache Sektion
+  displaytitle: 'false'
+  asfullwidthsection: 'false'
+  withbackground: 'false'
+  paddingtop: 50
+  paddingbottom: 50
+  sectionblocks:
+    - 
+      blocks:
+        - blocks/mein-heroblock
+      blockwidth: full
+      displaytitle: 'false'
+      displayheadline: 'false'
+  separator: null
+
+----
+
+Template: sectionspage

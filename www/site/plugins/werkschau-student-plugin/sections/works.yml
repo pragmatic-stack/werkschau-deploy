@@ -1,0 +1,13 @@
+type: pages
+headline: Arbeiten
+info: "{{ page.intendedTemplate }}"
+template:
+  - abschlussarbeit
+  - semesterarbeit
+empty: Bisher keine Abschlussarbeit eingetragen
+sortBy: date desc
+layout: list
+size: small
+image:
+  cover: true
+  ratio: 1/1

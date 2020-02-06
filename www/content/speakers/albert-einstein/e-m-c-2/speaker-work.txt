@@ -1,0 +1,23 @@
+Title: e = m * c ^ 2
+
+----
+
+Slug: e-m-c-2
+
+----
+
+Heroimg:
+
+- media_volkswagen_com-iris.jpg
+
+----
+
+Description: lorem ipsum
+
+----
+
+Link: 
+
+----
+
+Template: speaker-work

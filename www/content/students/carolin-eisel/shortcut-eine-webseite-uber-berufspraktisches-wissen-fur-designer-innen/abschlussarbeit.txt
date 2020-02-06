@@ -1,0 +1,68 @@
+Title: shortcut – eine Webseite über berufspraktisches Wissen für Designer*innen
+
+----
+
+Slug: shortcut-eine-webseite-uber-berufspraktisches-wissen-fur-designer-innen
+
+----
+
+Student: Carolin Eisel
+
+----
+
+CourseOfStudy: Design- und Kommunikationsstrategie DKS - MA
+
+----
+
+Dozent: Prof. Ulrich  Fleischmann, Prof. Gudrun Müllner
+
+----
+
+Building: buildings/m-gebaude
+
+----
+
+Tags: #web, #coding
+
+----
+
+Presentation:
+
+- web_screen_front_final.jpg
+- macbook-long-scroll-mockup_studium.jpg
+- macbook-long-scroll-mockup.jpg
+
+----
+
+Vimeolink: 
+
+----
+
+Headline: shortcut
+
+----
+
+Subheadline: eine Webseite über berufspraktisches Wissen für Designer*innen
+
+----
+
+Description:
+
+shortcut 
+ist eine Webseite, die wichtiges, berufspraktisches Wissen für Designer*innen bereitstellt. Hier kann man sich über Themen wie Lizenzverwaltung, Urheberrecht, Mehrwertsteuern, Vertragsrechte, Kundenakquise, Designschutz, Unternehmensgründung, uvm. informieren. Designer*innen, füllt eure Wissenslücken!
+
+----
+
+Backgroundcolor: #ffffff
+
+----
+
+Typographycolor: #000000
+
+----
+
+Template: abschlussarbeit
+
+----
+
+Studentid: students/carolin-eisel

@@ -1,0 +1,21 @@
+// bootstrap scss
+@import "../../../node_modules/bootstrap/scss/bootstrap";
+
+// custom scss
+@import "./shared/variables";
+@import "./shared/colors";
+@import "./shared/document";
+@import "./shared/typography";
+@import "./shared/grid";
+@import "./shared/navigation";
+@import "./shared/header";
+@import "./shared/images";
+@import "./shared/sections";
+@import "./shared/search";
+@import "./shared/footer";
+
+// custom elements
+@import "./elements/buttons";
+@import "./elements/dividers";
+@import "./elements/cards";
+@import "./elements/timetables";

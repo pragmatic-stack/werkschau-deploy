@@ -1,0 +1,590 @@
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=utf-8"/><title>Handbuch Administratoren</title><style>
+/* webkit printing magic: print all background colors */
+html {
+	-webkit-print-color-adjust: exact;
+}
+* {
+	box-sizing: border-box;
+	-webkit-print-color-adjust: exact;
+}
+
+html,
+body {
+	margin: 0;
+	padding: 0;
+}
+@media only screen {
+	body {
+		margin: 2em auto;
+		max-width: 900px;
+		color: rgb(55, 53, 47);
+	}
+}
+
+body {
+	line-height: 1.5;
+	white-space: pre-wrap;
+}
+
+a,
+a.visited {
+	color: inherit;
+	text-decoration: underline;
+}
+
+.pdf-relative-link-path {
+	font-size: 80%;
+	color: #444;
+}
+
+h1,
+h2,
+h3 {
+	letter-spacing: -0.01em;
+	line-height: 1.2;
+	font-weight: 600;
+	margin-bottom: 0;
+}
+
+.page-title {
+	font-size: 2.5rem;
+	font-weight: 700;
+	margin-top: 0;
+	margin-bottom: 0.75em;
+}
+
+h1 {
+	font-size: 1.875rem;
+	margin-top: 1.875rem;
+}
+
+h2 {
+	font-size: 1.5rem;
+	margin-top: 1.5rem;
+}
+
+h3 {
+	font-size: 1.25rem;
+	margin-top: 1.25rem;
+}
+
+.source {
+	border: 1px solid #ddd;
+	border-radius: 3px;
+	padding: 1.5em;
+	word-break: break-all;
+}
+
+.callout {
+	border-radius: 3px;
+	padding: 1rem;
+}
+
+figure {
+	margin: 1.25em 0;
+	page-break-inside: avoid;
+}
+
+figcaption {
+	opacity: 0.5;
+	font-size: 85%;
+	margin-top: 0.5em;
+}
+
+mark {
+	background-color: transparent;
+}
+
+.indented {
+	padding-left: 1.5em;
+}
+
+hr {
+	background: transparent;
+	display: block;
+	width: 100%;
+	height: 1px;
+	visibility: visible;
+	border: none;
+	border-bottom: 1px solid rgba(55, 53, 47, 0.09);
+}
+
+img {
+	max-width: 100%;
+}
+
+@media only print {
+	img {
+		max-height: 100vh;
+		object-fit: contain;
+	}
+}
+
+@page {
+	margin: 1in;
+}
+
+.collection-content {
+	font-size: 0.875rem;
+}
+
+.column-list {
+	display: flex;
+	justify-content: space-between;
+}
+
+.column {
+	padding: 0 1em;
+}
+
+.column:first-child {
+	padding-left: 0;
+}
+
+.column:last-child {
+	padding-right: 0;
+}
+
+.table_of_contents-item {
+	display: block;
+	font-size: 0.875rem;
+	line-height: 1.3;
+	padding: 0.125rem;
+}
+
+.table_of_contents-indent-1 {
+	margin-left: 1.5rem;
+}
+
+.table_of_contents-indent-2 {
+	margin-left: 3rem;
+}
+
+.table_of_contents-indent-3 {
+	margin-left: 4.5rem;
+}
+
+.table_of_contents-link {
+	text-decoration: none;
+	opacity: 0.7;
+	border-bottom: 1px solid rgba(55, 53, 47, 0.18);
+}
+
+table,
+th,
+td {
+	border: 1px solid rgba(55, 53, 47, 0.09);
+	border-collapse: collapse;
+}
+
+table {
+	border-left: none;
+	border-right: none;
+}
+
+th,
+td {
+	font-weight: normal;
+	padding: 0.25em 0.5em;
+	line-height: 1.5;
+	min-height: 1.5em;
+	text-align: left;
+}
+
+th {
+	color: rgba(55, 53, 47, 0.6);
+}
+
+ol,
+ul {
+	margin: 0;
+	margin-block-start: 0.6em;
+	margin-block-end: 0.6em;
+}
+
+li > ol:first-child,
+li > ul:first-child {
+	margin-block-start: 0.6em;
+}
+
+ul > li {
+	list-style: disc;
+}
+
+ul.to-do-list {
+	text-indent: -1.7em;
+}
+
+ul.to-do-list > li {
+	list-style: none;
+}
+
+.to-do-children-checked {
+	text-decoration: line-through;
+	opacity: 0.375;
+}
+
+ul.toggle > li {
+	list-style: none;
+}
+
+ul {
+	padding-inline-start: 1.7em;
+}
+
+ul > li {
+	padding-left: 0.1em;
+}
+
+ol {
+	padding-inline-start: 1.6em;
+}
+
+ol > li {
+	padding-left: 0.2em;
+}
+
+.mono ol {
+	padding-inline-start: 2em;
+}
+
+.mono ol > li {
+	text-indent: -0.4em;
+}
+
+.toggle {
+	padding-inline-start: 0em;
+	list-style-type: none;
+}
+
+/* Indent toggle children */
+.toggle > li > details {
+	padding-left: 1.7em;
+}
+
+.toggle > li > details > summary {
+	margin-left: -1.1em;
+}
+
+.selected-value {
+	display: inline-block;
+	padding: 0 0.5em;
+	background: rgba(206, 205, 202, 0.5);
+	border-radius: 3px;
+	margin-right: 0.5em;
+	margin-top: 0.3em;
+	margin-bottom: 0.3em;
+	white-space: nowrap;
+}
+
+.collection-title {
+	display: inline-block;
+	margin-right: 1em;
+}
+
+time {
+	opacity: 0.5;
+}
+
+.icon {
+	display: inline-block;
+	max-width: 1.2em;
+	max-height: 1.2em;
+	text-decoration: none;
+	vertical-align: text-bottom;
+	margin-right: 0.5em;
+}
+
+img.icon {
+	border-radius: 3px;
+}
+
+.user-icon {
+	width: 1.5em;
+	height: 1.5em;
+	border-radius: 100%;
+	margin-right: 0.5rem;
+}
+
+.user-icon-inner {
+	font-size: 0.8em;
+}
+
+.text-icon {
+	border: 1px solid #000;
+	text-align: center;
+}
+
+.page-cover-image {
+	display: block;
+	object-fit: cover;
+	width: 100%;
+	height: 30vh;
+}
+
+.page-header-icon {
+	font-size: 3rem;
+	margin-bottom: 1rem;
+}
+
+.page-header-icon-with-cover {
+	margin-top: -0.72em;
+	margin-left: 0.07em;
+}
+
+.page-header-icon img {
+	border-radius: 3px;
+}
+
+.link-to-page {
+	margin: 1em 0;
+	padding: 0;
+	border: none;
+	font-weight: 500;
+}
+
+p > .user {
+	opacity: 0.5;
+}
+
+td > .user,
+td > time {
+	white-space: nowrap;
+}
+
+input[type="checkbox"] {
+	transform: scale(1.5);
+	margin-right: 0.6em;
+	vertical-align: middle;
+}
+
+p {
+	margin-top: 0.5em;
+	margin-bottom: 0.5em;
+}
+
+.image {
+	border: none;
+	margin: 1.5em 0;
+	padding: 0;
+	border-radius: 0;
+	text-align: center;
+}
+
+.code,
+code {
+	background: rgba(135, 131, 120, 0.15);
+	border-radius: 3px;
+	padding: 0.2em 0.4em;
+	border-radius: 3px;
+	font-size: 85%;
+	tab-size: 2;
+}
+
+code {
+	color: #eb5757;
+}
+
+.code {
+	padding: 1.5em 1em;
+}
+
+.code > code {
+	background: none;
+	padding: 0;
+	font-size: 100%;
+	color: inherit;
+}
+
+blockquote {
+	font-size: 1.25em;
+	margin: 1em 0;
+	padding-left: 1em;
+	border-left: 3px solid rgb(55, 53, 47);
+}
+
+.bookmark-href {
+	font-size: 0.75em;
+	opacity: 0.5;
+}
+
+.sans { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol"; }
+.code { font-family: 'SFMono-Regular', Consolas, 'Liberation Mono', Menlo, Courier, monospace; }
+.serif { font-family: Lyon-Text, Georgia, KaiTi, STKaiTi, '华文楷体', KaiTi_GB2312, '楷体_GB2312', serif; }
+.mono { font-family: Nitti, 'Microsoft YaHei', '微软雅黑', monospace; }
+.pdf .sans { font-family: Inter, -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol", 'Twemoji', 'Noto Color Emoji', 'Noto Sans CJK SC', 'Noto Sans CJK KR'; }
+
+.pdf .code { font-family: Source Code Pro, 'SFMono-Regular', Consolas, 'Liberation Mono', Menlo, Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK SC', 'Noto Sans Mono CJK KR'; }
+
+.pdf .serif { font-family: PT Serif, Lyon-Text, Georgia, KaiTi, STKaiTi, '华文楷体', KaiTi_GB2312, '楷体_GB2312', serif, 'Twemoji', 'Noto Color Emoji', 'Noto Sans CJK SC', 'Noto Sans CJK KR'; }
+
+.pdf .mono { font-family: PT Mono, Nitti, 'Microsoft YaHei', '微软雅黑', monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK SC', 'Noto Sans Mono CJK KR'; }
+
+.highlight-default {
+}
+.highlight-gray {
+	color: rgb(155,154,151);
+}
+.highlight-brown {
+	color: rgb(100,71,58);
+}
+.highlight-orange {
+	color: rgb(217,115,13);
+}
+.highlight-yellow {
+	color: rgb(223,171,1);
+}
+.highlight-teal {
+	color: rgb(15,123,108);
+}
+.highlight-blue {
+	color: rgb(11,110,153);
+}
+.highlight-purple {
+	color: rgb(105,64,165);
+}
+.highlight-pink {
+	color: rgb(173,26,114);
+}
+.highlight-red {
+	color: rgb(224,62,62);
+}
+.highlight-gray_background {
+	background: rgb(235,236,237);
+}
+.highlight-brown_background {
+	background: rgb(233,229,227);
+}
+.highlight-orange_background {
+	background: rgb(250,235,221);
+}
+.highlight-yellow_background {
+	background: rgb(251,243,219);
+}
+.highlight-teal_background {
+	background: rgb(221,237,234);
+}
+.highlight-blue_background {
+	background: rgb(221,235,241);
+}
+.highlight-purple_background {
+	background: rgb(234,228,242);
+}
+.highlight-pink_background {
+	background: rgb(244,223,235);
+}
+.highlight-red_background {
+	background: rgb(251,228,228);
+}
+.block-color-default {
+	color: inherit;
+	fill: inherit;
+}
+.block-color-gray {
+	color: rgba(55, 53, 47, 0.6);
+	fill: rgba(55, 53, 47, 0.6);
+}
+.block-color-brown {
+	color: rgb(100,71,58);
+	fill: rgb(100,71,58);
+}
+.block-color-orange {
+	color: rgb(217,115,13);
+	fill: rgb(217,115,13);
+}
+.block-color-yellow {
+	color: rgb(223,171,1);
+	fill: rgb(223,171,1);
+}
+.block-color-teal {
+	color: rgb(15,123,108);
+	fill: rgb(15,123,108);
+}
+.block-color-blue {
+	color: rgb(11,110,153);
+	fill: rgb(11,110,153);
+}
+.block-color-purple {
+	color: rgb(105,64,165);
+	fill: rgb(105,64,165);
+}
+.block-color-pink {
+	color: rgb(173,26,114);
+	fill: rgb(173,26,114);
+}
+.block-color-red {
+	color: rgb(224,62,62);
+	fill: rgb(224,62,62);
+}
+.block-color-gray_background {
+	background: rgb(235,236,237);
+}
+.block-color-brown_background {
+	background: rgb(233,229,227);
+}
+.block-color-orange_background {
+	background: rgb(250,235,221);
+}
+.block-color-yellow_background {
+	background: rgb(251,243,219);
+}
+.block-color-teal_background {
+	background: rgb(221,237,234);
+}
+.block-color-blue_background {
+	background: rgb(221,235,241);
+}
+.block-color-purple_background {
+	background: rgb(234,228,242);
+}
+.block-color-pink_background {
+	background: rgb(244,223,235);
+}
+.block-color-red_background {
+	background: rgb(251,228,228);
+}
+
+.checkbox {
+	display: inline-flex;
+	vertical-align: text-bottom;
+	width: 16;
+	height: 16;
+	background-size: 16px;
+	margin-left: 2px;
+	margin-right: 5px;
+}
+
+.checkbox-on {
+	background-image: url("data:image/svg+xml;charset=UTF-8,%3Csvg%20width%3D%2216%22%20height%3D%2216%22%20viewBox%3D%220%200%2016%2016%22%20fill%3D%22none%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%0A%3Crect%20width%3D%2216%22%20height%3D%2216%22%20fill%3D%22%2358A9D7%22%2F%3E%0A%3Cpath%20d%3D%22M6.71429%2012.2852L14%204.9995L12.7143%203.71436L6.71429%209.71378L3.28571%206.2831L2%207.57092L6.71429%2012.2852Z%22%20fill%3D%22white%22%2F%3E%0A%3C%2Fsvg%3E");
+}
+
+.checkbox-off {
+	background-image: url("data:image/svg+xml;charset=UTF-8,%3Csvg%20width%3D%2216%22%20height%3D%2216%22%20viewBox%3D%220%200%2016%2016%22%20fill%3D%22none%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%0A%3Crect%20x%3D%220.75%22%20y%3D%220.75%22%20width%3D%2214.5%22%20height%3D%2214.5%22%20fill%3D%22white%22%20stroke%3D%22%2336352F%22%20stroke-width%3D%221.5%22%2F%3E%0A%3C%2Fsvg%3E");
+}
+	
+</style></head><body><article id="8680c91f-60f8-41e5-8039-d10178264b83" class="page sans"><header><h1 class="page-title">Handbuch Administratoren</h1></header><div class="page-body"><h1 id="a7196408-f150-46ed-8de4-f54783114488" class="">Inhalte</h1><nav id="698b621d-9e00-45a9-80b4-927c5ac859c0" class="block-color-gray table_of_contents"><div class="table_of_contents-item table_of_contents-indent-0"><a class="table_of_contents-link" href="#a7196408-f150-46ed-8de4-f54783114488">Inhalte</a></div><div class="table_of_contents-item table_of_contents-indent-0"><a class="table_of_contents-link" href="#d54564e7-fae6-471d-afae-9a3e259f036d">Aufbau im Ordner System</a></div><div class="table_of_contents-item table_of_contents-indent-1"><a class="table_of_contents-link" href="#76cae559-04e1-4c99-9754-56384d018107">Zurücksetzen der Seiteninhalte</a></div><div class="table_of_contents-item table_of_contents-indent-0"><a class="table_of_contents-link" href="#fe6faf83-8f29-4138-a2f9-9f594cd672eb">Überblick über das Panel</a></div><div class="table_of_contents-item table_of_contents-indent-1"><a class="table_of_contents-link" href="#5d170422-7e72-47ec-8eae-a0faf6a8c51c">Navigation</a></div><div class="table_of_contents-item table_of_contents-indent-1"><a class="table_of_contents-link" href="#25a6ed1c-a6af-49b2-80e3-7977d63022b8">Paneltab: Seiten</a></div><div class="table_of_contents-item table_of_contents-indent-1"><a class="table_of_contents-link" href="#036b899e-3f16-434b-9df4-b8ee6837e1c8">Paneltab: Blocks</a></div><div class="table_of_contents-item table_of_contents-indent-1"><a class="table_of_contents-link" href="#0ed9099c-94b2-4b21-939d-a2124fe7aa36">Paneltab: Studenten</a></div><div class="table_of_contents-item table_of_contents-indent-1"><a class="table_of_contents-link" href="#5d6f794a-912e-40ff-b6d1-b59a32b863ca">Paneltab: Speaker &amp; Talks (teilweise implementiert)</a></div><div class="table_of_contents-item table_of_contents-indent-1"><a class="table_of_contents-link" href="#fa39b08f-718f-48f6-8ee1-b7419a3ed7e8">Paneltab: Seitendaten</a></div><div class="table_of_contents-item table_of_contents-indent-1"><a class="table_of_contents-link" href="#105dcd02-49da-4ce5-968b-c1903e58655f">Paneltab: Infrastruktur (teilweise implementiert)</a></div></nav><h1 id="d54564e7-fae6-471d-afae-9a3e259f036d" class="">Aufbau im Ordner System</h1><hr id="d94c40b2-ae7c-4284-8b2d-43192db01c44"/><p id="c306e634-a246-472f-b97e-61a3a195867b" class="">Die <strong>Inhalte </strong>der Werkschau Seite sind im Ordner <strong>content </strong>organisiert<strong>.  </strong></p><figure class="block-color-gray_background callout" style="white-space:pre-wrap;display:flex" id="bedfe328-0b13-470e-88ad-de42199b4f8e"><div style="font-size:1.5em"><span class="icon">⛔</span></div><div style="width:100%"> Diese Ordner mit der enthaltenen .txt Datei dürfen <mark class="highlight-red"><strong>nicht gelöscht werden, </strong></mark>da diese für den einwandfreien Betrieb der Werkschau Website verantwortlich sind.</div></figure><pre id="2396a5e2-dc85-4624-a8fa-156fb4224d29" class="code"><code>-- content
+	-- absolventen    <mark class="highlight-teal">// Unterseite für die Übersicht von Absolventen</mark>
+	-- location       <mark class="highlight-teal">// Unterseite für die Location Informationen</mark>
+	-- timetable      <mark class="highlight-teal">// Unterseite für Zeitpläne</mark>
+	-- speakers       <mark class="highlight-red">// Unterseite für Speaker</mark>
+	-- blocks         <mark class="highlight-red">// Enthält konfigurerte Block(Seiten) für die Nutzung in Templates</mark>
+	-- buildings      <mark class="highlight-red">// Enthält die Gebäude Unterseiten</mark>
+	-- datenschutz    <mark class="highlight-teal">// Standardseite für den Datenschutz</mark>
+	-- error          <mark class="highlight-red">// Standard Fehlerseite</mark>
+	-- home           <mark class="highlight-red">// Website Root</mark>
+	-- impressum      <mark class="highlight-teal">// Standardseite für das Impressum</mark>
+	-- students       <mark class="highlight-red">// Unterseite für Studenten (enthält alle Studenten, Arbeiten ...)</mark>
+	-- talks          <mark class="highlight-red">// Unterseite für Talks / Vorträge</mark>
+	-- teamworks      <mark class="highlight-red">// Unterseite für Teamarbeiten</mark></code></pre><h2 id="76cae559-04e1-4c99-9754-56384d018107" class="">Zurücksetzen der Seiteninhalte</h2><figure class="block-color-gray_background callout" style="white-space:pre-wrap;display:flex" id="2dc548c5-7ef0-45c2-bd14-958ab80736a2"><div style="font-size:1.5em"><span class="icon">💡</span></div><div style="width:100%">Die oben genannten Ordner dürfen nicht gelöscht werden. Um die Werkschau Seite zurück zu setzen müssen lediglich die Unterordner folgender Seiten gelöscht werden. </div></figure><pre id="a8bb8675-6cb2-4eb8-8533-2c4a5cd84e5b" class="code"><code>-- content
+	-- speakers       // Unterseite für Speaker
+	-- blocks         // Enthält konfigurerte Block(Seiten) für die Nutzung in Templates
+	-- buildings      // Enthält die Gebäude Unterseiten
+	-- students       // Unterseite für Studenten (enthält alle Studenten, Arbeiten ...)
+	-- talks          // Unterseite für Talks / Vorträge
+	-- teamworks      // Unterseite für Teamarbeiten</code></pre><p id="b40f54d3-1ca0-4c73-9d83-2911f9e95065" class=""><strong>Beispiel am Ordner für Speaker</strong></p><pre id="88b21387-820a-44f7-8056-4ea557f5e2c1" class="code"><code>-- /content
+	-- /speakers           <mark class="highlight-red">// Der Überordner muss erhalten bleiben</mark>
+		-- /unterordner      <mark class="highlight-teal">// Unterordner können gelöscht werden</mark>
+		-- speakers.txt      <mark class="highlight-red">// Die Textdatei im Ordner muss erhalten bleiben </mark></code></pre><h1 id="fe6faf83-8f29-4138-a2f9-9f594cd672eb" class="">Überblick über das Panel</h1><hr id="5888a213-2b5a-49c9-96a0-d915aa94014f"/><h2 id="5d170422-7e72-47ec-8eae-a0faf6a8c51c" class="">Navigation</h2><p id="de18d0db-8d8d-494d-8c0b-2f71e2001734" class="">Die Inhalte der Seite sind im Administrator Panel verwaltbar. Die einzelnen Anwendungsgebiete werden in Tabs organisiert.</p><figure id="dcbb9042-d15d-4f50-a9b7-ecccb1b60447" class="image"><a href="../Aktueller%20Funktionsumfang/66bf1540f142cf5432d87acde6c5f4f5.gif"><img style="width:1000px" src="../Aktueller%20Funktionsumfang/66bf1540f142cf5432d87acde6c5f4f5.gif"/></a></figure><h2 id="25a6ed1c-a6af-49b2-80e3-7977d63022b8" class="">Paneltab: Seiten</h2><p id="b240f407-a71b-46ee-8d16-034332f4f286" class="">Das <strong>Tab Seiten</strong> enthält alle Unterseiten der Werkschau Website. Diese Seiten können veröffentlicht und im Menü der Werkschau Website angezeigt werden. Sie dienen also der <strong>Strukturierung der Inhalte auf erster Ebene</strong>.</p><p id="3ca734a5-a295-48b5-a818-7b03473ac13b" class="">Als so genannte <strong>Standardseiten </strong>sind folgende Typen vorhanden:</p><ul id="8c7d55c1-18cb-4c45-9ab7-ace4e0b6de33" class="bulleted-list"><li><strong>Startseite </strong>(mit Auswahl von Blocks für die jeweiligen Inhalte)</li></ul><ul id="cf75864b-336f-4347-8728-266fa9732712" class="bulleted-list"><li><strong>Einfache Seite</strong> - Eine Seite zur Erstellung einfacher Informationsseiten (z. B. Impressum)</li></ul><ul id="fbbd4628-acb7-4ee9-bc05-58cab95c83eb" class="bulleted-list"><li><strong>Sections Page (Block-Seite)</strong> - Eine Seite zur Erstellung von Seiteninhalten mit Hilfe von Blocks</li></ul><p id="34d2c303-36b0-4164-809c-2d7b7d0cf409" class="">
+<strong>Mehr zu Standardseiten:</strong></p><figure id="55b8ad17-ebe0-4e08-b576-e1d3d0554267" class="link-to-page"><a href="Handbuch%20Administratoren/Standardseiten%20bearbeiten.html">Standardseiten bearbeiten</a></figure><h2 id="036b899e-3f16-434b-9df4-b8ee6837e1c8" class="">Paneltab: Blocks</h2><p id="5672937d-9f74-4883-9ca2-ee02652bf68f" class="">Blocks dienen der Organisation von wiederverwendbaren und konfigurierbaren Inhalten. Blocks können auf Blockseiten eingebunden werden und die Inhalte werden auf der jeweiligen Seite angezeigt.</p><figure class="block-color-gray_background callout" style="white-space:pre-wrap;display:flex" id="b8059449-10b6-4c22-8abb-d2f49d0c5cb4"><div style="font-size:1.5em"><span class="icon">💡</span></div><div style="width:100%"><strong>Block Definition: </strong>Ein Block ist eine abstrahierte Seite um Daten zu speichern. Blöcke sind selbst nicht aufrufbar und dienen lediglich der Speicherung von Konfigurationen und Daten die angezeigt werden sollen.</div></figure><figure id="2905038e-337f-47d3-a736-c51f78699a12" class="link-to-page"><a href="Handbuch%20Administratoren/Blocks%20verwalten.html">Blocks verwalten</a></figure><figure class="block-color-gray_background callout" style="white-space:pre-wrap;display:flex" id="f5181606-dfa3-450f-a209-9babc5ff2d25"><div style="font-size:1.5em"><span class="icon">💡</span></div><div style="width:100%"><strong>Blockseite Definition: </strong>Eine Blockseite ist so konfiguriert, dass im Panel über ein Strukturfeld Blocks gesetzt werden können. Blocks werden hierbei in Sektionen angeordnet um eine Seitenstruktur im Sinne von <a href="https://getbootstrap.com/docs/4.0/layout/grid/">Bootstrap</a> aufzubauen.</div></figure><figure id="1fcf75ea-0c4c-41f0-8ebb-a9146298b79a" class="link-to-page"><a href="Handbuch%20Administratoren/Blockseiten%20verwalten.html">Blockseiten verwalten</a></figure><p id="07a6d018-af39-45f1-bf30-dc4a14f251fa" class="">
+</p><p id="d805c345-0e27-44ae-bc6b-fe93fbdf2731" class="">Vorteil von Blocks ist deren Wiederverwendbarkeit auf diversen Seiten. So kann beispielsweise ein Headerblock für die Startseite und ein Headerblock für Unterseiten angelegt und gesetzt werden.</p><p id="3ddce85a-91af-4ac2-8adb-0730bcf6f132" class=""><strong>Anwendungsbeispiel:</strong></p><p id="70257769-acd8-4c5b-b80b-db7f6d006a9d" class="">Es soll ein Header konfiguriert werden der auf diversen Blockseiten eingebunden werden kann. Hierfür wird ein Headerblock angelegt. Durch die Konfiguration und Auswahl von Bildern wird der Headerblock spezifiziert. Ist der Block nun aktiv, kann dieser auf Blockseiten mit dem Auswahlfeld Headerblock ausgewählt werden und wird hierdurch angezeigt.</p><h2 id="0ed9099c-94b2-4b21-939d-a2124fe7aa36" class="">Paneltab: Studenten</h2><p id="8bcb7d20-e6a9-40d1-b19c-ddbaa32eda2e" class="">Im Paneltab für Studenten können diese angelegt, befüllt und veröffentlicht werden.</p><p id="27a50851-422f-425c-b409-7249fa93cb15" class="">Eine Studentenseite kann Abschlussarbeiten und Semesterarbeiten enthalten.</p><h2 id="5d6f794a-912e-40ff-b6d1-b59a32b863ca" class="">Paneltab: Speaker &amp; Talks (teilweise implementiert)</h2><p id="27fff631-06f6-47da-851a-9d3d4a65514c" class="">Im Paneltab Speaker und Talks können Speaker mit zugehörigen Arbeiten angelegt werden.</p><p id="3644a01d-b03f-411d-85c3-83db5e8dd861" class="">Diese Speaker können wiederum einem Talk zugeordnet werden (noch nicht möglich) um hieraus eine Übersicht über Vortragende und Vorträge erstellen zu können.</p><h2 id="fa39b08f-718f-48f6-8ee1-b7419a3ed7e8" class="">Paneltab: Seitendaten</h2><p id="76eb9cc1-5d6e-4024-baba-15a80ff35bbb" class="">Über das Paneltab Seitendaten werden die globalen Daten zur Seite gepflegt. Hierbei mitunter Adresse und Anschrift, Soziale Links, Mapbox Access Token, Dozenten und Studiengänge.</p><h2 id="105dcd02-49da-4ce5-968b-c1903e58655f" class="">Paneltab: Infrastruktur (teilweise implementiert)</h2><p id="15dad7b0-df45-4d80-b434-d3a82d7a3d26" class="">Das Paneltab Infrastruktur behandelt die Gebäudeverwaltung. Hierbei können Gebäude und Räume mit zugehörigen Daten erfasst werden.</p><p id="f1f27764-72e7-4158-be16-a102be5c6e1d" class="">Die Gebäude dienen der Organisation von Ausstellungen und bilden die Grundlage für eine Raum / Gebäudeübersicht.</p><p id="1ddd4078-4bcd-44a5-a829-2d5d58a75b0a" class="">
+</p></div></article></body></html>

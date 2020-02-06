@@ -1,0 +1,10 @@
+title: Teamworks
+preset: pages
+
+status:
+  draft:
+    label: Entwurf
+    text: Deine Seite befindet sich im Entwurfsmodus
+  unlisted:
+    label: Veröffentlicht
+    text: Deine Seite ist veröffentlicht und die Daten werden auf der Website angezeigt

@@ -1,0 +1,58 @@
+title: Talk
+preset: page
+
+pages: false
+
+status:
+  draft: true
+  unlisted: true
+
+fields:
+  heroImg:
+    type: files
+    multiple: false
+    label: Anzeigebild
+    layout: cards
+    image:
+      cover: true
+    size: tiny
+    help: Bilder müssen vor dem Auswählen hochgeladen werden (Dateien)
+  seperator:
+    type: line
+  title:
+    type: text
+    label: Titel
+    required: true
+  speaker:
+    type: select
+    required: true
+    width: 1/2
+    label: Speaker
+    options: query
+    query: site.find('speakers').children.unlisted
+  building:
+    type: select
+    required: true
+    width: 1/2
+    label: Gebäude
+    options: query
+    query: site.find('buildings').children.unlisted
+  date:
+    label: Datum
+    width: 1/2
+    type: date
+    required: true
+  time:
+    label: Zeit
+    type: time
+    width: 1/2
+    required: true
+  description:
+    label: Beschreibung
+    type: textarea
+    size: small
+    buttons: false
+    required: true
+
+
+

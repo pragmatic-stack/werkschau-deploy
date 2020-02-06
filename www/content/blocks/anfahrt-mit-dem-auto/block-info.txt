@@ -1,0 +1,32 @@
+Title: Anfahrt mit dem Auto
+
+----
+
+Slug: anfahrt-mit-dem-auto
+
+----
+
+Displaytitle: false
+
+----
+
+Displayheadline: true
+
+----
+
+Headline: mit dem Auto
+
+----
+
+Description:
+
+Limitierte Parkplätze an der Hochschule
+(Einfahrt Friedbergerstraße 4)
+
+----
+
+Class: 
+
+----
+
+Template: block-info

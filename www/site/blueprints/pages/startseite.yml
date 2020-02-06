@@ -1,0 +1,86 @@
+title: Startseite (Landing-Page)
+
+options:
+  changeStatus: true
+  duplicate: false
+
+columns:
+  left:
+    width: 2/3
+    fields:
+      selectedBlocks:
+        type: headline
+        label: Blocks der Startseite
+        numbered: false
+      hero:
+        label: Hero Header
+        width: 1/2
+        type: pages
+        multiple: false
+        options: query
+        query: site.index.filterBy('template', 'block-hero')
+      mainInfo:
+        label: Info zur Werkschau
+        width: 1/2
+        type: pages
+        multiple: false
+        options: query
+        query: site.index.filterBy('template', 'block-info')
+      timeSchedule:
+        label: Zeitplan
+        width: 1/2
+        type: pages
+        multiple: false
+        options: query
+        query: site.index.filterBy('template', 'block-timeschedule')
+      theses:
+        label: Abschlussarbeiten
+        width: 1/2
+        type: pages
+        multiple: false
+        options: query
+        query: site.index.filterBy('template', 'block-theses')
+      address:
+        label: Adresse
+        width: 1/2
+        type: pages
+        multiple: false
+        options: query
+        query: site.index.filterBy('template', 'block-info')
+      approachPublic:
+        label: Anfahrt Öffentliche Verkehrsmittel
+        width: 1/2
+        type: pages
+        multiple: false
+        options: query
+        query: site.index.filterBy('template', 'block-info')
+      approachCar:
+        label: Anfahrt mit dem Auto
+        width: 1/2
+        type: pages
+        multiple: false
+        options: query
+        query: site.index.filterBy('template', 'block-info')
+      maps:
+        label: Karten Block
+        width: 1/2
+        type: pages
+        multiple: false
+        options: query
+        query: site.index.filterBy('template', 'block-maps')
+      speakers:
+        label: Speakers
+        width: 1/2
+        type: pages
+        multiple: false
+        options: query
+        query: site.index.filterBy('template', 'block-speakers')
+
+
+  right:
+    width: 1/3
+    sections:
+      blockInfo:
+        headline: verfügbare Blocks
+        type: pagesdisplay
+        query: site.find('blocks').children.unlisted

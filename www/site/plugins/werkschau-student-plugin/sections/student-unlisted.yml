@@ -1,0 +1,10 @@
+type: pages
+headline: veröffentlichte Studenten
+parent: kirby.page("students")
+info: "{{ page.date.toDate('d.m.Y') }}"
+status: unlisted
+template: student
+empty: Bisher sind keine veröffentlichten Studenten eingetragen
+sortBy: firstName asc
+sortable: true
+limit: 15

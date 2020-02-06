@@ -1,0 +1,41 @@
+Title: Super Homepage Slider
+
+----
+
+Slug: super-homepage-slider
+
+----
+
+Herotype: staticImage
+
+----
+
+Staticimage:
+
+- book_mockup_seite16-17.jpg
+
+----
+
+Sliderimages: 
+
+----
+
+Selectedcontent:
+
+- students/david-kochs/feeling-various
+- >
+  students/carolin-eisel/shortcut-eine-webseite-uber-berufspraktisches-wissen-fur-designer-innen
+- >
+  students/anna-lena-schlamp/von-angesicht-zu-angesicht-ein-ambivalentes-selbstbild
+- >
+  students/lena-albert/e-peti-was-ein-kampagnenguide-fur-bundestagspetitionen
+- >
+  students/laura-hacker/konzeption-und-interfacedesign-zum-thema-impfungen
+- >
+  students/josi-eckloff/licht-ins-dunkle-ausstellung-zum-thema-gewalt-in-der-erziehung
+- >
+  students/josefine-britz/v-eine-konzeptionelle-und-textliche-auseinandersetzung-mit-dem-weiblichen-geschlecht
+
+----
+
+Template: block-hero

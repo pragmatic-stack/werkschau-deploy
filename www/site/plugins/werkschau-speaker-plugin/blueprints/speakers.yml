@@ -1,0 +1,7 @@
+title: Speakers
+
+sections:
+  speakers-drafts:
+    extends: sections/speakers-drafts
+  speakers-unlisted:
+    extends: sections/speakers-unlisted

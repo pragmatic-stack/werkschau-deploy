@@ -1,0 +1,10 @@
+title: Sandbox Page
+
+fields:
+  infrastructure:
+    label: Demo
+    help: This is the help block
+    required: true
+    type: demo
+    options: query
+    query: site.find('buildings').children.unlisted

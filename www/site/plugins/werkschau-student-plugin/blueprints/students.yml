@@ -1,0 +1,34 @@
+title: Students
+
+status:
+  draft:
+    label: Entwurf
+    text: Deine Seite befindet sich im Entwurfsmodus
+  unlisted:
+    label: Veröffentlicht
+    text: Deine Seite ist veröffentlicht und die Daten werden auf der Website angezeigt
+  listed:
+    label: Veröffentlicht & Menülink
+    text: Die Seite ist veröffentlicht und wird in den Menüs angezeigt
+
+columns:
+  left:
+    width: 1/2
+    sections:
+      studentDrafts:
+        headline: unveröffentlichte Studenten
+        type: pages
+        status: drafts
+        parent: site.find('students')
+
+  right:
+    width: 1/2
+    sections:
+      studentsUnlisted:
+        headline: veröffentlichte Studenten
+        type: pages
+        status: unlisted
+        parent: site.find('students')
+        limit: 15
+        searchable: true
+

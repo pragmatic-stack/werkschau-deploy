@@ -1,0 +1,36 @@
+Title: Timetable
+
+----
+
+Slug: timetable
+
+----
+
+Displaytitle: true
+
+----
+
+Pagestructure:
+
+- 
+  sectiontitle: Zeitlicher Ablauf
+  displaytitle: 'false'
+  asfullwidthsection: 'false'
+  withbackground: 'false'
+  paddingtop: 0
+  paddingbottom: null
+  sectionblocks:
+    - 
+      blocks:
+        - blocks/werkschau-time-schedule
+      blockwidth: full
+      displaytitle: 'false'
+      displayheadline: 'true'
+      separaterow: 'false'
+  ascontainer: 'true'
+  inrow: 'true'
+  separator: null
+
+----
+
+Template: sectionspage

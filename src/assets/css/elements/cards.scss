@@ -1,0 +1,76 @@
+@import '../shared/colors';
+@import '../shared/images';
+
+.ws-card, .ws-card-program {
+  position: relative;
+  width: 100%;
+  display: block;
+  margin-bottom: 30px;
+  cursor: pointer;
+
+  figure {
+    @include ws-moveUp--initial;
+  }
+
+  &:hover figure {
+    @include ws-moveUp--active;
+  }
+}
+
+.ws-card--detail {
+  padding: 15px;
+
+  .ws-card--title {
+    font-size: 1rem;
+    font-weight: bold;
+  }
+
+  .ws-card--subtitle {
+    font-size: 0.8rem;
+    font-weight: 500;
+    font-style: italic;
+    color: $ws-text-mid-gray;
+    margin: 0;
+  }
+
+  .ws-card--description {
+    font-size: 0.8rem;
+    margin: 0;
+  }
+}
+
+// Program Cards
+.ws-card-program {
+  figure, img {
+    position: relative;
+    margin-top: 1.5rem;
+    width: calc(100% - 1.4rem);
+    z-index: 0;
+  }
+
+  .ws-card-info {
+    display: flex;
+    position: absolute;
+    top: -1.1rem;
+    right: 0;
+    z-index: 1;
+
+    span {
+      padding: 8px 10px;
+      background-color: $ws-dark;
+      color: $ws-light;
+      font-weight: bold;
+      margin-left: 5px;
+      font-size: 0.8rem;
+    }
+  }
+
+  .ws-card--detail {
+    position: relative;
+    margin-left: 1.5rem;
+    margin-top: -3rem;
+    width: calc(100% - 1.5rem);
+    z-index: 2;
+  }
+}
+

@@ -1,0 +1,73 @@
+Title: Von Angesicht zu Angesicht - Ein ambivalentes Selbstbild
+
+----
+
+Slug: von-angesicht-zu-angesicht-ein-ambivalentes-selbstbild
+
+----
+
+Student: Anna-Lena Schlamp
+
+----
+
+CourseOfStudy: Interaktive Medien IA - BA
+
+----
+
+Dozent: Prof. Robert Rose, Naphausen Elias
+
+----
+
+Building: buildings/m-gebaude
+
+----
+
+Room: 304
+
+----
+
+Tags: 
+
+----
+
+Presentation:
+
+- fotostudio.jpg
+- beide.jpg
+- 2a7a6974_moment.jpg
+
+----
+
+Vimeolink: 
+
+----
+
+Headline: Von Angesicht zu Angesicht
+
+----
+
+Subheadline: Ein ambivalentes Selbstbild
+
+----
+
+Description:
+
+Das Gesicht als Bühne, eine Büste als Leinwand. Lebloses wird zum Leben erweckt und tritt in Interaktion. Zwischen beobachten und beobachtet werden. Zwischen Klassik und Moderne. Zwischen Empathie oder Antipathie. 
+
+In der multimedialen Installation Von Angesicht zu Angesicht – ein ambivalentes Selbstbild wird mit den Möglichkeiten des Selbstporträts experimentiert. Durch Verknüpfung zweier Selbstbildnisse – Plastischer Abdruck und bewegtes Bild – entsteht ein Wechselspiel zwischen Dialog und Trialog. Umstehende werden unweigerlich zu Observierenden oder unbewusst zu direkten Kommunikationspartnern. Die Realitätsnähe der Werke soll dabei gegensätzliche Emotionen hervorrufen. Zwischen Faszination und Unbehagen. Bekannt und gleichzeitig unbekannt – ambivalent.
+
+----
+
+Backgroundcolor: #BCB6C4
+
+----
+
+Typographycolor: #ffffff
+
+----
+
+Template: abschlussarbeit
+
+----
+
+Studentid: students/anna-lena-schlamp

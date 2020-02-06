@@ -1,0 +1,66 @@
+Title: scolecite - konzeption und umsetzung einer experimentellen musikvisualisierung
+
+----
+
+Slug: scolecite-konzeption-und-umsetzung-einer-experimentellen-musikvisualisierung
+
+----
+
+Student: Felix Groitzsch
+
+----
+
+CourseOfStudy: Interaktive Medien IA - BA
+
+----
+
+Dozent: Prof. Jens Müller, Christian Schläffer
+
+----
+
+Building: buildings/m-gebaude
+
+----
+
+Tags: #3D, #animation, #motion
+
+----
+
+Presentation:
+
+- cave.png
+- darktech.png
+- tech.png
+- organic.png
+
+----
+
+Vimeolink: 
+
+----
+
+Headline: scolecite
+
+----
+
+Subheadline: konzeption und umsetzung einer experimentellen musikvisualisierung
+
+----
+
+Description: Experimentelle Musikvisualisierung zu Thomas Süßmairs Track Scolecite @ Studio Akkordarbeit, München.
+
+----
+
+Backgroundcolor: #8C5858
+
+----
+
+Typographycolor: #ffffff
+
+----
+
+Template: abschlussarbeit
+
+----
+
+Studentid: students/felix-groitzsch

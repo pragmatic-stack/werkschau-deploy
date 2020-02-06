@@ -1,0 +1,78 @@
+Title: Carolin Eisel
+
+----
+
+Slug: 
+
+----
+
+Profileimage:
+
+- carolineisel_korrektur_02.png
+
+----
+
+Thesis:
+
+- >
+  students/carolin-eisel/shortcut-eine-webseite-uber-berufspraktisches-wissen-fur-designer-innen
+
+----
+
+Projectworks: 
+
+----
+
+Firstname: Carolin
+
+----
+
+Lastname: Eisel
+
+----
+
+Courseofstudy: Design- und Kommunikationsstrategie DKS - MA
+
+----
+
+Email: carolin.eisel@gmx.de
+
+----
+
+Website: 
+
+----
+
+Instagram: https://www.instagram.com/carolineisel/
+
+----
+
+Behance: 
+
+----
+
+Twitter: 
+
+----
+
+Facebook: 
+
+----
+
+Linkedin: 
+
+----
+
+Comfortzone: - paniczone.jpg
+
+----
+
+Abschlussarbeit: - macbook-long-scroll-mockup_studium.jpg
+
+----
+
+Comfortzonedescription: Panic Zone: Eine Woche vor Abgabe, alles in Frage stellen.
+
+----
+
+Template: student

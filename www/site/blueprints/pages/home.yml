@@ -1,0 +1,47 @@
+# Each page blueprint must have a title, the title may be different from the file name
+title: Home
+
+# Each page can have an icon that is shown in page listings when no preview image is available.
+icon: 🏠
+
+# Page options allow you to control how users can interact with the page.
+# Here we prevent changing the page status (the home page cannot be renamed or deleted by default)
+# More about page options: https://getkirby.com/docs/reference/panel/blueprints/page#options
+options:
+  changeStatus: false
+
+sections:
+  drafts:
+    headline: Drafts
+    type: pages
+    status: draft
+    info: "{{ page.intendedTemplate }}"
+    image: false
+    templates:
+      - home-hero
+
+  listed:
+    headline: Listed
+    type: pages
+    status: listed
+    info: "{{ page.intendedTemplate }}"
+    image: false
+    templates:
+      - home-hero
+
+fields:
+  redirect:
+    label: Auf andere Seite weiterleiten?
+    type: toggle
+    text:
+      - Nein
+      - Ja
+
+  redirectPage:
+    label: Seite für die Weiterleitung auswählen
+    type: select
+    options: query
+    required: true
+    query: site.children.filterBy('status', 'in', ['unlisted', 'listed']).filterBy('template', 'in', ['default', 'startseite', 'timetable'])
+    when:
+      redirect: true

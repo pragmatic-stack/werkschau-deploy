@@ -1,0 +1,65 @@
+Title: Location
+
+----
+
+Slug: location2
+
+----
+
+Displaytitle: false
+
+----
+
+Pagestructure:
+
+- 
+  sectiontitle: Adresse und Anfahrt
+  displaytitle: 'true'
+  asfullwidthsection: 'false'
+  withbackground: 'false'
+  paddingtop: 50
+  paddingbottom: 50
+  sectionblocks:
+    - 
+      blocks:
+        - blocks/adresse-hochschule
+      blockwidth: third
+      displaytitle: 'false'
+      displayheadline: 'true'
+      separaterow: 'false'
+    - 
+      blocks:
+        - blocks/anfahrt-mit-dem-auto
+      blockwidth: third
+      displaytitle: 'false'
+      displayheadline: 'true'
+      separaterow: 'false'
+    - 
+      blocks:
+        - blocks/anfahrt-mit-den-offentlichen
+      blockwidth: third
+      displaytitle: 'false'
+      displayheadline: 'true'
+      separaterow: 'false'
+  ascontainer: 'true'
+  inrow: 'true'
+  separator: null
+- 
+  sectiontitle: Map Test
+  displaytitle: 'false'
+  asfullwidthsection: 'true'
+  withbackground: 'false'
+  paddingtop: 50
+  paddingbottom: 50
+  sectionblocks:
+    - 
+      blocks:
+        - blocks/map-test
+      blockwidth: full
+      displaytitle: 'false'
+      displayheadline: 'false'
+  separator: null
+
+----
+
+Template: sectionspage

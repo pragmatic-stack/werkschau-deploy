@@ -1,0 +1,73 @@
+Title: RömerApp - eine Augmented-Reality-Erlebnis für junge Erwachsene im Museum
+
+----
+
+Slug: romerapp-eine-augmented-reality-erlebnis-fur-junge-erwachsene-im-museum
+
+----
+
+Student: Gabriel von Münchow
+
+----
+
+CourseOfStudy: Interaktive Mediensysteme IMS - MA
+
+----
+
+Dozent: Prof.  Ludwig John
+
+----
+
+Building: buildings/k-gebaude
+
+----
+
+Tags: 
+
+----
+
+Presentation:
+
+- romerapp00.jpg
+- romerapp01.png
+- romerapp02.png
+
+----
+
+Vimeolink: 
+
+----
+
+Headline: RömerApp
+
+----
+
+Subheadline: eine Augmented-Reality-Erlebnis für junge Erwachsene im Museum
+
+----
+
+Description:
+
+Wann warst du das letzte Mal in einem Geschichtsmuseum?
+Die Erwartungen von jungen Erwachsenen an Museen sind gestiegen. Durch Augmented Reality können auf dem Smartphone Exponate der Museen zum Leben erweckt werden. Wie diese AR realisiert werden kann, um jungen Erwachsenen ein bedeutsames Erlebnis zu bieten, ist die Frage dieser Masterarbeit.
+Mit drei Entscheidungen „Was, wo und wie AR gezeigt werden soll“ wird die geeignete AR
+Darstellung für die Exponate ermittelt. Diese Darstellung bestimmt dann auch Art und
+Umfang der fünf Realisierungsschritte: Recherche; Ort festlegen; 3D Scan des Exponats;
+Modellierung und Darstellung der erweiterten Wirklichkeit. Durch diese strukturierte
+Vorgehensweise und das Nutzen von User Experience Methoden kann AR in eine Museumsapp eingebettet werden.
+
+----
+
+Backgroundcolor: #ffffff
+
+----
+
+Typographycolor: #000000
+
+----
+
+Template: abschlussarbeit
+
+----
+
+Studentid: students/gabriel-von-munchow

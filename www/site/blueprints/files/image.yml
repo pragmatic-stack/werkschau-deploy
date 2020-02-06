@@ -1,0 +1,44 @@
+title: Image
+
+accept:
+  mime: image/*
+  maxSize: 50000000
+
+columns:
+  - width: 1/2
+    sections:
+      content:
+        type: fields
+        fields:
+          caption:
+            label: Caption
+            type: textarea
+            size: medium
+            help: "Dieser Text wird beim Hover über das Bild angezeigt"
+  - width: 1/2
+    sections:
+      meta:
+        type: fields
+        fields:
+          alt:
+            label: Alternativer Text
+            type: text
+            help: "Diese Einstellung hilft ScreenReadern und ist SEO freundlich"
+          photographer:
+            label: Fotograf
+            type: text
+            width: 2/3
+          license:
+            label: Lizenz
+            type: select
+            width: 1/3
+            options:
+              - Unsplash
+              - CC BY 4.0
+              - CC BY-SA 4.0
+              - CC BY-NC 4.0
+              - CC BY-ND 4.0
+          link:
+            label: Quelllink
+            type: url
+            help: "Hier kannst du einen Link zur Quelle eingeben"

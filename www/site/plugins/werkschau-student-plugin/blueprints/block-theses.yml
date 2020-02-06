@@ -1,0 +1,40 @@
+title: Abschlussarbeiten Block
+icon: user
+
+status:
+  draft: Entwurf
+  unlisted: Verfügbar
+
+columns:
+  left:
+    width: 1/2
+    sections:
+      content:
+        type: fields
+        fields:
+          takeAll:
+            type: toggle
+            label: Alle Arbeiten anzeigen?
+            text:
+              - Nein, selber auswählen.
+              - Ja, alle anzeigen.
+
+          showFilter:
+            type: toggle
+            label: Tag Filter anzeigen?
+            text:
+              - Nein, keinen Filter verwenden.
+              - Ja, Filter anzeigen.
+  right:
+    width: 1/2
+    sections:
+      students:
+        type: fields
+        fields:
+          studentSelect:
+            type: pages
+            label: Abschlussarbeiten
+            options: query
+            query: site.index.filterBy('template', 'abschlussarbeit').published
+            when:
+              takeAll: false

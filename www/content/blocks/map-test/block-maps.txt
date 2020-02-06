@@ -1,0 +1,45 @@
+Title: Map Test
+
+----
+
+Slug: map-test
+
+----
+
+Displaytitle: false
+
+----
+
+Displayheadline: true
+
+----
+
+Headline: Test
+
+----
+
+Mapid: mapContainer
+
+----
+
+Mapheight: 400
+
+----
+
+Locationlat: 47.9082759
+
+----
+
+Locationlong: 10.5720573
+
+----
+
+Zoom: 13
+
+----
+
+Style: mapbox://styles/kraskasystem/ck65koc902fsj1imrrajkcqzv
+
+----
+
+Template: block-maps

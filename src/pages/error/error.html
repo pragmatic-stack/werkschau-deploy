@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="de" class="h-100">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <title><%= htmlWebpackPlugin.options.title %></title>
+</head>
+
+
+<body class="h-100 ws-body--no-hero">
+<!-- NAVIGATION WITHOUT HERO -->
+<%= require('html-loader!../../snippets/header-standard.html') %>
+
+<main class="h-75">
+    <article class="container h-100">
+        <div class="row h-100 align-items-center">
+            <div class="col-md-12">
+                <h1 class="ws-section--headline__centered mb-5" style="font-size: 4rem">
+                    404
+                </h1>
+                <h3 class="text-center">Wir konnten deine angeforderte Seite leider nicht finden.</h3>
+            </div>
+        </div>
+    </article>
+</main>
+<!-- FOOTER -->
+<%= require('html-loader!../../snippets/footer.html') %>
+<!-- SEARCH FORM -->
+<%= require('html-loader!../../snippets/search-form.html') %>
+</body>
+</html>

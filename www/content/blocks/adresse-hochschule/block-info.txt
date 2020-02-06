@@ -1,0 +1,33 @@
+Title: Adresse Hochschule
+
+----
+
+Slug: adresse-hochschule
+
+----
+
+Displaytitle: false
+
+----
+
+Displayheadline: true
+
+----
+
+Headline: Hauptadresse
+
+----
+
+Description:
+
+**Hochschule Augsburg**
+Elisenstr. 6
+86159 Augsburg
+
+----
+
+Class: 
+
+----
+
+Template: block-info

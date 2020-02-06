@@ -1,0 +1,7 @@
+type: pages
+status: unlisted
+template: speaker
+headline: Veröffentlichte Speaker
+empty: Bisher keine Speaker veröffentlicht
+parent: site.find('speakers')
+help: Veröffentlichte Speaker erscheinen in der Übersicht und werden auf der Seite angezeigt

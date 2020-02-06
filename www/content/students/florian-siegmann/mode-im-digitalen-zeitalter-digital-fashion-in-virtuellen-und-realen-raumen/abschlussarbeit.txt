@@ -1,0 +1,65 @@
+Title: Mode im digitalen Zeitalter - Potenziale von Digital Fashion in virtuellen und realen Räumen
+
+----
+
+Slug: mode-im-digitalen-zeitalter-digital-fashion-in-virtuellen-und-realen-raumen
+
+----
+
+Student: Florian Siegmann
+
+----
+
+CourseOfStudy: Design- und Kommunikationsstrategie DKS - MA
+
+----
+
+Dozent: Prof. Kai Bergmann, Prof.  Andreas Muxel
+
+----
+
+Building: buildings/m-gebaude
+
+----
+
+Tags: #3D, #game, #development, #AR/VR
+
+----
+
+Presentation:
+
+- ors03516.jpg
+- ors03666.jpg
+- gray_metallic_insta_03_ps.png
+
+----
+
+Vimeolink: 
+
+----
+
+Headline: Mode im digitalen Zeitalter
+
+----
+
+Subheadline: Potenziale von Digital Fashion in virtuellen und realen Räumen
+
+----
+
+Description: Untersuchungsgegenstand der gemeinsamen Masterarbeit von Fabian Franz und Florian Siegmann ist Mode im digitalen Zeitalter. Dabei wurden neue Systeme für die Zukunft der Modeindustrie mit einem Unternehmenskonzept im Sektor Industrie 4.0 verknüpft. Innovative Ideen an der Schnittstelle zwischen Mode und Technologie sollen Denkanstöße für einen nachhaltigeren Umgang mit Kleidung geben und zudem den grundlegenden Workflow zur Implementierung von Fashion im digitalen Raum erforschen.
+
+----
+
+Backgroundcolor: #000000
+
+----
+
+Typographycolor: #ffffff
+
+----
+
+Template: abschlussarbeit
+
+----
+
+Studentid: students/florian-siegmann

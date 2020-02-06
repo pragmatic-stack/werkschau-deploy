@@ -1,0 +1,56 @@
+Title: zeitlicher Ablauf
+
+----
+
+Displaytitle: true
+
+----
+
+Displayheadline: false
+
+----
+
+Headline: zeitlicher Ablauf
+
+----
+
+Events:
+
+- 
+  datum: 2020-02-07
+  von: 17:00
+  bis: ""
+  beschreibung: 'Verabschiedung der Absolventen '
+  zeit: 17:00
+  date: 2020-01-09T22:21:00.000Z
+  time: 17:00
+- 
+  datum: 2020-02-08
+  von: 13:00
+  bis: 16:00
+  beschreibung: Elevator Pitch
+- 
+  datum: 2020-02-07
+  von: 18:00
+  bis: 22:00
+  beschreibung: Vernissage und Alumni Treffen
+  zeit: 18:00
+- 
+  datum: 2020-02-07
+  von: 22:00
+  bis: ""
+  beschreibung: Werkschau-Party im City Club Augsburg
+- 
+  datum: 2020-02-08
+  von: 12:00
+  bis: 18:00
+  beschreibung: Ausstellung
+- 
+  datum: 2020-02-08
+  von: 13:00
+  bis: ""
+  beschreibung: Vorträge
+
+----
+
+Timedisplay: false

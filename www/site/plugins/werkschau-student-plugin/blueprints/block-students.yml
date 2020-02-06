@@ -1,0 +1,40 @@
+title: Studenten Block
+icon: user
+
+status:
+  draft: Entwurf
+  unlisted: Verfügbar
+
+columns:
+  left:
+    width: 1/2
+    sections:
+      content:
+        type: fields
+        fields:
+          takeAll:
+            type: toggle
+            label: Alle Studenten anzeigen?
+            text:
+              - Nein, selber auswählen.
+              - Ja, alle anzeigen.
+
+          showFilter:
+            type: toggle
+            label: Tag Filter anzeigen?
+            text:
+              - Nein, keinen Filter verwenden.
+              - Ja, Filter anzeigen.
+  right:
+    width: 1/2
+    sections:
+      students:
+        type: fields
+        fields:
+          studentSelect:
+            type: pages
+            label: Studenten
+            options: query
+            query: site.find('students').children
+            when:
+              takeAll: false

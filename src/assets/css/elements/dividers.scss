@@ -1,0 +1,17 @@
+@import "../shared/colors";
+
+.ws-divider-simple {
+  display: block;
+  position: relative;
+  border: 1px solid $ws-bg-light-gray;
+  margin: 15px 0;
+
+  span {
+    position: absolute;
+    top: -1px;
+    left: calc(50% - 150px);
+    width: 300px;
+    height: 3px;
+    background-color: $ws-bg-dark;
+  }
+}

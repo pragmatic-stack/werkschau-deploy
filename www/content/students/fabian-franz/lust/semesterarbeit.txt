@@ -1,0 +1,35 @@
+Title: Lust
+
+----
+
+Slug: lust
+
+----
+
+Student: Fabian Franz
+
+----
+
+Heroimage:
+
+- 85eeee51551291.5c6a07431a94c.jpg
+
+----
+
+Headline: Lust
+
+----
+
+Description: 'Lust' ist ein Designprojekt im kulturellen Raum. Die Arbeit beinhaltet – neben einem Corporate Design – Ausstellungs- und Kataloggestaltung und wurde auf verschiedenen Fedrigoni-Papieren gedruckt.
+
+----
+
+Template: semesterarbeit
+
+----
+
+Studentid: students/fabian-franz
+
+----
+
+CourseOfStudy: Design- und Kommunikationsstrategie DKS - MA

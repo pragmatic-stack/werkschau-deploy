@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <title><%= htmlWebpackPlugin.options.title %></title>
+</head>
+
+
+<body class="h-100 ws-body--no-hero">
+<!-- NAVIGATION WITHOUT HERO -->
+<%= require('html-loader!../../snippets/header-standard.html') %>
+
+<main>
+    <article class="container">
+        <div class="row position-relative align-items-center">
+            <div class="col-md-12">
+                <h1 class="ws-section--headline__centered mb-2">
+                    Konstantin Kraska
+                </h1>
+                <div class="ws-prev-next-nav">
+                    <div class="arrows">
+                        <a href="#"><i class="fas fa-chevron-left"></i></a>
+                        <a href="#"><i class="fas fa-chevron-right"></i></a>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <div class="row">
+            <!-- Thesis detail Data -->
+            <div class="col-md-4">
+                <div class="ws-bg-img ws-img--square ws-student-info"
+                     style="background-image: url('https://placehold.it/500x500?text=Student+Image')">
+                    <div class="ws-student-info__contact">
+                        <a href="#">
+                            <button type="button" class="ws-button ws-button__small ws-button__outline"><i
+                                    class="fas fa-envelope"></i>
+                            </button>
+                        </a>
+                        <a href="#">
+                            <button type="button" class="ws-button ws-button__small ws-button__outline"><i
+                                    class="fas fa-globe"></i></button>
+                        </a>
+                        <a href="#">
+                            <button type="button" class="ws-button ws-button__small ws-button__outline"><i
+                                    class="fab fa-instagram"></i>
+                            </button>
+                        </a>
+                        <a href="#">
+                            <button type="button" class="ws-button ws-button__small ws-button__outline"><i
+                                    class="fab fa-behance"></i></button>
+                        </a>
+                        <a href="#">
+                            <button type="button" class="ws-button ws-button__small ws-button__outline"><i
+                                    class="fab fa-facebook"></i>
+                            </button>
+                        </a>
+                        <a href="#">
+                            <button type="button" class="ws-button ws-button__small ws-button__outline"><i
+                                    class="fab fa-twitter"></i></button>
+                        </a>
+                    </div>
+                </div>
+                <div class="ws-thesis--data">
+                    <p><strong>Studiengang</strong><br>
+                        Interaktive Medien B.A.</p>
+
+                    <p><strong>Betreuer</strong><br>
+                        Prof. Kai Bergmann - Prof. Daniel Rothaug</p>
+
+                    <p><strong>Raum</strong><br>
+                        M 1.01 a</p>
+                </div>
+
+                <div class="ws-thesis--data">
+                    <h2>This is my Thesis Title</h2>
+                    <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt
+                        ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo
+                        dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor
+                        sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor
+                        invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et
+                        justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem
+                        ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy
+                        eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos
+                        et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus
+                        est Lorem ipsum dolor sit amet.</p>
+                </div>
+            </div>
+
+            <!-- Thesis feature images -->
+            <div class="col-md-8 ws-thesis--images">
+                <img src="https://placehold.it/1000x1000?text=Thesis+Teaser+Img"/>
+                <img src="https://placehold.it/1000x600?text=Thesis+Teaser+Img"/>
+                <img src="https://placehold.it/600x1000?text=Thesis+Teaser+Img"/>
+                <img src="https://placehold.it/1000x1000?text=Thesis+Teaser+Img"/>
+            </div>
+        </div>
+    </article>
+    <article class="container">
+        <div class="row">
+            <div class="col-md-12 ws-section">
+                <div class="ws-section--separator__centered">
+                    <div></div>
+                    <h2>Semesterarbeiten</h2>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-4">
+                <%= require('html-loader!../../snippets/cards/simple-card.html') %>
+            </div>
+            <div class="col-md-4">
+                <%= require('html-loader!../../snippets/cards/simple-card.html') %>
+            </div>
+            <div class="col-md-4">
+                <%= require('html-loader!../../snippets/cards/simple-card.html') %>
+            </div>
+        </div>
+    </article>
+
+</main>
+<!-- FOOTER -->
+<%= require('html-loader!../../snippets/footer.html') %>
+<!-- SEARCH FORM -->
+<%= require('html-loader!../../snippets/search-form.html') %>
+</body>
+</html>

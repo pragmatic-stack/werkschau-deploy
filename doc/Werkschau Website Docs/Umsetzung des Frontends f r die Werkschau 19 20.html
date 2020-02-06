@@ -1,0 +1,604 @@
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=utf-8"/><title>Umsetzung des Frontends für die Werkschau 19/20</title><style>
+/* webkit printing magic: print all background colors */
+html {
+	-webkit-print-color-adjust: exact;
+}
+* {
+	box-sizing: border-box;
+	-webkit-print-color-adjust: exact;
+}
+
+html,
+body {
+	margin: 0;
+	padding: 0;
+}
+@media only screen {
+	body {
+		margin: 2em auto;
+		max-width: 900px;
+		color: rgb(55, 53, 47);
+	}
+}
+
+body {
+	line-height: 1.5;
+	white-space: pre-wrap;
+}
+
+a,
+a.visited {
+	color: inherit;
+	text-decoration: underline;
+}
+
+.pdf-relative-link-path {
+	font-size: 80%;
+	color: #444;
+}
+
+h1,
+h2,
+h3 {
+	letter-spacing: -0.01em;
+	line-height: 1.2;
+	font-weight: 600;
+	margin-bottom: 0;
+}
+
+.page-title {
+	font-size: 2.5rem;
+	font-weight: 700;
+	margin-top: 0;
+	margin-bottom: 0.75em;
+}
+
+h1 {
+	font-size: 1.875rem;
+	margin-top: 1.875rem;
+}
+
+h2 {
+	font-size: 1.5rem;
+	margin-top: 1.5rem;
+}
+
+h3 {
+	font-size: 1.25rem;
+	margin-top: 1.25rem;
+}
+
+.source {
+	border: 1px solid #ddd;
+	border-radius: 3px;
+	padding: 1.5em;
+	word-break: break-all;
+}
+
+.callout {
+	border-radius: 3px;
+	padding: 1rem;
+}
+
+figure {
+	margin: 1.25em 0;
+	page-break-inside: avoid;
+}
+
+figcaption {
+	opacity: 0.5;
+	font-size: 85%;
+	margin-top: 0.5em;
+}
+
+mark {
+	background-color: transparent;
+}
+
+.indented {
+	padding-left: 1.5em;
+}
+
+hr {
+	background: transparent;
+	display: block;
+	width: 100%;
+	height: 1px;
+	visibility: visible;
+	border: none;
+	border-bottom: 1px solid rgba(55, 53, 47, 0.09);
+}
+
+img {
+	max-width: 100%;
+}
+
+@media only print {
+	img {
+		max-height: 100vh;
+		object-fit: contain;
+	}
+}
+
+@page {
+	margin: 1in;
+}
+
+.collection-content {
+	font-size: 0.875rem;
+}
+
+.column-list {
+	display: flex;
+	justify-content: space-between;
+}
+
+.column {
+	padding: 0 1em;
+}
+
+.column:first-child {
+	padding-left: 0;
+}
+
+.column:last-child {
+	padding-right: 0;
+}
+
+.table_of_contents-item {
+	display: block;
+	font-size: 0.875rem;
+	line-height: 1.3;
+	padding: 0.125rem;
+}
+
+.table_of_contents-indent-1 {
+	margin-left: 1.5rem;
+}
+
+.table_of_contents-indent-2 {
+	margin-left: 3rem;
+}
+
+.table_of_contents-indent-3 {
+	margin-left: 4.5rem;
+}
+
+.table_of_contents-link {
+	text-decoration: none;
+	opacity: 0.7;
+	border-bottom: 1px solid rgba(55, 53, 47, 0.18);
+}
+
+table,
+th,
+td {
+	border: 1px solid rgba(55, 53, 47, 0.09);
+	border-collapse: collapse;
+}
+
+table {
+	border-left: none;
+	border-right: none;
+}
+
+th,
+td {
+	font-weight: normal;
+	padding: 0.25em 0.5em;
+	line-height: 1.5;
+	min-height: 1.5em;
+	text-align: left;
+}
+
+th {
+	color: rgba(55, 53, 47, 0.6);
+}
+
+ol,
+ul {
+	margin: 0;
+	margin-block-start: 0.6em;
+	margin-block-end: 0.6em;
+}
+
+li > ol:first-child,
+li > ul:first-child {
+	margin-block-start: 0.6em;
+}
+
+ul > li {
+	list-style: disc;
+}
+
+ul.to-do-list {
+	text-indent: -1.7em;
+}
+
+ul.to-do-list > li {
+	list-style: none;
+}
+
+.to-do-children-checked {
+	text-decoration: line-through;
+	opacity: 0.375;
+}
+
+ul.toggle > li {
+	list-style: none;
+}
+
+ul {
+	padding-inline-start: 1.7em;
+}
+
+ul > li {
+	padding-left: 0.1em;
+}
+
+ol {
+	padding-inline-start: 1.6em;
+}
+
+ol > li {
+	padding-left: 0.2em;
+}
+
+.mono ol {
+	padding-inline-start: 2em;
+}
+
+.mono ol > li {
+	text-indent: -0.4em;
+}
+
+.toggle {
+	padding-inline-start: 0em;
+	list-style-type: none;
+}
+
+/* Indent toggle children */
+.toggle > li > details {
+	padding-left: 1.7em;
+}
+
+.toggle > li > details > summary {
+	margin-left: -1.1em;
+}
+
+.selected-value {
+	display: inline-block;
+	padding: 0 0.5em;
+	background: rgba(206, 205, 202, 0.5);
+	border-radius: 3px;
+	margin-right: 0.5em;
+	margin-top: 0.3em;
+	margin-bottom: 0.3em;
+	white-space: nowrap;
+}
+
+.collection-title {
+	display: inline-block;
+	margin-right: 1em;
+}
+
+time {
+	opacity: 0.5;
+}
+
+.icon {
+	display: inline-block;
+	max-width: 1.2em;
+	max-height: 1.2em;
+	text-decoration: none;
+	vertical-align: text-bottom;
+	margin-right: 0.5em;
+}
+
+img.icon {
+	border-radius: 3px;
+}
+
+.user-icon {
+	width: 1.5em;
+	height: 1.5em;
+	border-radius: 100%;
+	margin-right: 0.5rem;
+}
+
+.user-icon-inner {
+	font-size: 0.8em;
+}
+
+.text-icon {
+	border: 1px solid #000;
+	text-align: center;
+}
+
+.page-cover-image {
+	display: block;
+	object-fit: cover;
+	width: 100%;
+	height: 30vh;
+}
+
+.page-header-icon {
+	font-size: 3rem;
+	margin-bottom: 1rem;
+}
+
+.page-header-icon-with-cover {
+	margin-top: -0.72em;
+	margin-left: 0.07em;
+}
+
+.page-header-icon img {
+	border-radius: 3px;
+}
+
+.link-to-page {
+	margin: 1em 0;
+	padding: 0;
+	border: none;
+	font-weight: 500;
+}
+
+p > .user {
+	opacity: 0.5;
+}
+
+td > .user,
+td > time {
+	white-space: nowrap;
+}
+
+input[type="checkbox"] {
+	transform: scale(1.5);
+	margin-right: 0.6em;
+	vertical-align: middle;
+}
+
+p {
+	margin-top: 0.5em;
+	margin-bottom: 0.5em;
+}
+
+.image {
+	border: none;
+	margin: 1.5em 0;
+	padding: 0;
+	border-radius: 0;
+	text-align: center;
+}
+
+.code,
+code {
+	background: rgba(135, 131, 120, 0.15);
+	border-radius: 3px;
+	padding: 0.2em 0.4em;
+	border-radius: 3px;
+	font-size: 85%;
+	tab-size: 2;
+}
+
+code {
+	color: #eb5757;
+}
+
+.code {
+	padding: 1.5em 1em;
+}
+
+.code > code {
+	background: none;
+	padding: 0;
+	font-size: 100%;
+	color: inherit;
+}
+
+blockquote {
+	font-size: 1.25em;
+	margin: 1em 0;
+	padding-left: 1em;
+	border-left: 3px solid rgb(55, 53, 47);
+}
+
+.bookmark-href {
+	font-size: 0.75em;
+	opacity: 0.5;
+}
+
+.sans { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol"; }
+.code { font-family: 'SFMono-Regular', Consolas, 'Liberation Mono', Menlo, Courier, monospace; }
+.serif { font-family: Lyon-Text, Georgia, KaiTi, STKaiTi, '华文楷体', KaiTi_GB2312, '楷体_GB2312', serif; }
+.mono { font-family: Nitti, 'Microsoft YaHei', '微软雅黑', monospace; }
+.pdf .sans { font-family: Inter, -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol", 'Twemoji', 'Noto Color Emoji', 'Noto Sans CJK SC', 'Noto Sans CJK KR'; }
+
+.pdf .code { font-family: Source Code Pro, 'SFMono-Regular', Consolas, 'Liberation Mono', Menlo, Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK SC', 'Noto Sans Mono CJK KR'; }
+
+.pdf .serif { font-family: PT Serif, Lyon-Text, Georgia, KaiTi, STKaiTi, '华文楷体', KaiTi_GB2312, '楷体_GB2312', serif, 'Twemoji', 'Noto Color Emoji', 'Noto Sans CJK SC', 'Noto Sans CJK KR'; }
+
+.pdf .mono { font-family: PT Mono, Nitti, 'Microsoft YaHei', '微软雅黑', monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK SC', 'Noto Sans Mono CJK KR'; }
+
+.highlight-default {
+}
+.highlight-gray {
+	color: rgb(155,154,151);
+}
+.highlight-brown {
+	color: rgb(100,71,58);
+}
+.highlight-orange {
+	color: rgb(217,115,13);
+}
+.highlight-yellow {
+	color: rgb(223,171,1);
+}
+.highlight-teal {
+	color: rgb(15,123,108);
+}
+.highlight-blue {
+	color: rgb(11,110,153);
+}
+.highlight-purple {
+	color: rgb(105,64,165);
+}
+.highlight-pink {
+	color: rgb(173,26,114);
+}
+.highlight-red {
+	color: rgb(224,62,62);
+}
+.highlight-gray_background {
+	background: rgb(235,236,237);
+}
+.highlight-brown_background {
+	background: rgb(233,229,227);
+}
+.highlight-orange_background {
+	background: rgb(250,235,221);
+}
+.highlight-yellow_background {
+	background: rgb(251,243,219);
+}
+.highlight-teal_background {
+	background: rgb(221,237,234);
+}
+.highlight-blue_background {
+	background: rgb(221,235,241);
+}
+.highlight-purple_background {
+	background: rgb(234,228,242);
+}
+.highlight-pink_background {
+	background: rgb(244,223,235);
+}
+.highlight-red_background {
+	background: rgb(251,228,228);
+}
+.block-color-default {
+	color: inherit;
+	fill: inherit;
+}
+.block-color-gray {
+	color: rgba(55, 53, 47, 0.6);
+	fill: rgba(55, 53, 47, 0.6);
+}
+.block-color-brown {
+	color: rgb(100,71,58);
+	fill: rgb(100,71,58);
+}
+.block-color-orange {
+	color: rgb(217,115,13);
+	fill: rgb(217,115,13);
+}
+.block-color-yellow {
+	color: rgb(223,171,1);
+	fill: rgb(223,171,1);
+}
+.block-color-teal {
+	color: rgb(15,123,108);
+	fill: rgb(15,123,108);
+}
+.block-color-blue {
+	color: rgb(11,110,153);
+	fill: rgb(11,110,153);
+}
+.block-color-purple {
+	color: rgb(105,64,165);
+	fill: rgb(105,64,165);
+}
+.block-color-pink {
+	color: rgb(173,26,114);
+	fill: rgb(173,26,114);
+}
+.block-color-red {
+	color: rgb(224,62,62);
+	fill: rgb(224,62,62);
+}
+.block-color-gray_background {
+	background: rgb(235,236,237);
+}
+.block-color-brown_background {
+	background: rgb(233,229,227);
+}
+.block-color-orange_background {
+	background: rgb(250,235,221);
+}
+.block-color-yellow_background {
+	background: rgb(251,243,219);
+}
+.block-color-teal_background {
+	background: rgb(221,237,234);
+}
+.block-color-blue_background {
+	background: rgb(221,235,241);
+}
+.block-color-purple_background {
+	background: rgb(234,228,242);
+}
+.block-color-pink_background {
+	background: rgb(244,223,235);
+}
+.block-color-red_background {
+	background: rgb(251,228,228);
+}
+
+.checkbox {
+	display: inline-flex;
+	vertical-align: text-bottom;
+	width: 16;
+	height: 16;
+	background-size: 16px;
+	margin-left: 2px;
+	margin-right: 5px;
+}
+
+.checkbox-on {
+	background-image: url("data:image/svg+xml;charset=UTF-8,%3Csvg%20width%3D%2216%22%20height%3D%2216%22%20viewBox%3D%220%200%2016%2016%22%20fill%3D%22none%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%0A%3Crect%20width%3D%2216%22%20height%3D%2216%22%20fill%3D%22%2358A9D7%22%2F%3E%0A%3Cpath%20d%3D%22M6.71429%2012.2852L14%204.9995L12.7143%203.71436L6.71429%209.71378L3.28571%206.2831L2%207.57092L6.71429%2012.2852Z%22%20fill%3D%22white%22%2F%3E%0A%3C%2Fsvg%3E");
+}
+
+.checkbox-off {
+	background-image: url("data:image/svg+xml;charset=UTF-8,%3Csvg%20width%3D%2216%22%20height%3D%2216%22%20viewBox%3D%220%200%2016%2016%22%20fill%3D%22none%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%0A%3Crect%20x%3D%220.75%22%20y%3D%220.75%22%20width%3D%2214.5%22%20height%3D%2214.5%22%20fill%3D%22white%22%20stroke%3D%22%2336352F%22%20stroke-width%3D%221.5%22%2F%3E%0A%3C%2Fsvg%3E");
+}
+	
+</style></head><body><article id="e04717ca-2b02-4f0d-8987-1b7e268f8729" class="page sans"><header><h1 class="page-title">Umsetzung des Frontends für die Werkschau 19/20</h1></header><div class="page-body"><p id="eff175ec-d687-46cf-b281-2fbb3987897f" class=""><strong>Inhalt</strong></p><nav id="7bb4217b-2832-418e-ad28-481b45fded1d" class="block-color-gray table_of_contents"><div class="table_of_contents-item table_of_contents-indent-0"><a class="table_of_contents-link" href="#0c91b543-5c3a-449d-84a4-0b76b7363c13">Vorwort zum Frontend</a></div><div class="table_of_contents-item table_of_contents-indent-0"><a class="table_of_contents-link" href="#720194f6-904f-4e34-b3c8-cacf03374e7a">HTML/PHP</a></div><div class="table_of_contents-item table_of_contents-indent-1"><a class="table_of_contents-link" href="#944a189a-3cbb-41cf-9134-3585ad83c504">Block-/ Snippet-Parameter</a></div><div class="table_of_contents-item table_of_contents-indent-1"><a class="table_of_contents-link" href="#51f3d305-dd25-4c80-9bac-4d0d007c0914">Bilder (srcset, size)</a></div><div class="table_of_contents-item table_of_contents-indent-1"><a class="table_of_contents-link" href="#1c3b1ddc-fcc8-4489-b61b-7cd39e961906">Spalten-Layout (Flexbox)</a></div><div class="table_of_contents-item table_of_contents-indent-1"><a class="table_of_contents-link" href="#243240e5-124a-46aa-815f-3e6208e1dd14">Content spacing</a></div><div class="table_of_contents-item table_of_contents-indent-0"><a class="table_of_contents-link" href="#fa60c7f5-d6bf-473f-a3ca-be0925f9af35">CSS</a></div><div class="table_of_contents-item table_of_contents-indent-1"><a class="table_of_contents-link" href="#62876c82-c715-454d-b793-da90e4aa08b6">Anmerkung</a></div><div class="table_of_contents-item table_of_contents-indent-1"><a class="table_of_contents-link" href="#151618ae-ddd5-415b-a1c3-a7abd6ac542a">Dateistruktur</a></div><div class="table_of_contents-item table_of_contents-indent-1"><a class="table_of_contents-link" href="#7643315b-2f37-4c70-897a-64218347a6b2">Beispiel</a></div><div class="table_of_contents-item table_of_contents-indent-0"><a class="table_of_contents-link" href="#9f6000bd-3f8b-4204-a416-88b049a1fc83">JavaScript</a></div><div class="table_of_contents-item table_of_contents-indent-1"><a class="table_of_contents-link" href="#15b3077a-5123-4a94-8477-ab35e5339ab7">Dateistruktur</a></div><div class="table_of_contents-item table_of_contents-indent-1"><a class="table_of_contents-link" href="#acdae898-db39-4baf-8abd-79b6c4f3cb49">3D-Scans</a></div><div class="table_of_contents-item table_of_contents-indent-1"><a class="table_of_contents-link" href="#90a3fff5-bef3-47bc-ba82-05777bbc72e4">Vendor JavaScript</a></div></nav><h2 id="0c91b543-5c3a-449d-84a4-0b76b7363c13" class="">Vorwort zum Frontend</h2><p id="9e488eb8-b54f-42eb-a817-4d282ad398ee" class="">Das Frontend für die Werkschau-Webseite im Wintersemester 19/20, wurde nach dem Design von <a href="mailto:nathalie.pollok@hs-augsburg.de">Nathalie Pollok</a> und <a href="mailto:laura.kreuzer@hs-augsburg.de">Laura Kreuzer</a> programmiert.</p><p id="346d2bb8-9ac4-40ad-89b8-7dcfc5667381" class="">Daraus resultiert die Auswahlmöglichkeit zwischen Comfort- und Panic-Zone. In beiden dieser &quot;Webseiten-Versionen&quot; sollen die gleichen Inhalte dargestellt werden – nur eben auf unterschiedliche Art und Weise. </p><p id="f63523f0-c36b-400f-bf80-33e2e4863f15" class="">Die Comfort-Zone soll einem klassischen One-Pager entsprechen. </p><p id="4003f30b-2f6c-4233-b495-67a48e8a1c53" class="">Von der Panic-Zone aus, muss man die Inhalte auf einzelne Unterseiten verteilt annavigieren (<code>/absolventen</code>, <code>/location</code>, ...).</p><p id="fc493482-aee3-4239-b3e0-bac0450da9cf" class="">Um diese Funktionalität &quot;sauber&quot; bereitstellen zu können, war es nötig das Block-System in Kirby zu implementieren.</p><p id="96cdce5e-30d4-462b-a4a3-b88bb9a9c5b6" class="">Wir haben drei &quot;Startseiten&quot; angelegt. Auf der Root-Domain (<code>/</code> — Template: <code>home.php</code>) entscheidet man, zwischen den beiden Versionen. Dabei gelangt man entweder zur Comfort-Zone (<code>/comfort-zone</code> — Template: <code>startseite.php</code>) oder zur Panic-Zone (<code>/panic-zone</code> — Template: <code>panic.php</code>).</p><p id="ccd872f4-932c-48bc-af4c-993cf7284a69" class="">Auf der Comfort-Zone Seite werden die Inhalte über das Block-System von den jeweiligen Unterseiten – zu denen man über die Panic-Zone direkt navigieren kann – bezogen und zusammengeführt.</p><h2 id="720194f6-904f-4e34-b3c8-cacf03374e7a" class="">HTML/PHP</h2><p id="ed88cfa0-aeb8-4e18-9735-9dfc51a3e62e" class="">Besonderer Wert wurde darauf gelegt semantisch korrektes HTML zu schreiben (nav, main, article, section, ...).</p><p id="8efca157-5e58-4e86-afe7-76d62def6e62" class="">Wie im Entwicklerleitfaden beschrieben gibt es Blöcke und Snippets zur erleichterten Einbindung von Inhalten auf unterschiedliche Seiten.</p><h3 id="944a189a-3cbb-41cf-9134-3585ad83c504" class="">Block-/ Snippet-Parameter</h3><p id="d682f063-0770-49af-82ae-8673cbf63bbb" class="">Um semantische Anpassungen vorzunehmen oder grundlegende Änderungen am ausgelieferten Inhalt vorzunehmen, können manchen Blöcken und Snippets Parameter übergeben werden.</p><p id="d1296d25-5748-405a-9e63-0bdb517f917c" class="">Dem Header (<code>/site/snippets/header.php</code>) kann zum Beispiel eine <code>version</code> und eine <code>searchVersion</code> übergeben werden. Erkennbar ist das in den ersten Zeilen des Snippets:</p><pre id="3dbcaf5c-b93c-42d0-bbd9-cfc98d74e3a0" class="code"><code>&lt;?php $version = isset($version) ? $version : &#x27;off-page&#x27;; ?&gt;</code></pre><p id="9b8cbba1-be4e-4711-9b1a-92e9dba60f56" class="">Wenn ein Versions-Parameter übergeben wird, kann dieser im Nachhinein verwendet werden. Falls keiner übergeben wurde, wird mit dem Standard-Wert <code>off-page</code> weitergearbeitet. Mögliche Alternativen sind in diesem Fall <code>on-page</code>, <code>minimal-back</code>, <code>minimal-home</code> und <code>student</code>.</p><h3 id="51f3d305-dd25-4c80-9bac-4d0d007c0914" class="">Bilder (srcset, size)</h3><p id="04beb0b3-eb4a-4c9a-8056-13467d9d2bf4" class="">Bei der Einbindung von Bildern empfiehlt es sich, die Kirby-Funktion <code>srcset()</code> und die selbst geschriebene Funktion <code>sizes()</code> zu verwenden. Dadurch kann eine Bildversion mit der maximal-nötigen Größe geladen werden, wodurch die Datenübertragungs-Menge der Webseite drastisch reduziert wird.</p><p id="41650f5c-aba3-4d0a-a178-7f5feeee5eba" class="">Optionen für srcsets und die sizes-Funktion können unter <code>/site/config/config.php</code> eingesehen werden.</p><p id="5dc481a9-56fe-47a8-b80c-dfc9d37e70cb" class="">Beiden Funktionen können Parameter übergeben werden, die die Ausgabe-Werte beeinflussen. Beispiel: </p><pre id="cd831348-d18f-4a51-abb0-291748317563" class="code"><code>&lt;img srcset=&quot;&lt;?= $image-&gt;srcset(&#x27;square&#x27;); ?&gt;&quot; // &#x27;square&#x27; returns square-cropped images
+
+     sizes= &quot;&lt;?= sizes(&#x27;col_3&#x27;); ?&gt;&quot;           // &#x27;col_3&#x27; sets sizes for an element 
+                                               // within a .flex_row.col_3 parent
+     src=   &quot;&lt;?= $image-&gt;url() ?&gt;&quot; 
+/&gt;</code></pre><h3 id="1c3b1ddc-fcc8-4489-b61b-7cd39e961906" class="">Spalten-Layout (Flexbox)</h3><p id="cd47f332-28c6-4d79-ac1f-e88ab74d67b2" class="">Es gibt ein spezielles Flexbox-Layout für Spalten-Darstellungen. Dieses ist in <code>/assets/css/shared/utility.css</code> definiert.</p><pre id="00f73187-110f-4e38-a94e-fac5cbd8db2a" class="code"><code>&lt;article class=&quot;flex_row col_3&quot;&gt;
+	&lt;section class=&quot;col_span_2&quot;&gt;...&lt;/section&gt;
+	&lt;section&gt;...&lt;/section&gt;
+	&lt;section class=&quot;col_span_all&quot;&gt;...&lt;/section&gt;
+&lt;/article&gt;</code></pre><p id="603bde63-84ed-4edd-abca-c002667c6efe" class="">Der Container, in dem die Spalten-Darstellung stattfinden soll, kann um die Klassen <code>col_2</code> (für zweisplatiges Layout) oder <code>col_3</code> (für dreispaltiges Layout) erweitert werden. Wenn dies nicht geschieht, wird standardmäßig ein 4-spaltiges Layout generiert.</p><p id="0e9fcee2-6da4-458a-8051-ea5997650fa2" class="">Die Klassen <code>col_span_X</code> ermöglichen es einem Element mehrere Spalten breit dargestellt zu werden. Ist die Klasse <code>col_span_all</code> für ein Element definiert, so wird dieses mit einer breite von 100% dargestellt.</p><h3 id="243240e5-124a-46aa-815f-3e6208e1dd14" class="">Content spacing</h3><p id="ce90c0a0-125a-4458-b194-75e3a34c2279" class="">Die Klasse für Standard-Abstände zwischen den grundlegenden Inhaltselementen ist <code>stack</code>. Ich habe sie in diesem Projekt folgendermaßen verwendet:</p><pre id="1d8e354b-34d5-4ee2-a12c-8f4cf5b8e506" class="code"><code>&lt;main class=&quot;stack&quot;&gt;...&lt;/main&gt;</code></pre><p id="e83d5080-e71f-4d80-b3b4-4db28a1e1542" class="">Um die Abstände zwischen Spalten in einem Flexbox-Layout zu reduzieren, können Sie die Klasse <code>margin--small</code> in dem Elternelement definieren. </p><pre id="dee46daa-9cc1-4b78-ba7f-0f10d5464f8d" class="code"><code>&lt;main class=&quot;stack&quot;&gt;
+	&lt;article class=&quot;flex_row margin--small&quot;&gt;...&lt;/article&gt;
+&lt;/main&gt;</code></pre><h2 id="fa60c7f5-d6bf-473f-a3ca-be0925f9af35" class="">CSS</h2><h3 id="62876c82-c715-454d-b793-da90e4aa08b6" class="">Anmerkung</h3><p id="c579a72f-a29c-4bf3-a592-17fc7da2d207" class="">Leider gibt es zur Bennenung der Klassen keine durchgängig verwendeten Konventionen. </p><p id="c66817b2-3080-44da-9f19-1c9aee4e815b" class="">Kleiner Trost: Es gibt nicht viel CSS. Das CSS das es gibt, ist in eine feingliedrige Datei-Struktur sortiert – nach <a href="https://hankchizljaw.com/wrote/keeping-it-simple-with-css-that-scales/#heading-consistency">C-BEUT (Andy Bell)</a>. </p><p id="d93a078c-984f-41c9-b710-bf0172973e3d" class="">Weil dieser Zustand aber mit weiterer Programmierung zu immer weiteren Problemen führen wird, werden wir in einer der nächsten Versionen entweder (1) Koventionen definieren anhand derer wir alles vereinheitlichen können, oder (2) das Thema CSS-Klassen-Benennung in Zukunft komplett zu umgehen mit der Implementierung von <a href="https://tailwindcss.com/">tailwind.css</a>.</p><h3 id="151618ae-ddd5-415b-a1c3-a7abd6ac542a" class="">Dateistruktur</h3><p id="a56e785d-a746-414f-bb5e-d9ac70e0a332" class="">Es gibt folgende CSS-Dateien:</p><pre id="d3d4f524-448c-4b75-8a36-875581fa5b55" class="code"><code>-- /assets/css/shared/
+	-- normalize.css // Normalize Browser behaviour
+	-- colors.css    // All predefined color-values
+	-- variables.css // All other CSS-Variables
+	-- fonts.css     // @font-face implementation
+	-- cascade.css   // Cascading CSS
+	-- block.css     // Blocks that aren&#x27;t real kirby-blocks
+	-- element.css   // Elements
+	-- utility.css   // Utility classes like &#x27;flex_row&#x27;, &#x27;sr_only&#x27;, ...
+
+-- /assets/css/blocks/
+	-- block-marquee.css // Block-specific styles
+	-- ...
+
+-- /assets/css/templates/
+	-- speakers.css // Template-specific styles
+	-- ...</code></pre><p id="c4ad735e-f8bd-48fe-acef-50c9f8768ab8" class="">Die Dateien im Verzeichnis <code>shared</code> sind nach <a href="https://hankchizljaw.com/wrote/keeping-it-simple-with-css-that-scales/#heading-consistency">C-BEUT</a> strukturiert. </p><p id="43ca171a-bd61-4a0b-aff9-0b5bc1f58e1e" class="">In diesem Verzeichnis finden sich außerdem eine Normalisierungs-Datei (<code>normalize.css</code>), Schriftdefinitionen (<code>fonts.css</code>), Farbvariablen (<code>colors.css</code>) und sonstige Variablen (<code>variables.css</code>).</p><p id="fbe1f2c0-db32-43c9-8a43-40bd8230098b" class="">Spezifische Style-Angaben befinden sich in den jeweiligen Dateien der Verzeichnisse <code>blocks</code> und <code>templates</code>. </p><h3 id="7643315b-2f37-4c70-897a-64218347a6b2" class="">Beispiel</h3><p id="35e6230b-6b2d-4937-8cbe-666dd3c05c8d" class="">Style-Attribute zur Klasse <code>.device</code> werden in der Datei <code>/shared/block.css</code> definiert, weil diese &quot;Device-Blöcke&quot; sowohl auf der Panic-Zone Seite, als auch auf allen Seiten auf denen ein <code>#search-device</code> eingebunden ist, angewandt werden müssen.</p><h2 id="9f6000bd-3f8b-4204-a416-88b049a1fc83" class="">JavaScript</h2><p id="98a95888-b872-40ec-826f-afc390e2077d" class="">In der <code>/assets/js/index.js</code> befinden sich initiierende Funktionsaufrufe, die auf jeder beliebigen Seite stattfinden sollen.</p><h3 id="15b3077a-5123-4a94-8477-ab35e5339ab7" class="">Dateistruktur</h3><pre id="62a2b8ae-4e51-42b9-b761-63e25ad4d5a7" class="code"><code>-- /assets/js/shared/
+	-- 3d-scan.js
+	-- werkschau-util.js
+
+-- /assets/js/blocks/
+	-- block-marquee.js
+	-- ...
+
+-- /assets/js/templates/
+	-- panic.js
+	-- ...</code></pre><p id="12cb69dd-3ae2-4822-be73-e74d1086ed73" class="">Alle utility-Funktionen – beispielsweise auch die, die in der <code>index.js</code> aufgerufen werden – befinden sich in der Datei <code>/assets/js/shared/werkschau-util.js</code>.</p><p id="d64fe563-2d66-46d1-ada5-9687a1c87d55" class="">Wie bereits im Abschnitt <strong>CSS - Anmerkung</strong> geschildert, gibt es auch für JavaScript zusätzlich Dateien, die Template- und Block-spezifisch geladen werden. Diese befinden sich in den entsprechenden Verzeichnissen: <code>/assets/js/blocks</code> und <code>/assets/js/templates</code>.</p><h3 id="acdae898-db39-4baf-8abd-79b6c4f3cb49" class="">3D-Scans</h3><p id="365cf505-0877-4c6a-a1c6-8d60c2a532ac" class="">Eine Anforderung der diesjährigen Werkschau-Webseite war die Darstellung von 3D-Scans der Studenten.</p><p id="b8219a87-ca1d-4adc-ae99-c841904b5432" class="">Weil die Realisierung dieser Anforderung eine ganze Menge Abhängigkeiten mit sich brachte, habe ich eine extra JavaScript-Datei dafür angelegt: <code>/assets/js/shared/3d-scan.js</code>.</p><p id="58e266b8-cefb-463e-b431-f7cb9b07ca29" class="">In dieser Datei finden folgende Prozesse statt</p><ol id="90e3a926-7bd5-4c19-b343-a4e88ecffec5" class="numbered-list" start="1"><li>Loading-Spinner aktivieren</li></ol><ol id="2988c482-8902-4c2c-b31a-14081705e97c" class="numbered-list" start="2"><li>Internetverbindung auf Art und Geschwindigkeit überprüfen</li></ol><ol id="ab3ff3ae-3bae-4925-bf53-953fcd671637" class="numbered-list" start="3"><li>Wenn Internetverbindung gut genug → Scan laden; <p id="4d14aff4-dfca-4fca-be4c-208f01488d53" class="">Ansonsten → Fallback-Foto laden und Loading-Spinner deaktivieren</p></li></ol><ol id="5779aca2-8b42-4cb1-9954-cce4fba7a46a" class="numbered-list" start="4"><li>Wenn Scan heruntergeladen ist → <code>.zip</code> entpacken</li></ol><ol id="c54be0d7-d8c5-40dd-ab7f-917ba76deccf" class="numbered-list" start="5"><li>Three.js-Textur auf Basis der Schriftfarbe generieren</li></ol><ol id="6d0cace6-4e98-4830-85fc-0d9f286371ba" class="numbered-list" start="6"><li>Scan-Datei (<code>.obj</code>) an t<a href="http://threejs.org/">hree.js</a> <a href="https://threejs.org/examples/?q=obj#webgl_loader_obj">OBJLoader</a> übergeben</li></ol><ol id="d7e00cfb-c422-4795-8305-452a4d41e852" class="numbered-list" start="7"><li>Scan rendern lassen und Loading-Spinner deaktivieren</li></ol><p id="9f31777c-960c-48bb-8eab-14d60b103dfa" class="">Zu Punkt 4: Wenn der Scan geladen werden soll, wird eine <code>.zip</code>-Datei von diesem angefordert um die versendete Datenmenge geringstmöglich zu halten. Wenn diese <code>.zip</code>-Datei heruntergeladen wurde, wird sie auf dem Gerät des Benutzers mithilfe von <a href="https://stuk.github.io/jszip/">jszip</a> entpackt.</p><p id="ab523de2-af67-4f2c-a11d-000fc4630348" class="">Für diesen Prozess ist es unabdingbar, dass der Name der <code>.obj</code>-Datei in der <code>.zip</code>-Datei bekannt ist. Nur so kann auf den Scan zugegriffen werden. Zur Vereinfachung habe ich die Dateien daher identisch benannt. Beispiel:</p><pre id="5e20520b-b544-49e6-b48e-0a4bf385180a" class="code"><code>max-mustermann.obj     // Name der .obj-Datei
+max-mustermann.obj.zip // Name der .zip-Datei</code></pre><h3 id="90a3fff5-bef3-47bc-ba82-05777bbc72e4" class="">Vendor JavaScript</h3><p id="57e7db4c-2410-4ab4-9dde-737a77ffa51d" class="">CSS von Dritten befindet sich im Verzeichnis <code>/assets/vendor</code>.</p><p id="246f7ed2-aa1f-4c90-92a2-d645d7690835" class=""><code>jQuery 3.4.1</code> ist implementiert und wird auf jeder Seite als erstes Script geladen – kann also in dem Projekt verwendet werden.</p><p id="c3bf7445-c05e-4e17-8ea3-26c7f4928b6d" class="">Um Elemente &quot;dragbar&quot; zu machen habe ich <a href="https://github.com/catc/displace">displace.js</a> eingebunden. Das wird zum Beispiel in der <code>index.js</code> für alle Elemente mit der Klasse <code>draggable</code> initialisiert.</p><p id="96356580-e47c-498e-9aeb-be8c9216a13f" class="">Für das Karussell, dass beispielsweise in dem Speaker-Bereich auf der Startseite verwendet wird, wurde <a href="https://owlcarousel2.github.io/OwlCarousel2/">Owl Carousel</a> implementiert.</p><p id="4fb7352b-c978-4528-a847-2d923b05d785" class="">
+</p></div></article></body></html>

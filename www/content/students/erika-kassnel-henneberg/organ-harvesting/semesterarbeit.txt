@@ -1,0 +1,36 @@
+Title: Organ Harvesting
+
+----
+
+Slug: organ-harvesting
+
+----
+
+Student: Erika Kassnel-Henneberg
+
+----
+
+Heroimage:
+
+- >
+  ekh_2001551_organharvesting_v2.00_01_22_02.standbild001.jpg
+
+----
+
+Headline: Organ Harvesting (2018)
+
+----
+
+Description: Kurzfilm. Semesterarbeit im Fach Raum & Orientierung II
+
+----
+
+Template: semesterarbeit
+
+----
+
+Studentid: students/erika-kassnel-henneberg
+
+----
+
+CourseOfStudy: Interaktive Medien IA - BA

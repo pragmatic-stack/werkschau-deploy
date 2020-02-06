@@ -1,0 +1,35 @@
+Title: Hänsel
+
+----
+
+Slug: hansel
+
+----
+
+Student: Erika Kassnel-Henneberg
+
+----
+
+Heroimage:
+
+- still_haensel_04.jpg
+
+----
+
+Headline: Hänsel
+
+----
+
+Description: Kurzfilm. Semesterarbeit im Rahmen des Praktikums im AV-Studio
+
+----
+
+Template: semesterarbeit
+
+----
+
+Studentid: students/erika-kassnel-henneberg
+
+----
+
+CourseOfStudy: Interaktive Medien IA - BA

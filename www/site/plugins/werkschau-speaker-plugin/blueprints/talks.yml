@@ -1,0 +1,7 @@
+title: Talks Page
+
+sections:
+  drafts:
+    extends: sections/talks-drafts
+  unlisted:
+    extends: sections/talks-unlisted

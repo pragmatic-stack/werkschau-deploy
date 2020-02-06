@@ -1,0 +1,93 @@
+title: Sections Page (konfigurierbare Seite)
+
+fields:
+  displayTitle:
+    width: 1/2
+    label: Seitentitel anzeigen?
+    type: toggle
+    default: true
+    help: Zeigt den Seitentitel an
+
+  pageStructure:
+    label: Sektion Struktur
+    type: structure
+    columns:
+      sectionTitle:
+        width: 1/6
+      displayTitle:
+        width: 1/6
+      asFullWidthSection:
+        width: 1/6
+      withBackground:
+        width: 1/6
+      sectionBlocks:
+        width: 1/6
+    fields:
+      sectionTitle:
+        type: text
+        required: true
+        label: Titel der Sektion
+        help: Wird über den Blocks angezeigt wenn der Titel aktiviert ist.
+      displayTitle:
+        type: toggle
+        width: 1/4
+        label: Titel der Sektion anzeigen?
+        help: Wenn ja, wird über den Blocks der Titel angezeigt.
+      asFullWidthSection:
+        type: toggle
+        width: 1/4
+        default: true
+        label: Sektion in voller Seitenbreite?
+        help: Wenn ja, wird die Sektion in einen Container geschachtelt.
+      withBackground:
+        type: toggle
+        width: 1/4
+        default: false
+        label: Sektion Hintergrund anzeigen?
+        help: Die Sektion wird in voller Breite farbig hinterlegt.
+      separator:
+        type: line
+      paddingTop:
+        type: number
+        after: px
+        width: 1/4
+        default: 50
+        label: Padding-Top
+        help: Innerer Abstand nach oben.
+      paddingBottom:
+        type: number
+        after: px
+        width: 1/4
+        default: 50
+        label: Padding-Bottom
+        help: Innerer Abstand nach unten.
+
+      sectionBlocks:
+        label: Blocks in der Sektion
+        required: true
+        type: structure
+        fields:
+          blocks:
+            label: Block
+            type: pages
+            required: true
+            multiple: false
+            info: "{{ page.intendedTemplate }}"
+            size: tiny
+            options: query
+            query: site.find('blocks').children.unlisted
+          blockWidth:
+            label: Breite
+            type: select
+            required: true
+            options:
+              full: 1/1
+              half: 1/2
+              third: 1/3
+              quarter: 1/4
+          displayTitle:
+            type: toggle
+            label: Titel anzeigen?
+          displayHeadline:
+            type: toggle
+            label: Überschrift anzeigen?

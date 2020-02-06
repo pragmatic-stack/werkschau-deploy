@@ -1,0 +1,7 @@
+type: pagesdisplay
+headline: Teamarbeiten
+query: site.find('teamworks').children.filterBy('students', page.uri, ',')
+info: "{{ page.date.toDate('d.m.Y') }}"
+template: teamwork
+empty: Bisher keine Studienarbeiten eingetragen
+sortBy: date desc

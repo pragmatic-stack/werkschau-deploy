@@ -1,0 +1,35 @@
+Title: Zeitmaschine
+
+----
+
+Slug: zeitmaschine
+
+----
+
+Student: Anna-Lena Schlamp
+
+----
+
+Heroimage:
+
+- 683-1024.jpg
+
+----
+
+Headline: Zeitmaschine
+
+----
+
+Description: Das Projekt ZEITMASCHINE untersucht den Übergang von Chaos zur Ordnung, sucht Algorithmen für Rhythmen, spielt mit Takt, Metrum und Polyrhythmus.
+
+----
+
+Template: semesterarbeit
+
+----
+
+Studentid: students/anna-lena-schlamp
+
+----
+
+CourseOfStudy: Interaktive Medien IA - BA

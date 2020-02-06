@@ -1,0 +1,38 @@
+Title: Tropical Express
+
+----
+
+Slug: tropical-express
+
+----
+
+Student: Gabriel von Münchow
+
+----
+
+Heroimage:
+
+- tropical-express.jpg
+
+----
+
+Headline: Tropical Express
+
+----
+
+Description:
+
+Allein auf einer schönen tropischen Insel kehrt bei Ron langsam Langeweile ein, bis plötzlich aus heiterem Himmel ein Radio vom Himmel fällt...
+Ein animierter Kurzfilm über Sehnsucht.
+
+----
+
+Template: semesterarbeit
+
+----
+
+Studentid: students/gabriel-von-munchow
+
+----
+
+CourseOfStudy: Interaktive Mediensysteme IMS - MA

@@ -1,0 +1,90 @@
+title: Speaker
+status:
+  draft: true
+  unlisted: true
+
+addFields:
+  name:
+    type: text
+    label: Vorname
+    required: true
+  lastName:
+    type: text
+    label: Nachname
+    required: true
+
+columns:
+  - width: 1/4
+    sections:
+      image:
+        type: fields
+        fields:
+          profileImg:
+            type: files
+            multiple: false
+            label: Profilbild
+            layout: cards
+            size: tiny
+            width: 1/3
+            image:
+              cover: true
+            uploads:
+              template: image
+      works:
+        headline: Arbeiten
+        type: pages
+        template: speaker-work
+      files:
+        headline: Dateien
+        type: files
+        template: image
+
+  - width: 3/4
+    sections:
+      data:
+        type: fields
+        fields:
+          academicGrade:
+            type: text
+            label: Titel
+            help: Akademischer Titel des Speakers
+          name:
+            type: text
+            width: 1/2
+            label: Vorname
+            required: true
+          lastName:
+            type: text
+            width: 1/2
+            label: Nachname
+            required: true
+          biography:
+            type: textarea
+            width: 1/2
+            label: Biografie
+            required: true
+            maxLength: 500
+          biographyExcerpt:
+            type: textarea
+            width: 1/2
+            label: Biografie Auszug
+            max-length: 200
+            help: Ohne dieses Feld wird die Biografie mit den ersten 200 Zeichen angezeigt
+          separator:
+            type: line
+          instagramurl:
+            type: url
+            label: Instagram Url
+            width: 1/2
+          twitterurl:
+            type: url
+            label: Twitter Url
+            width: 1/2
+          websiteUrl:
+            type: url
+            label: Website Url
+            width: 1/2
+          behanceUrl:
+            type: url
+            label: Behance Url
+            width: 1/2

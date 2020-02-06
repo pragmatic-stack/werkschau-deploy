@@ -1,0 +1,36 @@
+Title: Mein Heroblock
+
+----
+
+Slug: mein-heroblock
+
+----
+
+Herotype: contentSlider
+
+----
+
+Staticimage: 
+
+----
+
+Sliderimages:
+
+- josefinequadrat.jpg
+
+----
+
+Selectedcontent:
+
+- >
+  students/alexander-staudt/chemnitz-links-mitte-rechts
+- >
+  students/felix-groitzsch/scolecite-konzeption-und-umsetzung-einer-experimentellen-musikvisualisierung
+- >
+  students/jin-liu/balloonman-an-animated-short
+- >
+  students/josefine-britz/v-eine-konzeptionelle-und-textliche-auseinandersetzung-mit-dem-weiblichen-geschlecht
+
+----
+
+Template: block-hero

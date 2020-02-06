@@ -1,0 +1,568 @@
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=utf-8"/><title>Datenfelder für Seiten und Plugins</title><style>
+/* webkit printing magic: print all background colors */
+html {
+	-webkit-print-color-adjust: exact;
+}
+* {
+	box-sizing: border-box;
+	-webkit-print-color-adjust: exact;
+}
+
+html,
+body {
+	margin: 0;
+	padding: 0;
+}
+@media only screen {
+	body {
+		margin: 2em auto;
+		max-width: 900px;
+		color: rgb(55, 53, 47);
+	}
+}
+
+body {
+	line-height: 1.5;
+	white-space: pre-wrap;
+}
+
+a,
+a.visited {
+	color: inherit;
+	text-decoration: underline;
+}
+
+.pdf-relative-link-path {
+	font-size: 80%;
+	color: #444;
+}
+
+h1,
+h2,
+h3 {
+	letter-spacing: -0.01em;
+	line-height: 1.2;
+	font-weight: 600;
+	margin-bottom: 0;
+}
+
+.page-title {
+	font-size: 2.5rem;
+	font-weight: 700;
+	margin-top: 0;
+	margin-bottom: 0.75em;
+}
+
+h1 {
+	font-size: 1.875rem;
+	margin-top: 1.875rem;
+}
+
+h2 {
+	font-size: 1.5rem;
+	margin-top: 1.5rem;
+}
+
+h3 {
+	font-size: 1.25rem;
+	margin-top: 1.25rem;
+}
+
+.source {
+	border: 1px solid #ddd;
+	border-radius: 3px;
+	padding: 1.5em;
+	word-break: break-all;
+}
+
+.callout {
+	border-radius: 3px;
+	padding: 1rem;
+}
+
+figure {
+	margin: 1.25em 0;
+	page-break-inside: avoid;
+}
+
+figcaption {
+	opacity: 0.5;
+	font-size: 85%;
+	margin-top: 0.5em;
+}
+
+mark {
+	background-color: transparent;
+}
+
+.indented {
+	padding-left: 1.5em;
+}
+
+hr {
+	background: transparent;
+	display: block;
+	width: 100%;
+	height: 1px;
+	visibility: visible;
+	border: none;
+	border-bottom: 1px solid rgba(55, 53, 47, 0.09);
+}
+
+img {
+	max-width: 100%;
+}
+
+@media only print {
+	img {
+		max-height: 100vh;
+		object-fit: contain;
+	}
+}
+
+@page {
+	margin: 1in;
+}
+
+.collection-content {
+	font-size: 0.875rem;
+}
+
+.column-list {
+	display: flex;
+	justify-content: space-between;
+}
+
+.column {
+	padding: 0 1em;
+}
+
+.column:first-child {
+	padding-left: 0;
+}
+
+.column:last-child {
+	padding-right: 0;
+}
+
+.table_of_contents-item {
+	display: block;
+	font-size: 0.875rem;
+	line-height: 1.3;
+	padding: 0.125rem;
+}
+
+.table_of_contents-indent-1 {
+	margin-left: 1.5rem;
+}
+
+.table_of_contents-indent-2 {
+	margin-left: 3rem;
+}
+
+.table_of_contents-indent-3 {
+	margin-left: 4.5rem;
+}
+
+.table_of_contents-link {
+	text-decoration: none;
+	opacity: 0.7;
+	border-bottom: 1px solid rgba(55, 53, 47, 0.18);
+}
+
+table,
+th,
+td {
+	border: 1px solid rgba(55, 53, 47, 0.09);
+	border-collapse: collapse;
+}
+
+table {
+	border-left: none;
+	border-right: none;
+}
+
+th,
+td {
+	font-weight: normal;
+	padding: 0.25em 0.5em;
+	line-height: 1.5;
+	min-height: 1.5em;
+	text-align: left;
+}
+
+th {
+	color: rgba(55, 53, 47, 0.6);
+}
+
+ol,
+ul {
+	margin: 0;
+	margin-block-start: 0.6em;
+	margin-block-end: 0.6em;
+}
+
+li > ol:first-child,
+li > ul:first-child {
+	margin-block-start: 0.6em;
+}
+
+ul > li {
+	list-style: disc;
+}
+
+ul.to-do-list {
+	text-indent: -1.7em;
+}
+
+ul.to-do-list > li {
+	list-style: none;
+}
+
+.to-do-children-checked {
+	text-decoration: line-through;
+	opacity: 0.375;
+}
+
+ul.toggle > li {
+	list-style: none;
+}
+
+ul {
+	padding-inline-start: 1.7em;
+}
+
+ul > li {
+	padding-left: 0.1em;
+}
+
+ol {
+	padding-inline-start: 1.6em;
+}
+
+ol > li {
+	padding-left: 0.2em;
+}
+
+.mono ol {
+	padding-inline-start: 2em;
+}
+
+.mono ol > li {
+	text-indent: -0.4em;
+}
+
+.toggle {
+	padding-inline-start: 0em;
+	list-style-type: none;
+}
+
+/* Indent toggle children */
+.toggle > li > details {
+	padding-left: 1.7em;
+}
+
+.toggle > li > details > summary {
+	margin-left: -1.1em;
+}
+
+.selected-value {
+	display: inline-block;
+	padding: 0 0.5em;
+	background: rgba(206, 205, 202, 0.5);
+	border-radius: 3px;
+	margin-right: 0.5em;
+	margin-top: 0.3em;
+	margin-bottom: 0.3em;
+	white-space: nowrap;
+}
+
+.collection-title {
+	display: inline-block;
+	margin-right: 1em;
+}
+
+time {
+	opacity: 0.5;
+}
+
+.icon {
+	display: inline-block;
+	max-width: 1.2em;
+	max-height: 1.2em;
+	text-decoration: none;
+	vertical-align: text-bottom;
+	margin-right: 0.5em;
+}
+
+img.icon {
+	border-radius: 3px;
+}
+
+.user-icon {
+	width: 1.5em;
+	height: 1.5em;
+	border-radius: 100%;
+	margin-right: 0.5rem;
+}
+
+.user-icon-inner {
+	font-size: 0.8em;
+}
+
+.text-icon {
+	border: 1px solid #000;
+	text-align: center;
+}
+
+.page-cover-image {
+	display: block;
+	object-fit: cover;
+	width: 100%;
+	height: 30vh;
+}
+
+.page-header-icon {
+	font-size: 3rem;
+	margin-bottom: 1rem;
+}
+
+.page-header-icon-with-cover {
+	margin-top: -0.72em;
+	margin-left: 0.07em;
+}
+
+.page-header-icon img {
+	border-radius: 3px;
+}
+
+.link-to-page {
+	margin: 1em 0;
+	padding: 0;
+	border: none;
+	font-weight: 500;
+}
+
+p > .user {
+	opacity: 0.5;
+}
+
+td > .user,
+td > time {
+	white-space: nowrap;
+}
+
+input[type="checkbox"] {
+	transform: scale(1.5);
+	margin-right: 0.6em;
+	vertical-align: middle;
+}
+
+p {
+	margin-top: 0.5em;
+	margin-bottom: 0.5em;
+}
+
+.image {
+	border: none;
+	margin: 1.5em 0;
+	padding: 0;
+	border-radius: 0;
+	text-align: center;
+}
+
+.code,
+code {
+	background: rgba(135, 131, 120, 0.15);
+	border-radius: 3px;
+	padding: 0.2em 0.4em;
+	border-radius: 3px;
+	font-size: 85%;
+	tab-size: 2;
+}
+
+code {
+	color: #eb5757;
+}
+
+.code {
+	padding: 1.5em 1em;
+}
+
+.code > code {
+	background: none;
+	padding: 0;
+	font-size: 100%;
+	color: inherit;
+}
+
+blockquote {
+	font-size: 1.25em;
+	margin: 1em 0;
+	padding-left: 1em;
+	border-left: 3px solid rgb(55, 53, 47);
+}
+
+.bookmark-href {
+	font-size: 0.75em;
+	opacity: 0.5;
+}
+
+.sans { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol"; }
+.code { font-family: 'SFMono-Regular', Consolas, 'Liberation Mono', Menlo, Courier, monospace; }
+.serif { font-family: Lyon-Text, Georgia, KaiTi, STKaiTi, '华文楷体', KaiTi_GB2312, '楷体_GB2312', serif; }
+.mono { font-family: Nitti, 'Microsoft YaHei', '微软雅黑', monospace; }
+.pdf .sans { font-family: Inter, -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol", 'Twemoji', 'Noto Color Emoji', 'Noto Sans CJK SC', 'Noto Sans CJK KR'; }
+
+.pdf .code { font-family: Source Code Pro, 'SFMono-Regular', Consolas, 'Liberation Mono', Menlo, Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK SC', 'Noto Sans Mono CJK KR'; }
+
+.pdf .serif { font-family: PT Serif, Lyon-Text, Georgia, KaiTi, STKaiTi, '华文楷体', KaiTi_GB2312, '楷体_GB2312', serif, 'Twemoji', 'Noto Color Emoji', 'Noto Sans CJK SC', 'Noto Sans CJK KR'; }
+
+.pdf .mono { font-family: PT Mono, Nitti, 'Microsoft YaHei', '微软雅黑', monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK SC', 'Noto Sans Mono CJK KR'; }
+
+.highlight-default {
+}
+.highlight-gray {
+	color: rgb(155,154,151);
+}
+.highlight-brown {
+	color: rgb(100,71,58);
+}
+.highlight-orange {
+	color: rgb(217,115,13);
+}
+.highlight-yellow {
+	color: rgb(223,171,1);
+}
+.highlight-teal {
+	color: rgb(15,123,108);
+}
+.highlight-blue {
+	color: rgb(11,110,153);
+}
+.highlight-purple {
+	color: rgb(105,64,165);
+}
+.highlight-pink {
+	color: rgb(173,26,114);
+}
+.highlight-red {
+	color: rgb(224,62,62);
+}
+.highlight-gray_background {
+	background: rgb(235,236,237);
+}
+.highlight-brown_background {
+	background: rgb(233,229,227);
+}
+.highlight-orange_background {
+	background: rgb(250,235,221);
+}
+.highlight-yellow_background {
+	background: rgb(251,243,219);
+}
+.highlight-teal_background {
+	background: rgb(221,237,234);
+}
+.highlight-blue_background {
+	background: rgb(221,235,241);
+}
+.highlight-purple_background {
+	background: rgb(234,228,242);
+}
+.highlight-pink_background {
+	background: rgb(244,223,235);
+}
+.highlight-red_background {
+	background: rgb(251,228,228);
+}
+.block-color-default {
+	color: inherit;
+	fill: inherit;
+}
+.block-color-gray {
+	color: rgba(55, 53, 47, 0.6);
+	fill: rgba(55, 53, 47, 0.6);
+}
+.block-color-brown {
+	color: rgb(100,71,58);
+	fill: rgb(100,71,58);
+}
+.block-color-orange {
+	color: rgb(217,115,13);
+	fill: rgb(217,115,13);
+}
+.block-color-yellow {
+	color: rgb(223,171,1);
+	fill: rgb(223,171,1);
+}
+.block-color-teal {
+	color: rgb(15,123,108);
+	fill: rgb(15,123,108);
+}
+.block-color-blue {
+	color: rgb(11,110,153);
+	fill: rgb(11,110,153);
+}
+.block-color-purple {
+	color: rgb(105,64,165);
+	fill: rgb(105,64,165);
+}
+.block-color-pink {
+	color: rgb(173,26,114);
+	fill: rgb(173,26,114);
+}
+.block-color-red {
+	color: rgb(224,62,62);
+	fill: rgb(224,62,62);
+}
+.block-color-gray_background {
+	background: rgb(235,236,237);
+}
+.block-color-brown_background {
+	background: rgb(233,229,227);
+}
+.block-color-orange_background {
+	background: rgb(250,235,221);
+}
+.block-color-yellow_background {
+	background: rgb(251,243,219);
+}
+.block-color-teal_background {
+	background: rgb(221,237,234);
+}
+.block-color-blue_background {
+	background: rgb(221,235,241);
+}
+.block-color-purple_background {
+	background: rgb(234,228,242);
+}
+.block-color-pink_background {
+	background: rgb(244,223,235);
+}
+.block-color-red_background {
+	background: rgb(251,228,228);
+}
+
+.checkbox {
+	display: inline-flex;
+	vertical-align: text-bottom;
+	width: 16;
+	height: 16;
+	background-size: 16px;
+	margin-left: 2px;
+	margin-right: 5px;
+}
+
+.checkbox-on {
+	background-image: url("data:image/svg+xml;charset=UTF-8,%3Csvg%20width%3D%2216%22%20height%3D%2216%22%20viewBox%3D%220%200%2016%2016%22%20fill%3D%22none%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%0A%3Crect%20width%3D%2216%22%20height%3D%2216%22%20fill%3D%22%2358A9D7%22%2F%3E%0A%3Cpath%20d%3D%22M6.71429%2012.2852L14%204.9995L12.7143%203.71436L6.71429%209.71378L3.28571%206.2831L2%207.57092L6.71429%2012.2852Z%22%20fill%3D%22white%22%2F%3E%0A%3C%2Fsvg%3E");
+}
+
+.checkbox-off {
+	background-image: url("data:image/svg+xml;charset=UTF-8,%3Csvg%20width%3D%2216%22%20height%3D%2216%22%20viewBox%3D%220%200%2016%2016%22%20fill%3D%22none%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%0A%3Crect%20x%3D%220.75%22%20y%3D%220.75%22%20width%3D%2214.5%22%20height%3D%2214.5%22%20fill%3D%22white%22%20stroke%3D%22%2336352F%22%20stroke-width%3D%221.5%22%2F%3E%0A%3C%2Fsvg%3E");
+}
+	
+</style></head><body><article id="55514cde-45ca-4a8d-aa42-1f676eaac13f" class="page sans"><header><h1 class="page-title">Datenfelder für Seiten und Plugins</h1></header><div class="page-body"><p id="f7ce9d50-a5cd-4e25-8b3a-34dc8d8a41e2" class="">
+</p><nav id="03b9ad69-0114-4b43-beb7-fde3cf618dae" class="block-color-gray table_of_contents"><div class="table_of_contents-item table_of_contents-indent-0"><a class="table_of_contents-link" href="#ee535c43-f526-4bea-a629-c9718f1e0ed8">Site</a></div><div class="table_of_contents-item table_of_contents-indent-0"><a class="table_of_contents-link" href="#690bd7e9-fb51-4807-9826-be732a1a8e7c">Plugin Studenten</a></div><div class="table_of_contents-item table_of_contents-indent-0"><a class="table_of_contents-link" href="#a7dffae2-452e-42a1-8d02-578d715c721f">Plugin Speakers &amp; Talks</a></div><div class="table_of_contents-item table_of_contents-indent-0"><a class="table_of_contents-link" href="#f4740ac2-bcd2-4546-8062-0bd224d2d44f">Plugin Infrastructure</a></div><div class="table_of_contents-item table_of_contents-indent-0"><a class="table_of_contents-link" href="#cf38f5ec-53bf-4d8b-97ff-6140314e86af">Plugin Blocks</a></div></nav><h1 id="ee535c43-f526-4bea-a629-c9718f1e0ed8" class="">Site</h1><hr id="fb52b651-529a-4b4d-aa1b-60d2a67dc723"/><p id="018b9800-599b-4a64-8bb4-2f183d2efcea" class="">Datenfelder in der Site.txt</p><div id="a76531c3-fd6f-4f16-871f-33d3453a84ec" class="collection-content"><h4 class="collection-title">Site</h4><table class="collection-content"><thead><tr><th>Property</th><th>Type</th><th>required</th><th>disabled</th><th>ToDo</th></tr></thead><tbody><tr id="19201478-e3d2-4dc3-a35a-e97eb8a26ce1"><td class="cell-title"><a href="Datenfelder%20f%20r%20Seiten%20und%20Plugins/Site/faculty.html">faculty</a></td><td class="cell-U_5*">text</td><td class="cell--_v|"><div class="checkbox checkbox-on"></div></td><td class="cell-:vPN"><div class="checkbox checkbox-off"></div></td><td class="cell-&lt;Z3;"></td></tr><tr id="f9e13a53-ac82-4494-9ded-08cd1424d81a"><td class="cell-title"><a href="Datenfelder%20f%20r%20Seiten%20und%20Plugins/Site/fachultyWebsite.html">fachultyWebsite</a></td><td class="cell-U_5*">url</td><td class="cell--_v|"><div class="checkbox checkbox-on"></div></td><td class="cell-:vPN"><div class="checkbox checkbox-off"></div></td><td class="cell-&lt;Z3;"></td></tr><tr id="cda22366-570e-422c-ad90-1def1e887fc7"><td class="cell-title"><a href="Datenfelder%20f%20r%20Seiten%20und%20Plugins/Site/name.html">name</a></td><td class="cell-U_5*">text</td><td class="cell--_v|"><div class="checkbox checkbox-on"></div></td><td class="cell-:vPN"><div class="checkbox checkbox-off"></div></td><td class="cell-&lt;Z3;"></td></tr><tr id="1261202c-63a9-4d06-addd-64c78f1d5f23"><td class="cell-title"><a href="Datenfelder%20f%20r%20Seiten%20und%20Plugins/Site/organisationWebsite.html">organisationWebsite</a></td><td class="cell-U_5*">url</td><td class="cell--_v|"><div class="checkbox checkbox-on"></div></td><td class="cell-:vPN"><div class="checkbox checkbox-off"></div></td><td class="cell-&lt;Z3;"></td></tr><tr id="3b641c5c-8316-4cfa-b4be-a04354f551ad"><td class="cell-title"><a href="Datenfelder%20f%20r%20Seiten%20und%20Plugins/Site/street.html">street</a></td><td class="cell-U_5*">text</td><td class="cell--_v|"><div class="checkbox checkbox-on"></div></td><td class="cell-:vPN"><div class="checkbox checkbox-off"></div></td><td class="cell-&lt;Z3;"></td></tr><tr id="5d263a33-703e-4b3f-a680-ab47fbd3172f"><td class="cell-title"><a href="Datenfelder%20f%20r%20Seiten%20und%20Plugins/Site/zip.html">zip</a></td><td class="cell-U_5*">number</td><td class="cell--_v|"><div class="checkbox checkbox-on"></div></td><td class="cell-:vPN"><div class="checkbox checkbox-off"></div></td><td class="cell-&lt;Z3;"></td></tr><tr id="8fb8f3da-e8ef-4dac-9dca-e07a96e63cde"><td class="cell-title"><a href="Datenfelder%20f%20r%20Seiten%20und%20Plugins/Site/city.html">city</a></td><td class="cell-U_5*">text</td><td class="cell--_v|"><div class="checkbox checkbox-on"></div></td><td class="cell-:vPN"><div class="checkbox checkbox-off"></div></td><td class="cell-&lt;Z3;"></td></tr><tr id="c220c091-fd24-4937-8aaf-0437359aca25"><td class="cell-title"><a href="Datenfelder%20f%20r%20Seiten%20und%20Plugins/Site/countryAbbrevation.html">countryAbbrevation</a></td><td class="cell-U_5*">text</td><td class="cell--_v|"><div class="checkbox checkbox-on"></div></td><td class="cell-:vPN"><div class="checkbox checkbox-off"></div></td><td class="cell-&lt;Z3;"></td></tr><tr id="ca56e63c-4029-46ac-87b3-d1a9107d8e32"><td class="cell-title"><a href="Datenfelder%20f%20r%20Seiten%20und%20Plugins/Site/cityAbbrevation.html">cityAbbrevation</a></td><td class="cell-U_5*">text</td><td class="cell--_v|"><div class="checkbox checkbox-on"></div></td><td class="cell-:vPN"><div class="checkbox checkbox-off"></div></td><td class="cell-&lt;Z3;"></td></tr><tr id="7acf90d1-b57f-4858-be63-0486be4d66e4"><td class="cell-title"><a href="Datenfelder%20f%20r%20Seiten%20und%20Plugins/Site/googleMapsLink.html">googleMapsLink</a></td><td class="cell-U_5*">text</td><td class="cell--_v|"><div class="checkbox checkbox-on"></div></td><td class="cell-:vPN"><div class="checkbox checkbox-off"></div></td><td class="cell-&lt;Z3;"></td></tr><tr id="c93854d8-7b51-45d6-a189-bb6dc048c65b"><td class="cell-title"><a href="Datenfelder%20f%20r%20Seiten%20und%20Plugins/Site/facebook.html">facebook</a></td><td class="cell-U_5*">url</td><td class="cell--_v|"><div class="checkbox checkbox-off"></div></td><td class="cell-:vPN"><div class="checkbox checkbox-off"></div></td><td class="cell-&lt;Z3;"></td></tr><tr id="cde4a0d7-2bed-4b02-a362-14e59c60c9fa"><td class="cell-title"><a href="Datenfelder%20f%20r%20Seiten%20und%20Plugins/Site/instagram.html">instagram</a></td><td class="cell-U_5*">url</td><td class="cell--_v|"><div class="checkbox checkbox-off"></div></td><td class="cell-:vPN"><div class="checkbox checkbox-off"></div></td><td class="cell-&lt;Z3;"></td></tr><tr id="631a47ae-9479-4fbe-ac78-63862071aff6"><td class="cell-title"><a href="Datenfelder%20f%20r%20Seiten%20und%20Plugins/Site/twitter.html">twitter</a></td><td class="cell-U_5*">url</td><td class="cell--_v|"><div class="checkbox checkbox-off"></div></td><td class="cell-:vPN"><div class="checkbox checkbox-off"></div></td><td class="cell-&lt;Z3;"></td></tr><tr id="652633ab-04be-4a66-8155-8d2dd53369e0"><td class="cell-title"><a href="Datenfelder%20f%20r%20Seiten%20und%20Plugins/Site/dozenten.html">dozenten</a></td><td class="cell-U_5*">structure</td><td class="cell--_v|"><div class="checkbox checkbox-off"></div></td><td class="cell-:vPN"><div class="checkbox checkbox-off"></div></td><td class="cell-&lt;Z3;"></td></tr><tr id="bc474fc1-c47d-47d9-ba13-cc92340a9653"><td class="cell-title"><a href="Datenfelder%20f%20r%20Seiten%20und%20Plugins/Site/studiengaenge.html">studiengaenge</a></td><td class="cell-U_5*">structure</td><td class="cell--_v|"><div class="checkbox checkbox-off"></div></td><td class="cell-:vPN"><div class="checkbox checkbox-off"></div></td><td class="cell-&lt;Z3;"></td></tr><tr id="1e81c928-1113-4119-a6d1-c871f3775f90"><td class="cell-title"><a href="Datenfelder%20f%20r%20Seiten%20und%20Plugins/Site/mapboxAccessToken.html">mapboxAccessToken</a></td><td class="cell-U_5*">text</td><td class="cell--_v|"><div class="checkbox checkbox-off"></div></td><td class="cell-:vPN"><div class="checkbox checkbox-off"></div></td><td class="cell-&lt;Z3;"></td></tr></tbody></table></div><h1 id="690bd7e9-fb51-4807-9826-be732a1a8e7c" class="">Plugin Studenten</h1><hr id="c2a74d19-54fe-4389-98d3-0c1325c04500"/><div id="a8f212c2-4a06-434b-80ce-7200c2e6a824" class="collection-content"><h4 class="collection-title">Student</h4><table class="collection-content"><thead><tr><th>Property</th><th>Tags</th><th>Files</th><th>type</th><th>required</th><th>ToDo</th></tr></thead><tbody><tr id="57fda7ea-cd3e-48cd-8d9d-23b8c567d718"><td class="cell-title"><a href="Datenfelder%20f%20r%20Seiten%20und%20Plugins/Student/firstName.html">firstName
+
+</a></td><td class="cell-m]p3"></td><td class="cell-ox&gt;W"></td><td class="cell-9knz">text</td><td class="cell-I;A|"><div class="checkbox checkbox-on"></div></td><td class="cell-01K("></td></tr><tr id="3be3d35d-476f-49ab-b5aa-bb6f6c2dcc44"><td class="cell-title"><a href="Datenfelder%20f%20r%20Seiten%20und%20Plugins/Student/lastName.html">lastName</a></td><td class="cell-m]p3"></td><td class="cell-ox&gt;W"></td><td class="cell-9knz">text</td><td class="cell-I;A|"><div class="checkbox checkbox-on"></div></td><td class="cell-01K("></td></tr><tr id="c5db383b-f57d-413a-b46c-a229458d6860"><td class="cell-title"><a href="Datenfelder%20f%20r%20Seiten%20und%20Plugins/Student/courseOfStudy.html">courseOfStudy</a></td><td class="cell-m]p3"></td><td class="cell-ox&gt;W"></td><td class="cell-9knz">multiselect</td><td class="cell-I;A|"><div class="checkbox checkbox-on"></div></td><td class="cell-01K("></td></tr><tr id="7386bd87-1a6f-4870-96e6-673a9484da99"><td class="cell-title"><a href="Datenfelder%20f%20r%20Seiten%20und%20Plugins/Student/works.html">works</a></td><td class="cell-m]p3"></td><td class="cell-ox&gt;W"></td><td class="cell-9knz">section / pages</td><td class="cell-I;A|"><div class="checkbox checkbox-off"></div></td><td class="cell-01K("></td></tr><tr id="f9104ff6-02b5-4939-bf54-6f456a609e8e"><td class="cell-title"><a href="Datenfelder%20f%20r%20Seiten%20und%20Plugins/Student/profileImage.html">profileImage</a></td><td class="cell-m]p3"></td><td class="cell-ox&gt;W"></td><td class="cell-9knz">imageName</td><td class="cell-I;A|"><div class="checkbox checkbox-off"></div></td><td class="cell-01K("></td></tr><tr id="1a324752-d811-4460-9584-68b7f9025e75"><td class="cell-title"><a href="Datenfelder%20f%20r%20Seiten%20und%20Plugins/Student/thesis.html">thesis</a></td><td class="cell-m]p3"></td><td class="cell-ox&gt;W"></td><td class="cell-9knz">page reference</td><td class="cell-I;A|"><div class="checkbox checkbox-on"></div></td><td class="cell-01K("></td></tr><tr id="ec552214-8f5d-4813-b54d-33580cccfc71"><td class="cell-title"><a href="Datenfelder%20f%20r%20Seiten%20und%20Plugins/Student/projectWorks.html">projectWorks</a></td><td class="cell-m]p3"></td><td class="cell-ox&gt;W"></td><td class="cell-9knz">pages reference</td><td class="cell-I;A|"><div class="checkbox checkbox-off"></div></td><td class="cell-01K("></td></tr><tr id="3cbef836-83e5-4500-8c8f-e3c2a5426c17"><td class="cell-title"><a href="Datenfelder%20f%20r%20Seiten%20und%20Plugins/Student/email.html">email</a></td><td class="cell-m]p3"></td><td class="cell-ox&gt;W"></td><td class="cell-9knz">email</td><td class="cell-I;A|"><div class="checkbox checkbox-off"></div></td><td class="cell-01K("></td></tr><tr id="8c090d05-9b61-4b94-b75e-cfe08460ae85"><td class="cell-title"><a href="Datenfelder%20f%20r%20Seiten%20und%20Plugins/Student/website.html">website</a></td><td class="cell-m]p3"></td><td class="cell-ox&gt;W"></td><td class="cell-9knz">url</td><td class="cell-I;A|"><div class="checkbox checkbox-off"></div></td><td class="cell-01K("></td></tr><tr id="5d9ecef8-7672-4ffb-a00e-e23744002bf6"><td class="cell-title"><a href="Datenfelder%20f%20r%20Seiten%20und%20Plugins/Student/instagram.html">instagram</a></td><td class="cell-m]p3"></td><td class="cell-ox&gt;W"></td><td class="cell-9knz">url</td><td class="cell-I;A|"><div class="checkbox checkbox-off"></div></td><td class="cell-01K("></td></tr><tr id="2b74d4f3-02ad-40bb-8176-0fe770d4facd"><td class="cell-title"><a href="Datenfelder%20f%20r%20Seiten%20und%20Plugins/Student/behance.html">behance</a></td><td class="cell-m]p3"></td><td class="cell-ox&gt;W"></td><td class="cell-9knz">url</td><td class="cell-I;A|"><div class="checkbox checkbox-off"></div></td><td class="cell-01K("></td></tr><tr id="4405a2b6-5af3-4927-b27d-8971d067c08a"><td class="cell-title"><a href="Datenfelder%20f%20r%20Seiten%20und%20Plugins/Student/twitter.html">twitter</a></td><td class="cell-m]p3"></td><td class="cell-ox&gt;W"></td><td class="cell-9knz">url</td><td class="cell-I;A|"><div class="checkbox checkbox-off"></div></td><td class="cell-01K("></td></tr><tr id="37ab1694-306f-41fb-a547-ebe994d62e9e"><td class="cell-title"><a href="Datenfelder%20f%20r%20Seiten%20und%20Plugins/Student/facebook.html">facebook</a></td><td class="cell-m]p3"></td><td class="cell-ox&gt;W"></td><td class="cell-9knz">url</td><td class="cell-I;A|"><div class="checkbox checkbox-off"></div></td><td class="cell-01K("></td></tr><tr id="a635891b-df1a-43c6-951e-299df4d74259"><td class="cell-title"><a href="Datenfelder%20f%20r%20Seiten%20und%20Plugins/Student/linkedIn.html">linkedIn</a></td><td class="cell-m]p3"></td><td class="cell-ox&gt;W"></td><td class="cell-9knz">url</td><td class="cell-I;A|"><div class="checkbox checkbox-off"></div></td><td class="cell-01K("></td></tr></tbody></table></div><div id="faa65315-407b-43c1-ad2e-06dc76408b25" class="collection-content"><h4 class="collection-title">Abschlussarbeit</h4><table class="collection-content"><thead><tr><th>Property</th><th>Tags</th><th>Files</th><th>type</th><th>required</th><th>disabled</th><th>ToDo</th></tr></thead><tbody><tr id="7a79d66e-56fc-458a-ab75-90a2fe8d22ff"><td class="cell-title"><a href="Datenfelder%20f%20r%20Seiten%20und%20Plugins/Abschlussarbeit/student.html">student</a></td><td class="cell-m]p3"></td><td class="cell-ox&gt;W"></td><td class="cell-9knz">text</td><td class="cell-I;A|"><div class="checkbox checkbox-off"></div></td><td class="cell-hS8/"><div class="checkbox checkbox-on"></div></td><td class="cell-01K("></td></tr><tr id="29bc6663-4904-4f85-8e41-7573c97d9b6c"><td class="cell-title"><a href="Datenfelder%20f%20r%20Seiten%20und%20Plugins/Abschlussarbeit/courseOfStudies.html">courseOfStudies</a></td><td class="cell-m]p3"></td><td class="cell-ox&gt;W"></td><td class="cell-9knz">text</td><td class="cell-I;A|"><div class="checkbox checkbox-off"></div></td><td class="cell-hS8/"><div class="checkbox checkbox-on"></div></td><td class="cell-01K("></td></tr><tr id="c97e4fee-11a0-45e6-be49-98f63d5fe3f3"><td class="cell-title"><a href="Datenfelder%20f%20r%20Seiten%20und%20Plugins/Abschlussarbeit/dozent.html">dozent</a></td><td class="cell-m]p3"></td><td class="cell-ox&gt;W"></td><td class="cell-9knz">multiselect</td><td class="cell-I;A|"><div class="checkbox checkbox-on"></div></td><td class="cell-hS8/"><div class="checkbox checkbox-off"></div></td><td class="cell-01K(">refactor instructors</td></tr><tr id="0d408423-37d3-4bee-9f70-4d402b2a595c"><td class="cell-title"><a href="Datenfelder%20f%20r%20Seiten%20und%20Plugins/Abschlussarbeit/building.html">building</a></td><td class="cell-m]p3"></td><td class="cell-ox&gt;W"></td><td class="cell-9knz">select / page</td><td class="cell-I;A|"><div class="checkbox checkbox-on"></div></td><td class="cell-hS8/"><div class="checkbox checkbox-off"></div></td><td class="cell-01K("></td></tr><tr id="99c46bad-dc74-4045-87e6-72a09c75890c"><td class="cell-title"><a href="Datenfelder%20f%20r%20Seiten%20und%20Plugins/Abschlussarbeit/room.html">room</a></td><td class="cell-m]p3"></td><td class="cell-ox&gt;W"></td><td class="cell-9knz">number</td><td class="cell-I;A|"><div class="checkbox checkbox-off"></div></td><td class="cell-hS8/"><div class="checkbox checkbox-off"></div></td><td class="cell-01K("></td></tr><tr id="6466848a-12a7-40f6-ba25-cfbf588e2f4b"><td class="cell-title"><a href="Datenfelder%20f%20r%20Seiten%20und%20Plugins/Abschlussarbeit/tags.html">tags</a></td><td class="cell-m]p3"></td><td class="cell-ox&gt;W"></td><td class="cell-9knz">multiselect</td><td class="cell-I;A|"><div class="checkbox checkbox-off"></div></td><td class="cell-hS8/"><div class="checkbox checkbox-off"></div></td><td class="cell-01K("></td></tr><tr id="a1113bfd-8799-4b3d-8987-9252cd764b6c"><td class="cell-title"><a href="Datenfelder%20f%20r%20Seiten%20und%20Plugins/Abschlussarbeit/presentation.html">presentation</a></td><td class="cell-m]p3"></td><td class="cell-ox&gt;W"></td><td class="cell-9knz">files</td><td class="cell-I;A|"><div class="checkbox checkbox-on"></div></td><td class="cell-hS8/"><div class="checkbox checkbox-off"></div></td><td class="cell-01K("></td></tr><tr id="1a1b0b49-636b-4aeb-b3bf-2e00671ec4e1"><td class="cell-title"><a href="Datenfelder%20f%20r%20Seiten%20und%20Plugins/Abschlussarbeit/vimeoLink.html">vimeoLink</a></td><td class="cell-m]p3"></td><td class="cell-ox&gt;W"></td><td class="cell-9knz">url</td><td class="cell-I;A|"><div class="checkbox checkbox-off"></div></td><td class="cell-hS8/"><div class="checkbox checkbox-off"></div></td><td class="cell-01K("></td></tr><tr id="02e250ba-e556-4ba2-8b46-b0c62a4fd676"><td class="cell-title"><a href="Datenfelder%20f%20r%20Seiten%20und%20Plugins/Abschlussarbeit/headline.html">headline</a></td><td class="cell-m]p3"></td><td class="cell-ox&gt;W"></td><td class="cell-9knz">text</td><td class="cell-I;A|"><div class="checkbox checkbox-on"></div></td><td class="cell-hS8/"><div class="checkbox checkbox-off"></div></td><td class="cell-01K("></td></tr><tr id="b664f04b-891b-455b-bcd0-c0c3c4b36e4a"><td class="cell-title"><a href="Datenfelder%20f%20r%20Seiten%20und%20Plugins/Abschlussarbeit/subheadline.html">subheadline</a></td><td class="cell-m]p3"></td><td class="cell-ox&gt;W"></td><td class="cell-9knz">text</td><td class="cell-I;A|"><div class="checkbox checkbox-on"></div></td><td class="cell-hS8/"><div class="checkbox checkbox-off"></div></td><td class="cell-01K("></td></tr><tr id="de15bde9-9dca-4e0f-9777-d7e34b3c41ce"><td class="cell-title"><a href="Datenfelder%20f%20r%20Seiten%20und%20Plugins/Abschlussarbeit/description.html">description</a></td><td class="cell-m]p3"></td><td class="cell-ox&gt;W"></td><td class="cell-9knz">textarea</td><td class="cell-I;A|"><div class="checkbox checkbox-on"></div></td><td class="cell-hS8/"><div class="checkbox checkbox-off"></div></td><td class="cell-01K(">refactor description</td></tr><tr id="cbfe75a1-dd56-4868-aca3-f54aedc6646d"><td class="cell-title"><a href="Datenfelder%20f%20r%20Seiten%20und%20Plugins/Abschlussarbeit/backgroundColor.html">backgroundColor</a></td><td class="cell-m]p3"></td><td class="cell-ox&gt;W"></td><td class="cell-9knz">text / hex</td><td class="cell-I;A|"><div class="checkbox checkbox-on"></div></td><td class="cell-hS8/"><div class="checkbox checkbox-off"></div></td><td class="cell-01K("></td></tr><tr id="80d8971b-1e9b-41c7-8dc0-03a6c295f82b"><td class="cell-title"><a href="Datenfelder%20f%20r%20Seiten%20und%20Plugins/Abschlussarbeit/typographyColor.html">typographyColor</a></td><td class="cell-m]p3"></td><td class="cell-ox&gt;W"></td><td class="cell-9knz">text / hex</td><td class="cell-I;A|"><div class="checkbox checkbox-on"></div></td><td class="cell-hS8/"><div class="checkbox checkbox-off"></div></td><td class="cell-01K("></td></tr><tr id="bf4a8e35-192e-4fef-949a-5191de09d870"><td class="cell-title"><a href="Datenfelder%20f%20r%20Seiten%20und%20Plugins/Abschlussarbeit/DataModel.html">DataModel</a></td><td class="cell-m]p3"></td><td class="cell-ox&gt;W"></td><td class="cell-9knz"></td><td class="cell-I;A|"><div class="checkbox checkbox-off"></div></td><td class="cell-hS8/"><div class="checkbox checkbox-off"></div></td><td class="cell-01K("></td></tr></tbody></table></div><div id="1515b023-12cb-4b4d-bf2d-3db23ecd3ec9" class="collection-content"><h4 class="collection-title">Semesterarbeit</h4><table class="collection-content"><thead><tr><th>Property</th><th>Type</th><th>required</th><th>disabled</th><th>ToDo</th></tr></thead><tbody><tr id="9e5c0ee2-4bca-4366-bc1d-b38edf0e735e"><td class="cell-title"><a href="Datenfelder%20f%20r%20Seiten%20und%20Plugins/Semesterarbeit/student.html">student</a></td><td class="cell-U_5*">text / auto</td><td class="cell--_v|"><div class="checkbox checkbox-off"></div></td><td class="cell-:vPN"><div class="checkbox checkbox-on"></div></td><td class="cell-&lt;Z3;"></td></tr><tr id="bd99968a-274b-4987-8989-1d4e58281ec3"><td class="cell-title"><a href="Datenfelder%20f%20r%20Seiten%20und%20Plugins/Semesterarbeit/heroImage.html">heroImage</a></td><td class="cell-U_5*">files</td><td class="cell--_v|"><div class="checkbox checkbox-on"></div></td><td class="cell-:vPN"><div class="checkbox checkbox-off"></div></td><td class="cell-&lt;Z3;"></td></tr><tr id="c15b8175-b0c6-4f30-b529-ee771b7a07ad"><td class="cell-title"><a href="Datenfelder%20f%20r%20Seiten%20und%20Plugins/Semesterarbeit/headline.html">headline</a></td><td class="cell-U_5*">text</td><td class="cell--_v|"><div class="checkbox checkbox-on"></div></td><td class="cell-:vPN"><div class="checkbox checkbox-off"></div></td><td class="cell-&lt;Z3;"></td></tr><tr id="82f06756-f1c6-446f-9668-bd630d0fb3a9"><td class="cell-title"><a href="Datenfelder%20f%20r%20Seiten%20und%20Plugins/Semesterarbeit/description.html">description</a></td><td class="cell-U_5*">textarea</td><td class="cell--_v|"><div class="checkbox checkbox-off"></div></td><td class="cell-:vPN"><div class="checkbox checkbox-off"></div></td><td class="cell-&lt;Z3;">refactor description</td></tr></tbody></table></div><div id="f4d69281-f5c5-4356-814f-47d4d88c0b5d" class="collection-content"><h4 class="collection-title">Copy of Teamarbeit</h4><table class="collection-content"><thead><tr><th>Property</th><th>Type</th><th>required</th><th>disabled</th><th>ToDo</th></tr></thead><tbody><tr id="e65c8a19-62c2-4658-8851-44220d30ddd2"><td class="cell-title"><a href="Datenfelder%20f%20r%20Seiten%20und%20Plugins/Copy%20of%20Teamarbeit/Untitled.html">Untitled</a></td><td class="cell-U_5*"></td><td class="cell--_v|"><div class="checkbox checkbox-off"></div></td><td class="cell-:vPN"><div class="checkbox checkbox-off"></div></td><td class="cell-&lt;Z3;"></td></tr></tbody></table></div><h1 id="a7dffae2-452e-42a1-8d02-578d715c721f" class="">Plugin Speakers &amp; Talks</h1><hr id="0f1fbbb9-7ec2-4f32-9c7d-5f170ce7e85b"/><figure class="block-color-gray_background callout" style="white-space:pre-wrap;display:flex" id="b1fe940c-0487-4c54-9b2d-6416eb79d7c5"><div style="font-size:1.5em"><span class="icon">💡</span></div><div style="width:100%">Das Plugin befindet sich in der Entwicklung. Es werden Blocks bereitgestellt, die jedoch verbessert und neu definiert werden. Speaker und Talks sind zum Zeitpunkt der Abgabe noch nicht implementiert.</div></figure><div id="5423807c-3d82-4b79-b377-dda470e77044" class="collection-content"><h4 class="collection-title">Speaker</h4><table class="collection-content"><thead><tr><th>Property</th><th>Type</th><th>required</th><th>disabled</th><th>ToDo</th></tr></thead><tbody><tr id="ab4f8909-b4ef-4ed8-9a22-744a1354a964"><td class="cell-title"><a href="Datenfelder%20f%20r%20Seiten%20und%20Plugins/Speaker/name.html">name</a></td><td class="cell-U_5*">text</td><td class="cell--_v|"><div class="checkbox checkbox-on"></div></td><td class="cell-:vPN"><div class="checkbox checkbox-off"></div></td><td class="cell-&lt;Z3;"></td></tr><tr id="122f1e6b-5fde-4e5e-80c3-e60f33e9a723"><td class="cell-title"><a href="Datenfelder%20f%20r%20Seiten%20und%20Plugins/Speaker/lastName.html">lastName</a></td><td class="cell-U_5*">text</td><td class="cell--_v|"><div class="checkbox checkbox-on"></div></td><td class="cell-:vPN"><div class="checkbox checkbox-off"></div></td><td class="cell-&lt;Z3;"></td></tr><tr id="30be48c7-9f0a-45a3-9fe0-2b0754e7a393"><td class="cell-title"><a href="Datenfelder%20f%20r%20Seiten%20und%20Plugins/Speaker/profileImage.html">profileImage</a></td><td class="cell-U_5*">files</td><td class="cell--_v|"><div class="checkbox checkbox-off"></div></td><td class="cell-:vPN"><div class="checkbox checkbox-off"></div></td><td class="cell-&lt;Z3;"></td></tr><tr id="8a223d95-28f1-4d71-9fd1-7a2cd6c028c1"><td class="cell-title"><a href="Datenfelder%20f%20r%20Seiten%20und%20Plugins/Speaker/works.html">works</a></td><td class="cell-U_5*">children /pages</td><td class="cell--_v|"><div class="checkbox checkbox-off"></div></td><td class="cell-:vPN"><div class="checkbox checkbox-off"></div></td><td class="cell-&lt;Z3;"></td></tr><tr id="0820ec64-1feb-4b60-bae0-925fe2c03ed3"><td class="cell-title"><a href="Datenfelder%20f%20r%20Seiten%20und%20Plugins/Speaker/academicGrade.html">academicGrade</a></td><td class="cell-U_5*">text</td><td class="cell--_v|"><div class="checkbox checkbox-off"></div></td><td class="cell-:vPN"><div class="checkbox checkbox-off"></div></td><td class="cell-&lt;Z3;"></td></tr><tr id="b5e62968-cc33-43a8-954b-34663c8e7c9c"><td class="cell-title"><a href="Datenfelder%20f%20r%20Seiten%20und%20Plugins/Speaker/biography.html">biography</a></td><td class="cell-U_5*">textarea</td><td class="cell--_v|"><div class="checkbox checkbox-on"></div></td><td class="cell-:vPN"><div class="checkbox checkbox-off"></div></td><td class="cell-&lt;Z3;"></td></tr><tr id="d239cbb1-f551-4fce-b324-06bc374f54ed"><td class="cell-title"><a href="Datenfelder%20f%20r%20Seiten%20und%20Plugins/Speaker/biographyExcerpt.html">biographyExcerpt</a></td><td class="cell-U_5*">textarea</td><td class="cell--_v|"><div class="checkbox checkbox-on"></div></td><td class="cell-:vPN"><div class="checkbox checkbox-off"></div></td><td class="cell-&lt;Z3;"></td></tr><tr id="080bea13-8723-4601-83eb-bd90ea6b7f6c"><td class="cell-title"><a href="Datenfelder%20f%20r%20Seiten%20und%20Plugins/Speaker/instagramurl.html">instagramurl</a></td><td class="cell-U_5*">url</td><td class="cell--_v|"><div class="checkbox checkbox-off"></div></td><td class="cell-:vPN"><div class="checkbox checkbox-off"></div></td><td class="cell-&lt;Z3;"></td></tr><tr id="7a88d313-4c16-47e3-9301-adebf9b6bc4d"><td class="cell-title"><a href="Datenfelder%20f%20r%20Seiten%20und%20Plugins/Speaker/twitterurl.html">twitterurl</a></td><td class="cell-U_5*">url</td><td class="cell--_v|"><div class="checkbox checkbox-off"></div></td><td class="cell-:vPN"><div class="checkbox checkbox-off"></div></td><td class="cell-&lt;Z3;"></td></tr><tr id="61e49d0d-62ec-4f5e-9651-7df976bee634"><td class="cell-title"><a href="Datenfelder%20f%20r%20Seiten%20und%20Plugins/Speaker/websiteurl.html">websiteurl</a></td><td class="cell-U_5*">url</td><td class="cell--_v|"><div class="checkbox checkbox-off"></div></td><td class="cell-:vPN"><div class="checkbox checkbox-off"></div></td><td class="cell-&lt;Z3;"></td></tr></tbody></table></div><div id="0c1ffbaf-468a-4125-aeac-3bbfb1c62061" class="collection-content"><h4 class="collection-title">Speaker Work</h4><table class="collection-content"><thead><tr><th>Property</th><th>Type</th><th>required</th><th>disabled</th><th>ToDo</th></tr></thead><tbody><tr id="817e799a-78bd-4c7e-afb3-faa4d0e7235a"><td class="cell-title"><a href="Datenfelder%20f%20r%20Seiten%20und%20Plugins/Speaker%20Work/heroImage.html">heroImage</a></td><td class="cell-U_5*">files</td><td class="cell--_v|"><div class="checkbox checkbox-on"></div></td><td class="cell-:vPN"><div class="checkbox checkbox-off"></div></td><td class="cell-&lt;Z3;"></td></tr><tr id="8030eba3-2b53-4c05-b15e-92a34711e95f"><td class="cell-title"><a href="Datenfelder%20f%20r%20Seiten%20und%20Plugins/Speaker%20Work/title.html">title</a></td><td class="cell-U_5*">text</td><td class="cell--_v|"><div class="checkbox checkbox-on"></div></td><td class="cell-:vPN"><div class="checkbox checkbox-off"></div></td><td class="cell-&lt;Z3;"></td></tr><tr id="c754825e-558a-4b55-a821-5e76e845565a"><td class="cell-title"><a href="Datenfelder%20f%20r%20Seiten%20und%20Plugins/Speaker%20Work/description.html">description</a></td><td class="cell-U_5*">textarea</td><td class="cell--_v|"><div class="checkbox checkbox-on"></div></td><td class="cell-:vPN"><div class="checkbox checkbox-off"></div></td><td class="cell-&lt;Z3;"></td></tr><tr id="c3cd1d9f-8244-45ed-965b-3bd84bb5857c"><td class="cell-title"><a href="Datenfelder%20f%20r%20Seiten%20und%20Plugins/Speaker%20Work/link.html">link</a></td><td class="cell-U_5*">url</td><td class="cell--_v|"><div class="checkbox checkbox-on"></div></td><td class="cell-:vPN"><div class="checkbox checkbox-off"></div></td><td class="cell-&lt;Z3;"></td></tr></tbody></table></div><div id="1d59fee7-2896-458a-b5ae-20c78e14a8f2" class="collection-content"><h4 class="collection-title">Talk / Vortrag</h4><table class="collection-content"><thead><tr><th>Property</th><th>Type</th><th>required</th><th>disabled</th><th>ToDo</th></tr></thead><tbody><tr id="6f4514c1-1e7f-4385-9a75-c1f00b709164"><td class="cell-title"><a href="Datenfelder%20f%20r%20Seiten%20und%20Plugins/Talk%20Vortrag/heroImg.html">heroImg</a></td><td class="cell-U_5*">files</td><td class="cell--_v|"><div class="checkbox checkbox-off"></div></td><td class="cell-:vPN"><div class="checkbox checkbox-off"></div></td><td class="cell-&lt;Z3;"></td></tr><tr id="84e3d97b-7232-4e1c-8245-fa7aeae806f8"><td class="cell-title"><a href="Datenfelder%20f%20r%20Seiten%20und%20Plugins/Talk%20Vortrag/title.html">title</a></td><td class="cell-U_5*">text</td><td class="cell--_v|"><div class="checkbox checkbox-on"></div></td><td class="cell-:vPN"><div class="checkbox checkbox-off"></div></td><td class="cell-&lt;Z3;"></td></tr><tr id="3d967e96-2178-4a9f-8f46-3772e12382ab"><td class="cell-title"><a href="Datenfelder%20f%20r%20Seiten%20und%20Plugins/Talk%20Vortrag/speaker.html">speaker</a></td><td class="cell-U_5*">select / page</td><td class="cell--_v|"><div class="checkbox checkbox-on"></div></td><td class="cell-:vPN"><div class="checkbox checkbox-off"></div></td><td class="cell-&lt;Z3;"></td></tr><tr id="a1dd9e1a-52ce-4863-9c14-7042b2a07816"><td class="cell-title"><a href="Datenfelder%20f%20r%20Seiten%20und%20Plugins/Talk%20Vortrag/building.html">building</a></td><td class="cell-U_5*">select / page</td><td class="cell--_v|"><div class="checkbox checkbox-on"></div></td><td class="cell-:vPN"><div class="checkbox checkbox-off"></div></td><td class="cell-&lt;Z3;"></td></tr><tr id="fec5dfdc-92a5-4353-b43d-7941192f1bf3"><td class="cell-title"><a href="Datenfelder%20f%20r%20Seiten%20und%20Plugins/Talk%20Vortrag/date.html">date</a></td><td class="cell-U_5*">date</td><td class="cell--_v|"><div class="checkbox checkbox-on"></div></td><td class="cell-:vPN"><div class="checkbox checkbox-off"></div></td><td class="cell-&lt;Z3;"></td></tr><tr id="c50b6907-4209-428d-9577-9b963b8da15b"><td class="cell-title"><a href="Datenfelder%20f%20r%20Seiten%20und%20Plugins/Talk%20Vortrag/time.html">time</a></td><td class="cell-U_5*">time</td><td class="cell--_v|"><div class="checkbox checkbox-on"></div></td><td class="cell-:vPN"><div class="checkbox checkbox-off"></div></td><td class="cell-&lt;Z3;"></td></tr><tr id="a9226be0-5b6c-4cc9-8401-ae076bdd4f04"><td class="cell-title"><a href="Datenfelder%20f%20r%20Seiten%20und%20Plugins/Talk%20Vortrag/description.html">description</a></td><td class="cell-U_5*">textarea</td><td class="cell--_v|"><div class="checkbox checkbox-on"></div></td><td class="cell-:vPN"><div class="checkbox checkbox-off"></div></td><td class="cell-&lt;Z3;"></td></tr></tbody></table></div><h1 id="f4740ac2-bcd2-4546-8062-0bd224d2d44f" class="">Plugin Infrastructure</h1><hr id="affe2ba5-71b4-4239-a92b-561ff44146b2"/><figure class="block-color-gray_background callout" style="white-space:pre-wrap;display:flex" id="6778e3d3-970d-4582-b0a6-ccd0f41453fa"><div style="font-size:1.5em"><span class="icon">💡</span></div><div style="width:100%">Das Plugin befindet sich in der Entwicklung. Es werden Blocks bereitgestellt, die jedoch verbessert und neu definiert werden. Ziel ist es eine automatisierte Raumübersicht zu erstellen die nach Gebäuden, Räumen und deren Arbeiten gefiltert werden kann.</div></figure><div id="2953dc71-159e-4832-971b-acad2137b3dd" class="collection-content"><h4 class="collection-title">Gebäude - building</h4><table class="collection-content"><thead><tr><th>Property</th><th>Type</th><th>required</th><th>disabled</th><th>ToDo</th></tr></thead><tbody><tr id="7ce73c2c-d7f3-4515-9a01-0a35903ec600"><td class="cell-title"><a href="Datenfelder%20f%20r%20Seiten%20und%20Plugins/Geb%20ude%20building/bezeichnung.html">bezeichnung</a></td><td class="cell-U_5*">text</td><td class="cell--_v|"><div class="checkbox checkbox-on"></div></td><td class="cell-:vPN"><div class="checkbox checkbox-off"></div></td><td class="cell-&lt;Z3;"></td></tr><tr id="7297ca21-4bae-4465-a378-2ebc689e00ab"><td class="cell-title"><a href="Datenfelder%20f%20r%20Seiten%20und%20Plugins/Geb%20ude%20building/kuerzel.html">kuerzel</a></td><td class="cell-U_5*">text</td><td class="cell--_v|"><div class="checkbox checkbox-on"></div></td><td class="cell-:vPN"><div class="checkbox checkbox-off"></div></td><td class="cell-&lt;Z3;"></td></tr><tr id="911e81e4-6ecc-4902-b7bf-f277af1b09b4"><td class="cell-title"><a href="Datenfelder%20f%20r%20Seiten%20und%20Plugins/Geb%20ude%20building/rooms.html">rooms</a></td><td class="cell-U_5*">structure</td><td class="cell--_v|"><div class="checkbox checkbox-off"></div></td><td class="cell-:vPN"><div class="checkbox checkbox-off"></div></td><td class="cell-&lt;Z3;"></td></tr></tbody></table></div><h1 id="cf38f5ec-53bf-4d8b-97ff-6140314e86af" class="">Plugin Blocks</h1><figure class="block-color-gray_background callout" style="white-space:pre-wrap;display:flex" id="865443da-b344-48f2-b27c-1abad8c88d13"><div style="font-size:1.5em"><span class="icon">💡</span></div><div style="width:100%">Das Plugin befindet sich in der Entwicklung. Es werden Blocks bereitgestellt, die jedoch verbessert und neu definiert werden.</div></figure><div id="9e7ec58b-5d8d-4ddb-9927-f22af266a9aa" class="collection-content"><h4 class="collection-title">Hero (block-hero)</h4><table class="collection-content"><thead><tr><th>Property</th><th>Type</th><th>required</th><th>disabled</th><th>ToDo</th></tr></thead><tbody><tr id="96f5d6eb-6cb8-4197-854b-028b9dc409ac"><td class="cell-title"><a href="Datenfelder%20f%20r%20Seiten%20und%20Plugins/Hero%20block%20hero/images.html">images</a></td><td class="cell-U_5*">files</td><td class="cell--_v|"><div class="checkbox checkbox-off"></div></td><td class="cell-:vPN"><div class="checkbox checkbox-off"></div></td><td class="cell-&lt;Z3;"></td></tr></tbody></table></div><div id="058885da-633e-484d-84e7-9c0af0b41367" class="collection-content"><h4 class="collection-title">Info (block-info)</h4><table class="collection-content"><thead><tr><th>Property</th><th>Type</th><th>required</th><th>disabled</th><th>ToDo</th></tr></thead><tbody><tr id="bc5a0097-6d36-455e-9d39-bb9c704d7ac9"><td class="cell-title"><a href="Datenfelder%20f%20r%20Seiten%20und%20Plugins/Info%20block%20info/headline.html">headline</a></td><td class="cell-U_5*">text</td><td class="cell--_v|"><div class="checkbox checkbox-off"></div></td><td class="cell-:vPN"><div class="checkbox checkbox-off"></div></td><td class="cell-&lt;Z3;"></td></tr><tr id="e2b99964-48b6-45d4-bbc9-a06dee30bcd9"><td class="cell-title"><a href="Datenfelder%20f%20r%20Seiten%20und%20Plugins/Info%20block%20info/description.html">description</a></td><td class="cell-U_5*">textarea</td><td class="cell--_v|"><div class="checkbox checkbox-off"></div></td><td class="cell-:vPN"><div class="checkbox checkbox-off"></div></td><td class="cell-&lt;Z3;"></td></tr><tr id="8766279a-a1b0-42e1-9ce2-3aa60f5c1ce3"><td class="cell-title"><a href="Datenfelder%20f%20r%20Seiten%20und%20Plugins/Info%20block%20info/class.html">class</a></td><td class="cell-U_5*">text</td><td class="cell--_v|"><div class="checkbox checkbox-off"></div></td><td class="cell-:vPN"><div class="checkbox checkbox-off"></div></td><td class="cell-&lt;Z3;"></td></tr></tbody></table></div><div id="bd587d99-f5de-4dd0-9cc6-cdc8eac30a4c" class="collection-content"><h4 class="collection-title">Maps (block-maps)</h4><table class="collection-content"><thead><tr><th>Property</th><th>Type</th><th>required</th><th>disabled</th><th>ToDo</th></tr></thead><tbody><tr id="48e5ae20-43cf-43fa-ae26-baf9cff01928"><td class="cell-title"><a href="Datenfelder%20f%20r%20Seiten%20und%20Plugins/Maps%20block%20maps/locationLat.html">locationLat</a></td><td class="cell-U_5*">text</td><td class="cell--_v|"><div class="checkbox checkbox-off"></div></td><td class="cell-:vPN"><div class="checkbox checkbox-off"></div></td><td class="cell-&lt;Z3;"></td></tr><tr id="dddc7706-e3d3-4596-aca0-4ca483d76ed2"><td class="cell-title"><a href="Datenfelder%20f%20r%20Seiten%20und%20Plugins/Maps%20block%20maps/locationLong.html">locationLong</a></td><td class="cell-U_5*">text</td><td class="cell--_v|"><div class="checkbox checkbox-off"></div></td><td class="cell-:vPN"><div class="checkbox checkbox-off"></div></td><td class="cell-&lt;Z3;"></td></tr><tr id="673fda2b-7d29-44e0-b802-1f2916bd1b83"><td class="cell-title"><a href="Datenfelder%20f%20r%20Seiten%20und%20Plugins/Maps%20block%20maps/zoom.html">zoom</a></td><td class="cell-U_5*">number</td><td class="cell--_v|"><div class="checkbox checkbox-off"></div></td><td class="cell-:vPN"><div class="checkbox checkbox-off"></div></td><td class="cell-&lt;Z3;"></td></tr><tr id="fa2cfe8d-ba88-4141-b5e9-0a0a3c8ba928"><td class="cell-title"><a href="Datenfelder%20f%20r%20Seiten%20und%20Plugins/Maps%20block%20maps/style.html">style</a></td><td class="cell-U_5*">text</td><td class="cell--_v|"><div class="checkbox checkbox-off"></div></td><td class="cell-:vPN"><div class="checkbox checkbox-off"></div></td><td class="cell-&lt;Z3;"></td></tr></tbody></table></div><div id="2b9a1739-403b-4946-87d4-0b5eb24c24f4" class="collection-content"><h4 class="collection-title">Timeschedule (block-timeschedule)</h4><table class="collection-content"><thead><tr><th>Property</th><th>Type</th><th>required</th><th>disabled</th><th>ToDo</th></tr></thead><tbody><tr id="eb7285f9-6bb6-480c-b430-1624c38814a8"><td class="cell-title"><a href="Datenfelder%20f%20r%20Seiten%20und%20Plugins/Timeschedule%20block%20timeschedule/events.html">events</a></td><td class="cell-U_5*">structure</td><td class="cell--_v|"><div class="checkbox checkbox-off"></div></td><td class="cell-:vPN"><div class="checkbox checkbox-off"></div></td><td class="cell-&lt;Z3;"></td></tr></tbody></table></div></div></article></body></html>

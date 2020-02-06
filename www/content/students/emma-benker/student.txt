@@ -1,0 +1,77 @@
+Title: Emma Benker
+
+----
+
+Slug: 
+
+----
+
+Profileimage:
+
+- absolventen-090.jpg
+
+----
+
+Thesis:
+
+- students/emma-benker/menschenrauschen
+
+----
+
+Projectworks: 
+
+----
+
+Firstname: Emma
+
+----
+
+Lastname: Benker
+
+----
+
+Courseofstudy: Interaktive Medien IA - BA
+
+----
+
+Email: emmabenker@gmail.com
+
+----
+
+Website: 
+
+----
+
+Instagram: 
+
+----
+
+Behance: 
+
+----
+
+Twitter: 
+
+----
+
+Facebook: 
+
+----
+
+Linkedin: 
+
+----
+
+Comfortzone: - img_8946.jpg
+
+----
+
+Abschlussarbeit: - bbild.png
+
+----
+
+Comfortzonedescription: kaltes klares Wasser
+
+----
+
+Template: student

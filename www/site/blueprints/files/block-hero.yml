@@ -1,0 +1,10 @@
+title: Hero slide
+icon: image
+
+fields:
+  caption:
+    type: text
+    width: 1/2
+  link:
+    type: url
+    width: 1/2

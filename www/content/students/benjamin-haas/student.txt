@@ -1,0 +1,82 @@
+Title: Benjamin Haas
+
+----
+
+Slug: 
+
+----
+
+Profileimage:
+
+- benjamin-haas-3-b.jpg
+
+----
+
+Thesis:
+
+- >
+  students/benjamin-haas/creature-design-replikation-der-tierwelt-in-der-fernen-zukunft
+
+----
+
+Projectworks:
+
+- students/benjamin-haas/landsapp
+- students/benjamin-haas/maschinenraum2019
+- students/benjamin-haas/sommerknistern
+
+----
+
+Firstname: Benjamin
+
+----
+
+Lastname: Haas
+
+----
+
+Courseofstudy: Interaktive Medien IA - BA
+
+----
+
+Email: Benjamin.Haas@HS-Augsburg.DE
+
+----
+
+Website: 
+
+----
+
+Instagram: 
+
+----
+
+Behance: 
+
+----
+
+Twitter: 
+
+----
+
+Facebook: 
+
+----
+
+Linkedin: 
+
+----
+
+Comfortzone: - comfort.jpeg
+
+----
+
+Abschlussarbeit: - whale.jpg
+
+----
+
+Comfortzonedescription: Comfort Zone: Soulfood
+
+----
+
+Template: student

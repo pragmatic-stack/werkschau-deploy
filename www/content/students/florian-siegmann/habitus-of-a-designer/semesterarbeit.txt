@@ -1,0 +1,35 @@
+Title: Habitus of a Designer
+
+----
+
+Slug: habitus-of-a-designer
+
+----
+
+Student: Florian Siegmann
+
+----
+
+Heroimage:
+
+- float_i1_0051.jpg
+
+----
+
+Headline: Habitus of a Designer
+
+----
+
+Description: 3D Short Film
+
+----
+
+Template: semesterarbeit
+
+----
+
+Studentid: students/florian-siegmann
+
+----
+
+CourseOfStudy: Design- und Kommunikationsstrategie DKS - MA

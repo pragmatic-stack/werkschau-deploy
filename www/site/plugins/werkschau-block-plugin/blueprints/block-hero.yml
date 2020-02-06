@@ -1,0 +1,92 @@
+title: Hero Block (Statisch, Slider oder Abschlussarbeiten)
+icon: image
+
+status:
+  draft:
+    label: Entwurf
+    text: Der Block ist im Entwurfsmodus und nicht für Blockseiten verfügbar
+  unlisted:
+    label: Verfügbar
+    text: Der Block ist auf Blockseiten auswählbar
+
+columns:
+  left:
+    width: 1/3
+    sections:
+      heroType:
+        type: fields
+        fields:
+          heroType:
+            type: radio
+            label: Typ des Hero Blocks
+            width: 1/3
+            required: true
+            options:
+              staticImage: statisches Bild
+              imageSlider: Bilderslider
+              contentSlider: Abschlussarbeiten Slider
+
+      staticImages:
+        headline: hochgeladene Bilder
+        type: files
+        template: image
+        when:
+          heroType: staticImage
+
+      sliderImages:
+        headline: hochgeladene Bilder
+        type: files
+        template: image
+        when:
+          heroType: imageSlider
+
+  right:
+    width: 2/3
+    sections:
+      # Static Image Section
+      staticImageSelect:
+        type: fields
+        fields:
+          staticImage:
+            type: files
+            label: Ausgewähltes Bild
+            multiple: false
+            layout: cards
+            image:
+              cover: true
+              ratio: 16/9
+            uploads:
+              template: image
+            when:
+              heroType: staticImage
+        when:
+          heroType: staticImage
+
+      sliderSelection:
+        type: fields
+        fields:
+          sliderImages:
+            type: files
+            label: Ausgewählte Bilder
+            layout: cards
+            size: medium
+            image:
+              cover: true
+              ratio: 16/9
+            uploads:
+              template: image
+        when:
+          heroType: imageSlider
+
+      contentSlider:
+        type: fields
+        fields:
+          selectedContent:
+            label: Ausgewählte Arbeiten
+            type: pages
+            layout: cards
+            size: medium
+            options: query
+            query: site.index.unlisted.filterBy('template', 'abschlussarbeit')
+        when:
+          heroType: contentSlider

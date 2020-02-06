@@ -1,0 +1,17 @@
+type: group
+headline: Defaults
+fields:
+  displayTitle:
+    type: toggle
+    label: Blocktitel anzeigen?
+    help: Zeigt den Blocktitel (Seitenname) als Section Headline
+  displayHeadline:
+    type: toggle
+    label: Block Überschrift anzeigen?
+    help: Zeigt die Überschrift an
+  headline:
+    type: text
+    label: Block Überschrift
+    required: true
+    when:
+      displayHeadline: true

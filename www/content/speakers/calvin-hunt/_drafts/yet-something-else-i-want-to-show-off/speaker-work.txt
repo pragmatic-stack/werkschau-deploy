@@ -1,0 +1,17 @@
+Title: Yet something else I want to show off
+
+----
+
+Slug: yet-something-else-i-want-to-show-off
+
+----
+
+Template: speaker-work
+
+----
+
+Heroimg: 
+
+----
+
+Description: 

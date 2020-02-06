@@ -1,0 +1,25 @@
+Title: M-Gebäude
+
+----
+
+Slug: m-gebaude
+
+----
+
+Headline: 
+
+----
+
+Bezeichnung: M-Gebäude
+
+----
+
+Kuerzel: M
+
+----
+
+Rooms: 
+
+----
+
+Template: building

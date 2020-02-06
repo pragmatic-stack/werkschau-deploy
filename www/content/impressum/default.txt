@@ -1,0 +1,71 @@
+Title: Impressum
+
+----
+
+Slug: impressum
+
+----
+
+Inmainmenu: false
+
+----
+
+Infootermenu: true
+
+----
+
+Pagecontent:
+
+# Hochschulleitung
+## Erstellung der Webseite
+### Design
+Nathalie Pollok: nathalie.pollok@hs-augsburg.de
+Laura Kreuzer: laura.kreuzer@hs-augsburg.de
+
+### Programmierung
+Konstantin Kraska: konstantin.kraska@hs-augsburg.de
+Florian Kapaun: hello@florian-kapaun.de
+
+### Verantwortlich für den Inhalt
+Präsident Prof. Dr. Gordon Thomas Rohrmair
+
+## Anschrift
+Hochschule für angewandte Wissenschaften Augsburg
+An der Hochschule 1
+86161 Augsburg
+Telefon: +49 (0)821-5586-0
+Telefax: +49 (0)821-5586-3222
+
+info@hs-augsburg.de
+
+## Postadresse
+Hochschule Augsburg
+Postfach 110605
+86031 Augsburg
+
+**Anlieferung von Paketen**
+Hochschule Augsburg
+An der Hochschule 1
+86161 Augsburg
+
+**Ust-Idnr**
+DE 811335517 (Staatsoberkasse Bayern, Landshut)
+
+### Zuständige Aufsichtsbehörde
+Bayerisches Staatsministerium für Wissenschaft, Forschung und Kunst 80327 München
+
+### Copyright
+Kopie und Weiterverwendung von Text und Grafik erfordert die Zustimmung der Hochschule Augsburg.
+
+### Ohne Gewähr
+Änderungen infolge zwischenzeitlicher ministerieller Entscheidungen sowie im Rahmen der allgemeinen Reformen auf dem Bildungssektor und im Personalbereich müssen vorbehalten bleiben.
+
+### Haftungsausschluss
+Die Hochschule Augsburg bemüht sich um Sorgfalt bei der Auswahl der Verlinkung, hat aber selbst keinerlei Einfluss auf die Inhalte oder die Gestaltung der gelinkten Seiten. Die Hochschule Augsburg übernimmt keinerlei Verantwortung für die Inhalte von Internetseiten, auf deren URL in unseren Seiten verwiesen wird. Diese Erklärung gilt für alle auf unseren Seiten angebrachten Links und für die Inhalte aller Seiten, zu denen die angebrachten Links führen.
+
+### Regeln
+Die Darstellung der Hochschule Augsburg enthält auch individuell gestaltete Seiten, die in der Verantwortung der jeweiligen Autoren stehen. Auf diesen Seiten dürfen keine Inhalte enthalten sein, die dem Ansehen der Hochschule schaden. Die Hochschulleitung behält sich vor, bei Nichtbeachten dieser Regeln Maßnahmen zu ergreifen.
+
+----
+
+Template: default

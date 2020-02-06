@@ -1,0 +1,17 @@
+Title: The project I'm most proud of
+
+----
+
+Slug: the-project-i-m-most-proud-of
+
+----
+
+Template: speaker-work
+
+----
+
+Heroimg: 
+
+----
+
+Description: 

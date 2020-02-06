@@ -1,0 +1,64 @@
+Title: MENSCHENRAUSCHEN
+
+----
+
+Slug: menschenrauschen
+
+----
+
+Student: Emma Benker
+
+----
+
+CourseOfStudy: Interaktive Medien IA - BA
+
+----
+
+Dozent: Prof. Robert Rose, Prof.  Maurice Göldner
+
+----
+
+Building: buildings/m-gebaude
+
+----
+
+Tags: #bookdesign, #coding, #interactive, #photography
+
+----
+
+Presentation:
+
+- mockup.jpg
+- bbild.png
+
+----
+
+Vimeolink: 
+
+----
+
+Headline: MENSCHENRAUSCHEN
+
+----
+
+Subheadline: Ein interaktives Buch
+
+----
+
+Description: Das Buch ist eine interaktiv erfahrbare künstlerische Interpretation des Rausches, der mithilfe von illegalen Drogen in der Techno-Szene stattfindet.
+
+----
+
+Backgroundcolor: #ffffff
+
+----
+
+Typographycolor: #000000
+
+----
+
+Template: abschlussarbeit
+
+----
+
+Studentid: students/emma-benker

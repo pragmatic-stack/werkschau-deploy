@@ -1,0 +1,60 @@
+@import "../shared/colors";
+
+.ws-timetable, .ws-timetable--card {
+  margin-bottom: 25px;
+
+  .ws-timetable-day {
+    margin-bottom: 15px;
+  }
+
+  .ws-timetable-day--separator {
+    margin-bottom: 50px;
+    position: relative;
+
+    &:after {
+      content: '';
+      position: absolute;
+      width: 100px;
+      height: 3px;
+      background-color: $ws-bg-dark;
+      bottom: -25px;
+      left: 0;
+      z-index: 2;
+    }
+  }
+
+  p {
+    margin: 0;
+
+    .ws-timetable-item-time {
+      font-weight: bold;
+    }
+  }
+}
+
+.ws-timetable--card {
+
+  .ws-timetable-day {
+    font-size: 1.3rem;
+    padding: 10px 15px;
+    background-color: $ws-bg-dark;
+    color: $ws-text-light;
+    margin-bottom: 0;
+  }
+
+  .ws-timetable-events {
+    padding: 15px;
+    background-color: $ws-bg-light-gray;
+  }
+}
+
+.ws-timetable--time-block {
+
+  .ws-timetable-item {
+    margin-bottom: 10px;
+  }
+
+  .ws-timetable-item-time {
+    display: block;
+  }
+}

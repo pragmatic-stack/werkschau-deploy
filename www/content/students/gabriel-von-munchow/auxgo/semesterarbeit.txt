@@ -1,0 +1,35 @@
+Title: AuxGo
+
+----
+
+Slug: auxgo
+
+----
+
+Student: Gabriel von Münchow
+
+----
+
+Heroimage:
+
+- auxgo.jpg
+
+----
+
+Headline: AuxGo - A scavenger hunt App for international students in Augsburg
+
+----
+
+Description: Mit der App AuxGo können internationale Studenten neue Leute und Augsburg kennen lernen. In kleinen Gruppen führt die App durch die Sehenswürdigkeiten Augsburgs. Rätsel führen dabei zur nächsten Station.
+
+----
+
+Template: semesterarbeit
+
+----
+
+Studentid: students/gabriel-von-munchow
+
+----
+
+CourseOfStudy: Interaktive Mediensysteme IMS - MA

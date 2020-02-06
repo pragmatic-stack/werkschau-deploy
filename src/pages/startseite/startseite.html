@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <title><%= htmlWebpackPlugin.options.title %></title>
+</head>
+
+<body class="h-100">
+<!-- HEADER with HERO -->
+<%= require('html-loader!../../snippets/header-onepage.html') %>
+
+<main data-syp="scroll" data-target="#scrollTarget" data-offset="88">
+    <article id="info" class="container ws-section">
+        <section class="row">
+            <section class="col-md-6">
+                <h1 class="ws-section--headline">Information</h1>
+                <p>Wie jedes Semester verabschieden sich die AbsolventInnen der Fakultät für Gestaltung von ihrer
+                    Hochschule mit einer Schau ihrer Abschlussarbeiten. Auf dem Campus am Roten Tor werden die
+                    Bachelorarbeiten der Studiengänge ›Kommunikationsdesign‹ und ›Interaktive Medien‹ sowie die
+                    Masterarbeiten der Studiengänge ›Design- und Kommunikationsstrategie‹ und ›Interaktive
+                    Mediensysteme‹ gezeigt. Zusätzlich gibt es dieses Jahr erstmalig den ›Werkschau-Slam‹ und
+                    Vorträge.</p>
+            </section>
+            <section class="col-md-6">
+                <h1 class="ws-section--headline">Timetable</h1>
+                <div class="ws-timetable">
+                    <h3 class="ws-timetable-day">Freitag 07.02.2020</h3>
+                    <p class="ws-timetable-item">
+                        <span class="ws-timetable-item-time">18:00 Uhr</span>
+                        <span class="ws-timetable-item-description">Verabschiedung der Absolventen</span>
+                    </p>
+                    <p class="ws-timetable-item">
+                        <span class="ws-timetable-item-time">19:00 Uhr</span>
+                        <span class="ws-timetable-item-description">Vernissage und Welcome</span>
+                    </p>
+                    <p class="ws-timetable-item">
+                        <span class="ws-timetable-item-time">23:00 Uhr</span>
+                        <span class="ws-timetable-item-description">Fette Party</span>
+                    </p>
+                </div>
+                <div class="ws-timetable">
+                    <h3 class="ws-timetable-day">Samstag 08.02.2020</h3>
+                    <p class="ws-timetable-item">
+                        <span class="ws-timetable-item-time">18:00 Uhr</span>
+                        <span class="ws-timetable-item-description">Verabschiedung der Absolventen</span>
+                    </p>
+                    <p class="ws-timetable-item">
+                        <span class="ws-timetable-item-time">19:00 Uhr</span>
+                        <span class="ws-timetable-item-description">Vernissage und Welcome</span>
+                    </p>
+                    <p class="ws-timetable-item">
+                        <span class="ws-timetable-item-time">23:00 Uhr</span>
+                        <span class="ws-timetable-item-description">Fette Party</span>
+                    </p>
+                </div>
+            </section>
+        </section>
+    </article>
+
+    <article id="absolventen" class="ws-bg-wrapper__grey">
+        <div class="container ws-section">
+            <!-- students headline -->
+            <div class="row">
+                <div class="col-md-12">
+                    <h1 class="ws-section--headline__centered mb-5">
+                        Abschlussarbeiten
+                    </h1>
+                </div>
+            </div>
+            <!-- students content -->
+            <div class="row">
+                <div class="col-md-3">
+                    <article class="ws-card">
+                        <figure class="ws-bg-img ws-img--square scale"
+                                style="background-image: url('https://placehold.it/500x500')"></figure>
+                        <section class="ws-card--detail ws-bg-light">
+                            <h2 class="ws-card--title">This is my super awesome super duper project</h2>
+                            <p class="ws-card--subtitle">Konstantin Kraska - IAM</p>
+                            <p class="ws-card--description">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed
+                                diam nonumy
+                                eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua</p>
+                        </section>
+                    </article>
+                </div>
+                <div class="col-md-3">
+                    <article class="ws-card">
+                        <figure class="ws-bg-img ws-img--square scale"
+                                style="background-image: url('https://placehold.it/500x500')"></figure>
+                        <section class="ws-card--detail ws-bg-light">
+                            <h2 class="ws-card--title">This is my super awesome super duper project</h2>
+                            <p class="ws-card--subtitle">Konstantin Kraska - IAM</p>
+                            <p class="ws-card--description">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed
+                                diam nonumy
+                                eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua</p>
+                        </section>
+                    </article>
+                </div>
+                <div class="col-md-3">
+                    <article class="ws-card">
+                        <figure class="ws-bg-img ws-img--square scale"
+                                style="background-image: url('https://placehold.it/500x500')"></figure>
+                        <section class="ws-card--detail ws-bg-light">
+                            <h2 class="ws-card--title">This is my super awesome super duper project</h2>
+                            <p class="ws-card--subtitle">Konstantin Kraska - IAM</p>
+                            <p class="ws-card--description">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed
+                                diam nonumy
+                                eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua</p>
+                        </section>
+                    </article>
+                </div>
+                <div class="col-md-3">
+                    <article class="ws-card">
+                        <figure class="ws-bg-img ws-img--square scale"
+                                style="background-image: url('https://placehold.it/500x500')"></figure>
+                        <section class="ws-card--detail ws-bg-light">
+                            <h2 class="ws-card--title">This is my super awesome super duper project</h2>
+                            <p class="ws-card--subtitle">Konstantin Kraska - IAM</p>
+                            <p class="ws-card--description">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed
+                                diam nonumy
+                                eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua</p>
+                        </section>
+                    </article>
+                </div>
+                <div class="col-md-3">
+                    <article class="ws-card">
+                        <figure class="ws-bg-img ws-img--square scale"
+                                style="background-image: url('https://placehold.it/500x500')"></figure>
+                        <section class="ws-card--detail ws-bg-light">
+                            <h2 class="ws-card--title">This is my super awesome super duper project</h2>
+                            <p class="ws-card--subtitle">Konstantin Kraska - IAM</p>
+                            <p class="ws-card--description">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed
+                                diam nonumy
+                                eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua</p>
+                        </section>
+                    </article>
+                </div>
+                <div class="col-md-3">
+                    <article class="ws-card">
+                        <figure class="ws-bg-img ws-img--square scale"
+                                style="background-image: url('https://placehold.it/500x500')"></figure>
+                        <section class="ws-card--detail ws-bg-light">
+                            <h2 class="ws-card--title">This is my super awesome super duper project</h2>
+                            <p class="ws-card--subtitle">Konstantin Kraska - IAM</p>
+                            <p class="ws-card--description">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed
+                                diam nonumy
+                                eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua</p>
+                        </section>
+                    </article>
+                </div>
+                <div class="col-md-3">
+                    <article class="ws-card">
+                        <figure class="ws-bg-img ws-img--square scale"
+                                style="background-image: url('https://placehold.it/500x500')"></figure>
+                        <section class="ws-card--detail ws-bg-light">
+                            <h2 class="ws-card--title">This is my super awesome super duper project</h2>
+                            <p class="ws-card--subtitle">Konstantin Kraska - IAM</p>
+                            <p class="ws-card--description">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed
+                                diam nonumy
+                                eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua</p>
+                        </section>
+                    </article>
+                </div>
+                <div class="col-md-3">
+                    <article class="ws-card">
+                        <figure class="ws-bg-img ws-img--square scale"
+                                style="background-image: url('https://placehold.it/500x500')"></figure>
+                        <section class="ws-card--detail ws-bg-light">
+                            <h2 class="ws-card--title">This is my super awesome super duper project</h2>
+                            <p class="ws-card--subtitle">Konstantin Kraska - IAM</p>
+                            <p class="ws-card--description">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed
+                                diam nonumy
+                                eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua</p>
+                        </section>
+                    </article>
+                </div>
+            </div>
+        </div>
+    </article>
+
+    <!-- ANFAHRT -->
+    <article id="anfahrt" class="ws-bg-light">
+        <article class="container ws-section">
+            <!-- sponsors headline -->
+            <div class="row">
+                <div class="col-md-12">
+                    <h1 class="ws-section--headline__centered">
+                        Anfahrt
+                    </h1>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-4">
+                    <h3>Adresse</h3>
+                    <p>Hochschule Augsburg <br>
+                        Campus am Roten Tor<br>
+                        Friedbergerstraße 2-4<br>
+                        86161 Augsburg
+                    </p>
+                </div>
+                <div class="col-md-4">
+                    <h3>Öffentliche Verkehrsmittel</h3>
+                    <p>Straßenbahnlinie 6 oder <br>
+                        Bus 32, 33, 35, 66 oder 93<br>
+                        Haltestelle Hochschule<br>
+                    </p>
+                </div>
+                <div class="col-md-4">
+                    <h3>Auto</h3>
+                    <p>Limitierte Parkplätze an der Hochschule<br>
+                        (Einfahrt Friedbergerstraße 4)
+                    </p>
+                </div>
+            </div>
+        </article>
+    </article>
+
+    <article class="ws-map-container">
+        <img src="https://placehold.it/3000x500?text=Werkschau+Location+Map" class="img-fluid">
+    </article>
+
+    <!-- SPONSORS -->
+    <article id="sponsoren" class="container ws-section">
+        <!-- sponsors headline -->
+        <div class="row">
+            <div class="col-md-12">
+                <h1 class="ws-section--headline__centered">
+                    Sponsoren
+                </h1>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-md-2 ws-scale">
+                <img src="https://placehold.it/200x200?text=WS+Sponsor" class="img-fluid">
+            </div>
+            <div class="col-md-2 ws-scale">
+                <img src="https://placehold.it/200x200?text=WS+Sponsor" class="img-fluid">
+            </div>
+            <div class="col-md-2 ws-scale">
+                <img src="https://placehold.it/200x200?text=WS+Sponsor" class="img-fluid">
+            </div>
+            <div class="col-md-2 ws-scale">
+                <img src="https://placehold.it/200x200?text=WS+Sponsor" class="img-fluid">
+            </div>
+            <div class="col-md-2 ws-scale">
+                <img src="https://placehold.it/200x200?text=WS+Sponsor" class="img-fluid">
+            </div>
+            <div class="col-md-2 ws-scale">
+                <img src="https://placehold.it/200x200?text=WS+Sponsor" class="img-fluid">
+            </div>
+        </div>
+    </article>
+</main>
+
+<!-- FOOTER -->
+<%= require('html-loader!../../snippets/footer.html') %>
+
+<!-- SEARCH FORM -->
+<%= require('html-loader!../../snippets/search-form.html') %>
+</body>
+</html>

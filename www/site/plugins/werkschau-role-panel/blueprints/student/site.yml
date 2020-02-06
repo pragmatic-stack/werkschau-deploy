@@ -1,0 +1,25 @@
+title: Dashboard
+
+tabs:
+  # students tab
+  students:
+    label: Studenten
+    icon: user
+    columns:
+      left:
+        width: 1/2
+        sections:
+          studentDrafts: sections/student-drafts
+      right:
+        width: 1/2
+        sections:
+          studentUnlisted: sections/student-unlisted
+
+  #teamworks:
+   # label: Teamarbeiten
+    #icon: users
+   # columns:
+    #  - width: 1/2
+     #   sections:
+       #   teamworks: sections/teamwork-unlisted
+      #    teamworkDrafts: sections/teamworks-drafts

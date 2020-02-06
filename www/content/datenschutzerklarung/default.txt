@@ -1,0 +1,95 @@
+Title: Datenschutzerklärung
+
+----
+
+Slug: datenschutzerklarung
+
+----
+
+Inmainmenu: false
+
+----
+
+Infootermenu: true
+
+----
+
+Pagecontent:
+
+# Datenschutz
+Diese Datenschutzerklärung gilt für die Webseiten:
+http://werkschau.hs-augsburg.de
+
+Und als Ergänzung soweit wir personenbezogene Daten in eigener Verantwortung verarbeiten für:
+https://www.facebook.com/Werkschau.Augsburg/
+https://www.instagram.com/werkschau_augsburg/
+https://vimeo.com/hsagestaltung
+
+Wir gehen derzeit davon aus, dass wir keine datenschutzrechtliche Mitverantwortung unterliegen, soweit Ihre Daten durch diese Anbieter zu von diesen festgelegten Zwecken verarbeitet werden.
+
+## Verantwortlicher
+Hochschule für angewandte Wissenschaften Augsburg,
+Körperschaft des öffentlichen Recht gemäß Art. 11 Abs. 1 S. 1 BayHSchG,
+vertreten durch ihren Präsidenten Prof. Dr. Gordon T. Rohrmair
+An der Hochschule 1
+86161 Augsburg
+Telefon: +49 (0)821-5586-0
+Telefax: +49 (0)821-5586-3222
+info@hs-augsburg.de
+
+## Kontaktdaten des bestellten behördlichen Datenschutzbeauftragten
+Nataly Kaminski
+An der Hochschule 1
+86161 Augsburg
+Telefon: +49 (0)821-5586-0
+Telefax: +49 (0)821-5586-3222
+datenschutz@hs-augsburg.de
+
+## Zwecke und Rechtsgrundlagen der Verarbeitung
+Wir bieten gemäß Art. 2 Abs. 6 BayHSchG, Art. 4 Abs. 1 S. 1 und 2 BayEGovG auf unseren Webseiten unsere Dienste und Verwaltungsleistungen sowie Informationen für die Öffentlichkeit über unsere Tätigkeit.
+Unsere Social Media Auftritte sind Teil unserer Öffentlichkeitsarbeit. Unser Bestreben ist es, zielgruppengerecht zu informieren und sich mit Ihnen auszutauschen, Art. 2 Abs. 6 BayHSchG. Wir ermöglichen Ihnen eine schnelle elektronische Kontaktaufnahme und unmittelbare Kommunikation über die Medien Ihrer Wahl, § 5 Abs. 1 Nr. 2 TMG.
+Cookies, Protokolldateien und das Webanalyse-Tool Matomo verwenden wir zur Erstellung von Geschäftsstatistiken, zur Durchführung von Organisationsuntersuchungen, zur Prüfung oder Wartung unseres Webdienstes und zur Gewährleistung der Netz- und Informationssicherheit gemäß Art. 6 Abs. 1 BayDSG, § 13 Abs. 7 TMG, Art. 11 Abs. 1 BayEGovG.
+
+## Protokolldateien
+Wenn Sie die zentralen Webseiten der Hochschule Augsburg besuchen, übermitteln Sie über Ihren Internetbrowser Daten an unseren Webserver. Die folgenden Daten werden während einer laufenden Verbindung zur Kommunikation zwischen Ihrem Internetbrowser und unserem Webserver aufgezeichnet und für die Dauer von 3 Tagen gespeichert:
+
+Name bzw. IP-Adresse des anfragenden Rechners
+Name Ihres Internet-Zugangs-Providers
+Datum und Uhrzeit des Zugriffs
+Name und URL der abgerufenen Datei
+Übertragene Datenmenge
+Meldung, ob der Abruf erfolgreich war
+Dauer der Speicherung der personenbezogenen Daten
+Vorbehaltlich entsprechender Aufbewahrungsfristen werden personenbezogene Daten gelöscht, sobald sie zur Erfüllung des Zwecks, zu dem sie erhoben wurden, nicht mehr erforderlich sind oder die Legitimationsgrundlage hierfür entfällt (z. B. durch den Widerruf einer Einwilligung).
+Haben Sie unter Wissen der Öffentlichkeit oder Teilen dieser über Social Media mit uns kommuniziert, können Sie selbst über Dauer der Veröffentlichung entscheiden oder uns um Löschung bitten. Wir löschen diese Daten unter Beachtung des Archivrechts innerhalb unseres Verantwortungsbereiches. Liegen uns nach der Löschung noch Kopien der Daten vor, werden diese in der Verarbeitung beschränkt und noch gemäß den gesetzlichen Aufbewahrungspflichten Berücksichtigung des Archivrechts aufbewahrt.
+
+## Betroffenenrechte
+Nach der Datenschutz-Grundverordnung stehen Ihnen folgende Rechte zu:
+Werden Ihre personenbezogenen Daten verarbeitet, so haben Sie das Recht, Auskunft über die zu Ihrer Person gespeicherten Daten zu erhalten (Art. 15 DSGVO).
+Sollten unrichtige personenbezogene Daten verarbeitet werden, steht Ihnen ein Recht auf Berichtigung zu (Art. 16 DSGVO).
+Liegen die gesetzlichen Voraussetzungen vor, so können Sie die Löschung oder Einschränkung der Verarbeitung verlangen sowie Widerspruch gegen die Verarbeitung einlegen (Art. 17, 18 und 21 DSGVO).
+Wenn Sie in die Datenverarbeitung eingewilligt haben oder ein Vertrag zur Datenverarbeitung besteht und die Datenverarbeitung mithilfe automatisierter Verfahren durchgeführt wird, steht Ihnen gegebenenfalls ein Recht auf Datenübertragbarkeit zu (Art. 20 DSGVO).
+Sollten Sie von Ihren oben genannten Rechten Gebrauch machen, prüft die öffentliche Stelle, ob die gesetzlichen Voraussetzungen hierfür erfüllt sind.
+Weiterhin besteht ein Beschwerderecht beim Bayerischen Landesbeauftragten für den Datenschutz.
+
+## Aktive Komponenten
+Für dynamische Inhalte der Website werden Cookies verwendet, die aber keine personenbezogenen Daten speichern.
+Javascript-Anwendungen dienen hier lediglich für erweiterte Navigationsmöglichkeiten. Die Verwendung dieser Funktionalität kann vom jeweiligen Nutzer durch Einstellungen im Browser deaktiviert werden.
+
+## Links zu Webseiten anderer Anbieter
+Unsere Webseiten enthalten Querverweise zu Seiten anderer Anbieter. Wir weisen darauf hin, dass diese Datenschutzerklärung ausschließlich für die zentrale Website der Hochschule Augsburg gilt. Wir haben keinen Einfluss darauf und kontrollieren auch nicht, ob andere Anbieter die geltenden Datenschutzbestimmungen einhalten.
+
+## Sonstiges zu unserer Datenschutzerklärung
+Wir behalten uns vor, diese Datenschutzerklärung gelegentlich anzupassen, damit diese stets den aktuellen rechtlichen Anforderungen entspricht oder um Änderungen unserer Leistungen in der Datenschutzerklärung umzusetzen, z. B. bei der Einführung neuer Services. Für Ihren erneuten Besuch gilt dann die neue Datenschutzerklärung.
+
+## Google Maps
+Diese Seite nutzt über eine API den Kartendienst Google Maps. Anbieter ist die Google Inc., 1600 Amphitheatre Parkway, Mountain View, CA 94043, USA.
+
+Zur Nutzung der Funktionen von Google Maps ist es notwendig, Ihre IP Adresse zu speichern. Diese Informationen werden in der Regel an einen Server von Google in den USA übertragen und dort gespeichert. Der Anbieter dieser Seite hat keinen Einfluss auf diese Datenübertragung.
+Die Nutzung von Google Maps erfolgt im Interesse einer ansprechenden Darstellung unserer Online-Angebote und an einer leichten Auffindbarkeit der von uns auf der Website angegebenen Orte. Dies stellt ein berechtigtes Interesse im Sinne von Art. 6 Abs. 1 lit. f DSGVO dar.
+
+Mehr Informationen zum Umgang mit Nutzerdaten finden Sie in der Datenschutzerklärung von Google: https://www.google.de/intl/de/policies/privacy/.
+
+----
+
+Template: default

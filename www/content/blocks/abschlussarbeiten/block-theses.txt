@@ -1,0 +1,13 @@
+Title: Abschlussarbeiten
+
+----
+
+Takeall: true
+
+----
+
+Showfilter: true
+
+----
+
+Theses: students/alena-keln/split-world, students/anna-lena-schlamp/von-angesicht-zu-angesicht-ein-ambivalentes-selbstbild, students/gabriel-von-munchow/romerapp-eine-augmented-reality-erlebnis-fur-junge-erwachsene-im-museum, students/lucia-charlotte-ott-207/directions

@@ -1,0 +1,75 @@
+title: Mapbox Block
+icon: map
+
+status:
+  draft:
+    label: Entwurf
+    text: Der Block ist im Entwurfsmodus und nicht für Blockseiten verfügbar
+  unlisted:
+    label: Verfügbar
+    text: Der Block ist auf Blockseiten auswählbar
+
+columns:
+  top:
+    sections:
+      info:
+        type: fields
+        fields:
+          info:
+            label: Info
+            type: info
+            text: |
+              Mapbox Hinweise,
+
+              zur Einbindung von Maps wurde Mapbox verwendet. Die Styles wurden mit Mapbox Studio generiert. Um Mapbox nutzen zu können muss ein Access Token unter dem Tab <strong>Seitendaten</strong> eingetragen werden.
+
+              [zur Mapbox API](https://www.mapbox.com/)
+          separator:
+            type: line
+
+  left:
+    width: 1/3
+    sections:
+      default:
+        type: fields
+        fields:
+          defaults: fields/default-block-fields
+  right:
+    width: 2/3
+    sections:
+      content:
+        type: fields
+        fields:
+          mapId:
+            width: 1/2
+            type: text
+            required: true
+            label: Map Html Id
+            help: Wird als ID gesetzt für die automatische Initialisierung
+          mapHeight:
+            type: number
+            width: 1/2
+            label: Höhe
+            required: true
+            help: Höhe der Map in Pixeln
+          locationLat:
+            width: 1/2
+            type: text
+            required: true
+            label: Location Lat
+          locationLong:
+            type: text
+            width: 1/2
+            required: true
+            label: Location Long
+          zoom:
+            type: number
+            required: true
+            width: 1/2
+            label: Zoom
+          style:
+            type: text
+            required: true
+            width: 1/2
+            label: Mapbox Style
+            help: Style Link für die Mapbox Konfiguration [(Mapbox Studio)](https://www.mapbox.com/mapbox-studio/)

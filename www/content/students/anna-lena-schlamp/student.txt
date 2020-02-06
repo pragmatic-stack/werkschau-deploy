@@ -1,0 +1,78 @@
+Title: Anna-Lena Schlamp
+
+----
+
+Slug: 
+
+----
+
+Profileimage:
+
+- group-7.jpg
+
+----
+
+Thesis:
+
+- >
+  students/anna-lena-schlamp/von-angesicht-zu-angesicht-ein-ambivalentes-selbstbild
+
+----
+
+Projectworks: 
+
+----
+
+Firstname: Anna-Lena
+
+----
+
+Lastname: Schlamp
+
+----
+
+Courseofstudy: Interaktive Medien IA - BA
+
+----
+
+Email: annaschlamp@gmx.net
+
+----
+
+Website: 
+
+----
+
+Instagram: https://www.instagram.com/annaschlmp/
+
+----
+
+Behance: 
+
+----
+
+Twitter: 
+
+----
+
+Facebook: 
+
+----
+
+Linkedin: 
+
+----
+
+Comfortzone: - zone.jpg
+
+----
+
+Abschlussarbeit: - fotostudio.jpg
+
+----
+
+Comfortzonedescription: Panic Zone: staubig
+
+----
+
+Template: student

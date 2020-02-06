@@ -1,0 +1,29 @@
+.ws-grid {
+  display: grid;
+  grid-gap: 30px;
+}
+
+.ws-grid--col-2 {
+  grid-template-columns: 1fr 1fr;
+}
+
+.ws-grid--col-3 {
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.ws-grid--col-4 {
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.ws-col--square:before {
+  display: block;
+  padding-bottom: 100%;
+}
+
+
+@media (max-width: 768px){
+  .ws-grid--col-2, .ws-grid--col-3, .ws-grid--col-4 {
+    grid-template-columns: 1fr;
+  }
+}
+

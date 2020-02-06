@@ -1,0 +1,21 @@
+Title: Studenten
+
+----
+
+Takeall: false
+
+----
+
+Showfilter: false
+
+----
+
+Studentselect:
+
+- students/anna-lena-schlamp
+- students/david-kochs
+- students/felix-groitzsch
+- students/alena-keln
+- students/jin-liu
+- students/carolin-eisel
+- students/almagul-abitaev

@@ -1,0 +1,82 @@
+Title: Fabian Franz
+
+----
+
+Slug: 
+
+----
+
+Profileimage:
+
+- shooting.jpg
+
+----
+
+Thesis:
+
+- >
+  students/fabian-franz/mode-im-digitalen-zeitalter
+
+----
+
+Projectworks:
+
+- >
+  students/fabian-franz/being-human-in-the-age-of-technology
+- students/fabian-franz/lust
+
+----
+
+Firstname: Fabian
+
+----
+
+Lastname: Franz
+
+----
+
+Courseofstudy: Design- und Kommunikationsstrategie DKS - MA
+
+----
+
+Email: fabian.franz@hs-augsburg.de
+
+----
+
+Website: https://fabianfranz.com
+
+----
+
+Instagram: https://www.instagram.com/f.ffffranz/
+
+----
+
+Behance: https://www.behance.net/fabian_franz
+
+----
+
+Twitter: 
+
+----
+
+Facebook: 
+
+----
+
+Linkedin: 
+
+----
+
+Comfortzone: - paniczone.jpg
+
+----
+
+Abschlussarbeit: - vorschaubild.jpg
+
+----
+
+Comfortzonedescription: Schlaflos in Shanghai
+
+----
+
+Template: student

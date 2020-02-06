@@ -1,0 +1,68 @@
+Title: Creature Design – Replikation der Tierwelt in der fernen Zukunft
+
+----
+
+Slug: creature-design-replikation-der-tierwelt-in-der-fernen-zukunft
+
+----
+
+Student: Benjamin Haas
+
+----
+
+CourseOfStudy: Interaktive Medien IA - BA
+
+----
+
+Dozent: Prof. Jens Müller, Udo Westermeyer
+
+----
+
+Building: buildings/m-gebaude
+
+----
+
+Room: 208
+
+----
+
+Tags: #3D, #animation
+
+----
+
+Presentation:
+
+- bat.jpg
+- deer2.jpg
+
+----
+
+Vimeolink: 
+
+----
+
+Headline: Creature Design
+
+----
+
+Subheadline: Replikation der Tierwelt in der fernen Zukunft
+
+----
+
+Description: Das Artensterben ist ein großes Thema in der heutigen Zeit, in meiner Arbeit möchte ich Konzepte verschiedener Maschinen vorstellen, welche möglicherweise ausgestorbene Tierarten in der Zukunft ersetzen sollen. Die Maschinen werden dabei in 3D präsentiert, sollen hierbei zwar an das Original erinnern, jedoch eine Weiterentwicklung darstellen.
+
+----
+
+Backgroundcolor: #ffffff
+
+----
+
+Typographycolor: #000000
+
+----
+
+Template: abschlussarbeit
+
+----
+
+Studentid: students/benjamin-haas

@@ -1,0 +1,22 @@
+Title: Information
+
+----
+
+Slug: information
+
+----
+
+Addresses:
+
+- 
+  block:
+    - blocks/anfahrt-mit-dem-auto
+  blockwidth: half
+- 
+  block:
+    - blocks/abschlussarbeiten
+  blockwidth: half
+
+----
+
+Template: block-section

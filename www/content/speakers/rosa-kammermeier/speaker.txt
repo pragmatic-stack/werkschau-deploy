@@ -1,0 +1,53 @@
+Title: Rosa Kammermeier
+
+----
+
+Slug: 
+
+----
+
+Profileimg: 
+
+----
+
+Academicgrade: 
+
+----
+
+Name: Rosa
+
+----
+
+Lastname: Kammermeier
+
+----
+
+Biography: Unsere Alumna Rosa Kammermeier arbeitet für Kunden wie Google, Adobe und Sagmeister & Walsh. Ihre Arbeit bestehen neben klassischem Design vor allem aus Illustrationen und formschönen Letterings. 2017 wurde sie als eine von nur sechs Kreativen weltweit für die Adobe Creative Residency ausgewählt. Dadurch hatte sie die Möglichkeit, sich ein Jahr voll auf ihre persönlichen Projekte zu konzentrieren. Rosa erschuf in dieser Zeit den „Walk of Happiness“ – eine Route mit positiven Handletterings durch München, Las Vegas, Berlin und San Francisco. Außerdem durfte sie für die berühmte „Beauty“-Exhibition von Stefan Sagmeister und Jessica Walsh Schriftzüge auf einem eingeschneiten Jaguar gestalten.
+
+----
+
+Biographyexcerpt: 
+
+----
+
+Instagramurl: 
+
+----
+
+Twitterurl: 
+
+----
+
+Websiteurl: 
+
+----
+
+Template: speaker
+
+----
+
+Vorname: Rosa
+
+----
+
+Nachname: Kammermeier

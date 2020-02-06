@@ -1,0 +1,35 @@
+Title: SOMMERKNISTERN
+
+----
+
+Slug: sommerknistern
+
+----
+
+Student: Benjamin Haas
+
+----
+
+Heroimage:
+
+- sommerknistern.png
+
+----
+
+Headline: Sommerknistern
+
+----
+
+Description: Ein Projekt, welches während den Augsburger Sommernächten präsentiert wurde. Der Film wurde dabei auf einer runden Fläche projiziert.
+
+----
+
+Template: semesterarbeit
+
+----
+
+Studentid: students/benjamin-haas
+
+----
+
+CourseOfStudy: Interaktive Medien IA - BA

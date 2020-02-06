@@ -1,0 +1,571 @@
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=utf-8"/><title>Entwicklungsworkflow</title><style>
+/* webkit printing magic: print all background colors */
+html {
+	-webkit-print-color-adjust: exact;
+}
+* {
+	box-sizing: border-box;
+	-webkit-print-color-adjust: exact;
+}
+
+html,
+body {
+	margin: 0;
+	padding: 0;
+}
+@media only screen {
+	body {
+		margin: 2em auto;
+		max-width: 900px;
+		color: rgb(55, 53, 47);
+	}
+}
+
+body {
+	line-height: 1.5;
+	white-space: pre-wrap;
+}
+
+a,
+a.visited {
+	color: inherit;
+	text-decoration: underline;
+}
+
+.pdf-relative-link-path {
+	font-size: 80%;
+	color: #444;
+}
+
+h1,
+h2,
+h3 {
+	letter-spacing: -0.01em;
+	line-height: 1.2;
+	font-weight: 600;
+	margin-bottom: 0;
+}
+
+.page-title {
+	font-size: 2.5rem;
+	font-weight: 700;
+	margin-top: 0;
+	margin-bottom: 0.75em;
+}
+
+h1 {
+	font-size: 1.875rem;
+	margin-top: 1.875rem;
+}
+
+h2 {
+	font-size: 1.5rem;
+	margin-top: 1.5rem;
+}
+
+h3 {
+	font-size: 1.25rem;
+	margin-top: 1.25rem;
+}
+
+.source {
+	border: 1px solid #ddd;
+	border-radius: 3px;
+	padding: 1.5em;
+	word-break: break-all;
+}
+
+.callout {
+	border-radius: 3px;
+	padding: 1rem;
+}
+
+figure {
+	margin: 1.25em 0;
+	page-break-inside: avoid;
+}
+
+figcaption {
+	opacity: 0.5;
+	font-size: 85%;
+	margin-top: 0.5em;
+}
+
+mark {
+	background-color: transparent;
+}
+
+.indented {
+	padding-left: 1.5em;
+}
+
+hr {
+	background: transparent;
+	display: block;
+	width: 100%;
+	height: 1px;
+	visibility: visible;
+	border: none;
+	border-bottom: 1px solid rgba(55, 53, 47, 0.09);
+}
+
+img {
+	max-width: 100%;
+}
+
+@media only print {
+	img {
+		max-height: 100vh;
+		object-fit: contain;
+	}
+}
+
+@page {
+	margin: 1in;
+}
+
+.collection-content {
+	font-size: 0.875rem;
+}
+
+.column-list {
+	display: flex;
+	justify-content: space-between;
+}
+
+.column {
+	padding: 0 1em;
+}
+
+.column:first-child {
+	padding-left: 0;
+}
+
+.column:last-child {
+	padding-right: 0;
+}
+
+.table_of_contents-item {
+	display: block;
+	font-size: 0.875rem;
+	line-height: 1.3;
+	padding: 0.125rem;
+}
+
+.table_of_contents-indent-1 {
+	margin-left: 1.5rem;
+}
+
+.table_of_contents-indent-2 {
+	margin-left: 3rem;
+}
+
+.table_of_contents-indent-3 {
+	margin-left: 4.5rem;
+}
+
+.table_of_contents-link {
+	text-decoration: none;
+	opacity: 0.7;
+	border-bottom: 1px solid rgba(55, 53, 47, 0.18);
+}
+
+table,
+th,
+td {
+	border: 1px solid rgba(55, 53, 47, 0.09);
+	border-collapse: collapse;
+}
+
+table {
+	border-left: none;
+	border-right: none;
+}
+
+th,
+td {
+	font-weight: normal;
+	padding: 0.25em 0.5em;
+	line-height: 1.5;
+	min-height: 1.5em;
+	text-align: left;
+}
+
+th {
+	color: rgba(55, 53, 47, 0.6);
+}
+
+ol,
+ul {
+	margin: 0;
+	margin-block-start: 0.6em;
+	margin-block-end: 0.6em;
+}
+
+li > ol:first-child,
+li > ul:first-child {
+	margin-block-start: 0.6em;
+}
+
+ul > li {
+	list-style: disc;
+}
+
+ul.to-do-list {
+	text-indent: -1.7em;
+}
+
+ul.to-do-list > li {
+	list-style: none;
+}
+
+.to-do-children-checked {
+	text-decoration: line-through;
+	opacity: 0.375;
+}
+
+ul.toggle > li {
+	list-style: none;
+}
+
+ul {
+	padding-inline-start: 1.7em;
+}
+
+ul > li {
+	padding-left: 0.1em;
+}
+
+ol {
+	padding-inline-start: 1.6em;
+}
+
+ol > li {
+	padding-left: 0.2em;
+}
+
+.mono ol {
+	padding-inline-start: 2em;
+}
+
+.mono ol > li {
+	text-indent: -0.4em;
+}
+
+.toggle {
+	padding-inline-start: 0em;
+	list-style-type: none;
+}
+
+/* Indent toggle children */
+.toggle > li > details {
+	padding-left: 1.7em;
+}
+
+.toggle > li > details > summary {
+	margin-left: -1.1em;
+}
+
+.selected-value {
+	display: inline-block;
+	padding: 0 0.5em;
+	background: rgba(206, 205, 202, 0.5);
+	border-radius: 3px;
+	margin-right: 0.5em;
+	margin-top: 0.3em;
+	margin-bottom: 0.3em;
+	white-space: nowrap;
+}
+
+.collection-title {
+	display: inline-block;
+	margin-right: 1em;
+}
+
+time {
+	opacity: 0.5;
+}
+
+.icon {
+	display: inline-block;
+	max-width: 1.2em;
+	max-height: 1.2em;
+	text-decoration: none;
+	vertical-align: text-bottom;
+	margin-right: 0.5em;
+}
+
+img.icon {
+	border-radius: 3px;
+}
+
+.user-icon {
+	width: 1.5em;
+	height: 1.5em;
+	border-radius: 100%;
+	margin-right: 0.5rem;
+}
+
+.user-icon-inner {
+	font-size: 0.8em;
+}
+
+.text-icon {
+	border: 1px solid #000;
+	text-align: center;
+}
+
+.page-cover-image {
+	display: block;
+	object-fit: cover;
+	width: 100%;
+	height: 30vh;
+}
+
+.page-header-icon {
+	font-size: 3rem;
+	margin-bottom: 1rem;
+}
+
+.page-header-icon-with-cover {
+	margin-top: -0.72em;
+	margin-left: 0.07em;
+}
+
+.page-header-icon img {
+	border-radius: 3px;
+}
+
+.link-to-page {
+	margin: 1em 0;
+	padding: 0;
+	border: none;
+	font-weight: 500;
+}
+
+p > .user {
+	opacity: 0.5;
+}
+
+td > .user,
+td > time {
+	white-space: nowrap;
+}
+
+input[type="checkbox"] {
+	transform: scale(1.5);
+	margin-right: 0.6em;
+	vertical-align: middle;
+}
+
+p {
+	margin-top: 0.5em;
+	margin-bottom: 0.5em;
+}
+
+.image {
+	border: none;
+	margin: 1.5em 0;
+	padding: 0;
+	border-radius: 0;
+	text-align: center;
+}
+
+.code,
+code {
+	background: rgba(135, 131, 120, 0.15);
+	border-radius: 3px;
+	padding: 0.2em 0.4em;
+	border-radius: 3px;
+	font-size: 85%;
+	tab-size: 2;
+}
+
+code {
+	color: #eb5757;
+}
+
+.code {
+	padding: 1.5em 1em;
+}
+
+.code > code {
+	background: none;
+	padding: 0;
+	font-size: 100%;
+	color: inherit;
+}
+
+blockquote {
+	font-size: 1.25em;
+	margin: 1em 0;
+	padding-left: 1em;
+	border-left: 3px solid rgb(55, 53, 47);
+}
+
+.bookmark-href {
+	font-size: 0.75em;
+	opacity: 0.5;
+}
+
+.sans { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol"; }
+.code { font-family: 'SFMono-Regular', Consolas, 'Liberation Mono', Menlo, Courier, monospace; }
+.serif { font-family: Lyon-Text, Georgia, KaiTi, STKaiTi, '华文楷体', KaiTi_GB2312, '楷体_GB2312', serif; }
+.mono { font-family: Nitti, 'Microsoft YaHei', '微软雅黑', monospace; }
+.pdf .sans { font-family: Inter, -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol", 'Twemoji', 'Noto Color Emoji', 'Noto Sans CJK SC', 'Noto Sans CJK KR'; }
+
+.pdf .code { font-family: Source Code Pro, 'SFMono-Regular', Consolas, 'Liberation Mono', Menlo, Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK SC', 'Noto Sans Mono CJK KR'; }
+
+.pdf .serif { font-family: PT Serif, Lyon-Text, Georgia, KaiTi, STKaiTi, '华文楷体', KaiTi_GB2312, '楷体_GB2312', serif, 'Twemoji', 'Noto Color Emoji', 'Noto Sans CJK SC', 'Noto Sans CJK KR'; }
+
+.pdf .mono { font-family: PT Mono, Nitti, 'Microsoft YaHei', '微软雅黑', monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK SC', 'Noto Sans Mono CJK KR'; }
+
+.highlight-default {
+}
+.highlight-gray {
+	color: rgb(155,154,151);
+}
+.highlight-brown {
+	color: rgb(100,71,58);
+}
+.highlight-orange {
+	color: rgb(217,115,13);
+}
+.highlight-yellow {
+	color: rgb(223,171,1);
+}
+.highlight-teal {
+	color: rgb(15,123,108);
+}
+.highlight-blue {
+	color: rgb(11,110,153);
+}
+.highlight-purple {
+	color: rgb(105,64,165);
+}
+.highlight-pink {
+	color: rgb(173,26,114);
+}
+.highlight-red {
+	color: rgb(224,62,62);
+}
+.highlight-gray_background {
+	background: rgb(235,236,237);
+}
+.highlight-brown_background {
+	background: rgb(233,229,227);
+}
+.highlight-orange_background {
+	background: rgb(250,235,221);
+}
+.highlight-yellow_background {
+	background: rgb(251,243,219);
+}
+.highlight-teal_background {
+	background: rgb(221,237,234);
+}
+.highlight-blue_background {
+	background: rgb(221,235,241);
+}
+.highlight-purple_background {
+	background: rgb(234,228,242);
+}
+.highlight-pink_background {
+	background: rgb(244,223,235);
+}
+.highlight-red_background {
+	background: rgb(251,228,228);
+}
+.block-color-default {
+	color: inherit;
+	fill: inherit;
+}
+.block-color-gray {
+	color: rgba(55, 53, 47, 0.6);
+	fill: rgba(55, 53, 47, 0.6);
+}
+.block-color-brown {
+	color: rgb(100,71,58);
+	fill: rgb(100,71,58);
+}
+.block-color-orange {
+	color: rgb(217,115,13);
+	fill: rgb(217,115,13);
+}
+.block-color-yellow {
+	color: rgb(223,171,1);
+	fill: rgb(223,171,1);
+}
+.block-color-teal {
+	color: rgb(15,123,108);
+	fill: rgb(15,123,108);
+}
+.block-color-blue {
+	color: rgb(11,110,153);
+	fill: rgb(11,110,153);
+}
+.block-color-purple {
+	color: rgb(105,64,165);
+	fill: rgb(105,64,165);
+}
+.block-color-pink {
+	color: rgb(173,26,114);
+	fill: rgb(173,26,114);
+}
+.block-color-red {
+	color: rgb(224,62,62);
+	fill: rgb(224,62,62);
+}
+.block-color-gray_background {
+	background: rgb(235,236,237);
+}
+.block-color-brown_background {
+	background: rgb(233,229,227);
+}
+.block-color-orange_background {
+	background: rgb(250,235,221);
+}
+.block-color-yellow_background {
+	background: rgb(251,243,219);
+}
+.block-color-teal_background {
+	background: rgb(221,237,234);
+}
+.block-color-blue_background {
+	background: rgb(221,235,241);
+}
+.block-color-purple_background {
+	background: rgb(234,228,242);
+}
+.block-color-pink_background {
+	background: rgb(244,223,235);
+}
+.block-color-red_background {
+	background: rgb(251,228,228);
+}
+
+.checkbox {
+	display: inline-flex;
+	vertical-align: text-bottom;
+	width: 16;
+	height: 16;
+	background-size: 16px;
+	margin-left: 2px;
+	margin-right: 5px;
+}
+
+.checkbox-on {
+	background-image: url("data:image/svg+xml;charset=UTF-8,%3Csvg%20width%3D%2216%22%20height%3D%2216%22%20viewBox%3D%220%200%2016%2016%22%20fill%3D%22none%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%0A%3Crect%20width%3D%2216%22%20height%3D%2216%22%20fill%3D%22%2358A9D7%22%2F%3E%0A%3Cpath%20d%3D%22M6.71429%2012.2852L14%204.9995L12.7143%203.71436L6.71429%209.71378L3.28571%206.2831L2%207.57092L6.71429%2012.2852Z%22%20fill%3D%22white%22%2F%3E%0A%3C%2Fsvg%3E");
+}
+
+.checkbox-off {
+	background-image: url("data:image/svg+xml;charset=UTF-8,%3Csvg%20width%3D%2216%22%20height%3D%2216%22%20viewBox%3D%220%200%2016%2016%22%20fill%3D%22none%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%0A%3Crect%20x%3D%220.75%22%20y%3D%220.75%22%20width%3D%2214.5%22%20height%3D%2214.5%22%20fill%3D%22white%22%20stroke%3D%22%2336352F%22%20stroke-width%3D%221.5%22%2F%3E%0A%3C%2Fsvg%3E");
+}
+	
+</style></head><body><article id="28137de0-6b39-4ff0-8774-a80e4d27eeeb" class="page sans"><header><h1 class="page-title">Entwicklungsworkflow</h1></header><div class="page-body"><nav id="cb8d04a5-ed2e-45a3-b2c7-799fa2add49f" class="block-color-gray table_of_contents"><div class="table_of_contents-item table_of_contents-indent-0"><a class="table_of_contents-link" href="#ef8e1456-a4a8-43e7-abe6-df3bda4f6f2d">Workflow für neue Features / Seiten</a></div><div class="table_of_contents-item table_of_contents-indent-1"><a class="table_of_contents-link" href="#88aec9ca-f243-4979-8230-6c3ede3da933"><strong>Entwickeln des Skeletts mit Webpack</strong></a></div><div class="table_of_contents-item table_of_contents-indent-1"><a class="table_of_contents-link" href="#b64dfb5e-7996-4ef7-8a18-4b1092b2ddca"><strong>Anlegen der Templates in Kirby</strong></a></div><div class="table_of_contents-item table_of_contents-indent-0"><a class="table_of_contents-link" href="#541b8a1c-010e-46bc-8623-fee20fd3ddae">Abhängigkeiten installieren</a></div><div class="table_of_contents-item table_of_contents-indent-0"><a class="table_of_contents-link" href="#7cd074a2-a105-49c9-a4a3-a4a14db01eb2">Seitentyp entwickeln</a></div><div class="table_of_contents-item table_of_contents-indent-0"><a class="table_of_contents-link" href="#146bddd3-2167-4c65-9645-79c6fb0eb836">Webpack Befehle</a></div><div class="table_of_contents-item table_of_contents-indent-1"><a class="table_of_contents-link" href="#8f563269-e563-4df2-b772-f4839881ef8e"><strong>Html-Build - Seitenstruktur</strong></a></div><div class="table_of_contents-item table_of_contents-indent-1"><a class="table_of_contents-link" href="#fb9298ff-5ca2-4784-b7e9-e9e8c507124f"><strong>Html-Start - Entwicklung des Skeletts mit Webpack-Dev-Server</strong></a></div><div class="table_of_contents-item table_of_contents-indent-1"><a class="table_of_contents-link" href="#eb8203b1-e344-4f05-97a6-1ea8618b7093"><strong>Kirby-Build - Assets für Kirby</strong></a></div><div class="table_of_contents-item table_of_contents-indent-1"><a class="table_of_contents-link" href="#f7992b19-3a79-4e7f-979f-c306446f83c6"><strong>Kirby-Watch - Assets für Kirby im Watch Mode (experimental)</strong></a></div><div class="table_of_contents-item table_of_contents-indent-0"><a class="table_of_contents-link" href="#1372918d-3a8e-41d2-8ade-9df05babf3fc">Hilfsskripte</a></div><div class="table_of_contents-item table_of_contents-indent-1"><a class="table_of_contents-link" href="#3ae9d90a-9261-4a5e-8d74-9c955b873e78">Add-Frontend-Page<strong> - Hilfsskript für die Skelett Entwicklung</strong></a></div></nav><h1 id="ef8e1456-a4a8-43e7-abe6-df3bda4f6f2d" class="">Workflow für neue Features / Seiten</h1><figure class="block-color-gray_background callout" style="white-space:pre-wrap;display:flex" id="fd6d1d3e-f103-415b-9050-69a08284280a"><div style="font-size:1.5em"><span class="icon">💡</span></div><div style="width:100%">Das System ist mit Webpack aufgebaut um diverse Tools für die Frontend Entwicklung einzubinden, Code zu verkleinern und moderne Technologien wie SCSS und ES6 nutzen zu können.</div></figure><h3 id="88aec9ca-f243-4979-8230-6c3ede3da933" class=""><strong>Entwickeln des Skeletts mit Webpack</strong></h3><ol id="ceadd721-194b-4d26-8262-aae5f9611af8" class="numbered-list" start="1"><li>Seite im<strong> src/pages</strong> Verzeichnis anlegen (per Skript oder manuell)</li></ol><ol id="f41c9f65-9b78-4c50-9ec0-43d8943ffb64" class="numbered-list" start="2"><li>Html Struktur aufbauen</li></ol><ol id="c7e0d198-2c29-40ca-9b80-92a1721f445a" class="numbered-list" start="3"><li>JavaScript und SCSS implementieren</li></ol><ol id="b1f50312-a3dd-4f1c-b7fe-2f4c350aac57" class="numbered-list" start="4"><li>Webpack ausführen (<strong>html-build</strong> oder <strong>kirby-build</strong>)
+</li></ol><h3 id="b64dfb5e-7996-4ef7-8a18-4b1092b2ddca" class=""><strong>Anlegen der Templates in Kirby</strong></h3><ol id="e1f58356-6ed1-4ece-9df8-375638ca1bab" class="numbered-list" start="1"><li>Blueprint (optional - wenn eine Konfiguration über das Panel möglich sein soll)</li></ol><ol id="985e8922-fa56-41f2-9ab4-5dbf955e0c1d" class="numbered-list" start="2"><li>Template (Übernahme aus dem <code>dist</code> Verzeichnis) und Php implementieren</li></ol><ol id="68c1b514-aa89-434a-adb6-2c6479b1b095" class="numbered-list" start="3"><li>Content Seite anlegen oder über das Panel erstellen</li></ol><h1 id="541b8a1c-010e-46bc-8623-fee20fd3ddae" class="">Abhängigkeiten installieren</h1><p id="f8c3f70f-6f45-4f3d-9940-d1b0bf0fbc8b" class="">Es wird vorausgesetzt dass Node.js installiert und verwendungsfähig ist. <a href="https://nodejs.org/en/">Node.js</a></p><p id="96ef42c0-488c-44a6-b39a-6c109d9b687d" class=""><code>npm i</code> oder <code>npm install</code> installiert die Abhängigkeiten, welche in der package.json definiert wurden.</p><h1 id="7cd074a2-a105-49c9-a4a3-a4a14db01eb2" class="">Seitentyp entwickeln</h1><p id="d020a032-25ea-43a6-a1ae-22850dcefa30" class="">Durch das Hilfsskript kann ein zusätzlicher Seitentyp (für ein späteres Kirby Template) angelegt werden. Hierbei wird im Verzeichnis <code>src/pages</code>eine neue Seitenkonfiguration für die weitere Vorgehensweise angelegt.</p><p id="d0fd2fad-0ddb-44f0-979f-085bd1b5b853" class=""><code>npm run add-frontend-page &lt;page-name&gt;</code></p><p id="ecf5d8a9-98ad-4ab9-bff0-ca8af8e84f27" class=""><strong>In diesem Beispiel:</strong></p><p id="bc49714e-a678-4813-823d-1fb01120e383" class=""><code>npm run add-frontend-page building</code></p><p id="2417dc20-b93d-4db1-bf8b-9acabba523a2" class="">Das Skript erzeugt die folgende Struktur:</p><pre id="120f24bd-9090-42df-a9a5-15da6ffbe744" class="code"><code>-- src/pages
+	-- ...
+	-- building
+			-- building.html    // enthält das seitenrelevante markup
+			-- building.js      // enthält seitenrelevantes javascript
+			-- building.scss	  // enthält seitenrelevante styles</code></pre><p id="4b055090-0858-4174-8b1f-5a50a1d9497d" class="">In der <strong>building.html</strong> kann nun das HTML-Markup angelegt werden. Die <strong>building.js</strong> dient der Entwicklung von seitenspezifischem JavaScript. Die <strong>building.scss</strong> enthält das seitenspezifische SCSS das zu CSS umgewandelt wird.</p><figure class="block-color-gray_background callout" style="white-space:pre-wrap;display:flex" id="16be2fc3-225d-4f9f-a2e2-8306250b9029"><div style="font-size:1.5em"><span class="icon">💡</span></div><div style="width:100%">Globale Styles und JavaScript werden im Ordner <code>src/assets/css/shared</code> oder <code>src/assets/js/shared </code>angelegt und in der <code>index.js</code> und / oder <code>src/assets/css/globals.scss</code> eingebunden.</div></figure><h1 id="146bddd3-2167-4c65-9645-79c6fb0eb836" class="">Webpack Befehle</h1><h3 id="8f563269-e563-4df2-b772-f4839881ef8e" class=""><strong>Html-Build - Seitenstruktur</strong></h3><pre id="7c02c9c4-b692-4394-aadd-29db95171ca5" class="code"><code>npm run html-build</code></pre><p id="73301240-d51d-42c6-992a-f2932c0e599c" class="">Erstellt die Seite in einer Dummy Version ohne PHP im Ordner <strong>dist</strong>. Dieser Befehl dient der initialen Visualisierung von Seiten und neu entwickelten Features.</p><h3 id="fb9298ff-5ca2-4784-b7e9-e9e8c507124f" class=""><strong>Html-Start - Entwicklung des Skeletts mit Webpack-Dev-Server</strong></h3><pre id="d75391a4-085f-4ead-8656-efc2508e1cd5" class="code"><code>npm run html-build</code></pre><p id="da365914-8d34-405c-a109-22a3fcf784ad" class="">Erstellt die Seite in einer Dummy Version ohne PHP im Ordner <strong>dist</strong>. Dieser Befehl dient der initialen Visualisierung von Seiten und neu entwickelten Features.</p><h3 id="eb8203b1-e344-4f05-97a6-1ea8618b7093" class=""><strong>Kirby-Build - Assets für Kirby</strong></h3><pre id="22cc02a0-44a7-4368-8da5-d3cc78421271" class="code"><code>npm run kirby-build</code></pre><p id="d550b9a2-41cc-40a8-8691-27e3534f4648" class="">Erstellt das Asset Verzeichnis im <code>www/assets</code> Verzeichnis zur Auslieferung der Seite.</p><h3 id="f7992b19-3a79-4e7f-979f-c306446f83c6" class=""><strong>Kirby-Watch - Assets für Kirby im Watch Mode (experimental)</strong></h3><pre id="40a0c96e-34d7-4336-b0cf-46da89582f18" class="code"><code>npm run kirby-watch</code></pre><p id="89f8fa91-ba53-4de7-90c9-2536afb19c8b" class="">Erstellt die Bundles im Watch-Modus um parallel die PHP-Templates zu entwickeln.</p><h1 id="1372918d-3a8e-41d2-8ade-9df05babf3fc" class="">Hilfsskripte</h1><h3 id="3ae9d90a-9261-4a5e-8d74-9c955b873e78" class="">Add-Frontend-Page<strong> - Hilfsskript für die Skelett Entwicklung</strong></h3><pre id="5df644db-48d1-4dd3-882c-a0c0991392f0" class="code"><code>npm run add-frontend-page &lt;pagename&gt;</code></pre><p id="bf9045af-60ca-4dec-9545-7c74fb19d108" class="">Erstellt eine Seite für die Entwicklung mit Webpack im <code>src/pages</code> Verzeichnis.</p></div></article></body></html>

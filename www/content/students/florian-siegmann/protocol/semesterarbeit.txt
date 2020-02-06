@@ -1,0 +1,35 @@
+Title: PROTOCOL
+
+----
+
+Slug: protocol
+
+----
+
+Student: Florian Siegmann
+
+----
+
+Heroimage:
+
+- 1.jpg
+
+----
+
+Headline: PROTOCOL Digital Fashion
+
+----
+
+Description: FUTURE OF WORK COLLECTION
+
+----
+
+Template: semesterarbeit
+
+----
+
+Studentid: students/florian-siegmann
+
+----
+
+CourseOfStudy: Design- und Kommunikationsstrategie DKS - MA

@@ -1,0 +1,8 @@
+type: pages
+headline: unveröffentlichte Teamarbeiten
+parent: kirby.page("teamworks")
+info: "{{ page.date.toDate('d.m.Y') }}"
+status: drafts
+template: teamwork
+empty: Bisher keine Teamarbeiten angelegt
+sortBy: date desc

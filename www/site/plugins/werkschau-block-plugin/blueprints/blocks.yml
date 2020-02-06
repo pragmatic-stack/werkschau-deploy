@@ -1,0 +1,14 @@
+Title: Block Seiten
+
+columns:
+  left:
+    width: 1/2
+    sections:
+      block-drafts:
+        extends: sections/block-drafts
+
+  right:
+    width: 1/2
+    sections:
+      block-unlisted:
+        extends: sections/block-unlisted

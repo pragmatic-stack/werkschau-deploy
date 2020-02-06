@@ -1,0 +1,71 @@
+Title: Startseite
+
+----
+
+Slug: startseite
+
+----
+
+Hero:
+
+- blocks/mein-heroblock
+
+----
+
+Maininfo:
+
+- blocks/werkschau-info-section
+
+----
+
+Timeschedule:
+
+- blocks/werkschau-time-schedule
+
+----
+
+Theses:
+
+- blocks/abschlussarbeiten
+
+----
+
+Address:
+
+- blocks/adresse-hochschule
+
+----
+
+Approachpublic:
+
+- blocks/anfahrt-mit-den-offentlichen
+
+----
+
+Approachcar:
+
+- blocks/anfahrt-mit-dem-auto
+
+----
+
+Maps:
+
+- blocks/google-maps
+
+----
+
+Speakers:
+
+- blocks/speakers
+
+----
+
+Approach: blocks/anfahrt-mit-dem-auto
+
+----
+
+Marqueetext: 
+
+----
+
+Template: startseite

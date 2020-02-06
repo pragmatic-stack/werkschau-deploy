@@ -1,0 +1,25 @@
+Title: W-Gebäude
+
+----
+
+Slug: w-gebaude
+
+----
+
+Headline: 
+
+----
+
+Bezeichnung: W-Gebäude
+
+----
+
+Kuerzel: W
+
+----
+
+Rooms: 
+
+----
+
+Template: building
